@@ -1,0 +1,30 @@
+// Core
+@import 'core/functions';
+@import 'core/mixins';
+@import 'core/variables';
+
+// Layout
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/grid';
+
+// Components
+@import 'components/buttons';
+@import 'components/buttonsFace';
+@import 'components/containers';
+@import 'components/forms';
+@import 'components/links';
+@import 'components/paragraphs';
+@import 'components/popup';
+@import 'components/titles';
+@import 'components/typography';
+
+// Pages
+@import 'pages/contact';
+@import 'pages/cover';
+@import 'pages/datas';
+@import 'pages/game';
+@import 'pages/home';
+@import 'pages/quizz';
+@import 'pages/resources';
+@import 'pages/tips';
