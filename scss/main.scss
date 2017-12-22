@@ -1,12 +1,12 @@
 // Core
-@import 'core/functions';
 @import 'core/mixins';
+@import 'core/functions';
 @import 'core/variables';
 
 // Layout
-@import 'layout/header';
 @import 'layout/footer';
 @import 'layout/grid';
+@import 'layout/header';
 
 // Components
 @import 'components/buttons';
