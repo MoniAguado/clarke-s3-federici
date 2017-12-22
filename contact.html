@@ -3,42 +3,55 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Federici</title>
+		<title>Federici-Contact</title>
 		<link rel="stylesheet" href="style/style.css">
 		<link rel="stylesheet" href="style/bootstrap-grid.min.css">
 	</head>
 	<body class="page-contact">
 		<header>
-			<ul>
-				<li>Consejos</li>
-				<li>Recursos</li>
-				<li>Datos</li>
-				<li>Encuesta</li>
-				<li>Juego</li>
-				<li>Contacto</li>
+			<ul class="nav">
+			  <li class="nav-item">
+			    <a class="nav-link" href="tips.html">Consejos</a>
+			  </li>
+				<li class="nav-item">
+			    <a class="nav-link" href="resources.html">Recursos</a>
+			  </li>
+				<li class="nav-item">
+			    <a class="nav-link" href="statistics.html">Datos</a>
+			  </li>
+				<li class="nav-item">
+			    <a class="nav-link" href="survey.html">Encuesta</a>
+			  </li>
+				<li class="nav-item">
+			    <a class="nav-link" href="quiz.html">Juego</a>
+			  </li>
+				<li class="nav-item">
+			    <a class="nav-link" href="contact.html">Contacto</a>
+			  </li>
 			</ul>
+			<div>
+				<p>Teléfono</p>
+				<p>016</p>
+			</div>
 			<img src="https://www.placehold.it/500x100" alt="Home">
 		</header>
 		<main>
-			<form class="">
-					<h1> ¿Necesitas ayuda?</h1>
-					<p> Si tienes alguna pregunta o quieres información adicional , rellena el siguiente formulario.
-					</p>
-				<div class="">
-					<div class="">
-
-						<input type="text" name="name" placeholder="Nombre" class="" >
-						<input type="text" name="surname" placeholder="Apellidos" class="" >
-					</div>
-					<div class="numeros">
-						<input type="email" name="mail" placeholder="email" class="email" required>
-					</div>
-						<textarea name="comments" placeholder="Escribe aquí tus comentarios y sugerencias" rows="8" cols="60"></textarea>
-
-					<input type="submit" name="submit" class="submit">
-				</div>
-				<h2 class=""> ¡Muchas gracias!</h2>
-			</form>
+			<h1> ¿Necesitas ayuda?</h1>
+			<p> Si tienes alguna pregunta o quieres información adicional , rellena el siguiente formulario.
+			</p>
+			<div class="container">
+				<form class="" action="index.html" method="post">
+	  			<div class="form-group">
+	          <input type="text" name="name" placeholder="Nombre" class="form-control" >
+	  				<input type="text" name="surname" placeholder="Apellidos" class="form-control" >
+	  			</div>
+	  			<div class="form-group">
+	  				<input type="email" name="mail" placeholder="email" class="form-control" required>
+	  			</div>
+	  			<textarea name="comments" placeholder="Escribe aquí tus preguntas" rows="8" cols="60"></textarea>
+					<button type="submit" class="btn btn-primary">Enviar</button>
+				</form>
+  		</div>
 
 		</main>
 		<script type="text/javascript" src="js/main.js"></script>
