@@ -445,7 +445,11 @@ html {
 .align-self-stretch {
   -ms-flex-item-align: stretch !important;
   align-self: stretch !important;
-}/*# sourceMappingURL=bootstrap-grid.min.css.map */@media (min-width: 576px) {
+}/*# sourceMappingURL=bootstrap-grid.min.css.map */.page-quiz {
+  background-color: red;
+}
+
+@media (min-width: 576px) {
   .container {
     max-width: 540px;
   }
