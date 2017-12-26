@@ -1,5 +1,6 @@
 
-
+//core
+@import 'core/variables';
 // Layout
 @import 'layout/footer';
 @import 'layout/grid';
@@ -16,6 +17,7 @@
 @import 'components/popup';
 @import 'components/titles';
 @import 'components/typography';
+@import 'components/socialmedia';
 
 // Pages
 @import 'pages/contact';
