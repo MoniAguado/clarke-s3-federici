@@ -1,4 +1,4 @@
-/*social media*//*!
+@import url("https://fonts.googleapis.com/css?family=Abel|Lilita+One");/*fuentes*//*social media*//*!
  * Bootstrap Grid v4.0.0-beta.2 (https://getbootstrap.com)
  * Copyright 2011-2017 The Bootstrap Authors
  * Copyright 2011-2017 Twitter, Inc.
@@ -445,7 +445,17 @@ html {
 .align-self-stretch {
   -ms-flex-item-align: stretch !important;
   align-self: stretch !important;
-}/*# sourceMappingURL=bootstrap-grid.min.css.map */.social-media {
+}/*# sourceMappingURL=bootstrap-grid.min.css.map */body {
+  font-family: 'Abel', sans-serif;
+  font-size: 16px;
+}
+
+.title {
+  font-family: 'Lilita One', cursive;
+  font-size: 20px;
+}
+
+.social-media {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
