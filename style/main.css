@@ -1,3 +1,11 @@
+.link--cover {
+  text-decoration: none;
+}
+
+.button {
+  background-color: blue;
+}
+
 .header {
   background-color: backgroundColorHeader;
   height: heightHeader;
