@@ -1,0 +1,13 @@
+.header {
+  background-color: backgroundColorHeader;
+  height: heightHeader;
+  width: widthHeader;
+  position: fixed;
+  z-index: 1;
+}
+
+.page-quiz {
+  background-color: grey;
+}
+
+/*# sourceMappingURL=main.css.map */

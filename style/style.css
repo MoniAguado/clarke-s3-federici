@@ -1,4 +1,3 @@
-
 /*!
  * Bootstrap Grid v4.0.0-beta.2 (https://getbootstrap.com)
  * Copyright 2011-2017 The Bootstrap Authors
@@ -455,7 +454,7 @@ html {
 }
 
 .page-quiz {
-  background-color: red;
+  background-color: grey;
 }
 
 @media (min-width: 576px) {
@@ -2037,6 +2036,5 @@ html {
     align-self: stretch !important;
   }
 }
-
 
 /*# sourceMappingURL=style.css.map */
