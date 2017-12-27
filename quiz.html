@@ -3,11 +3,11 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Quiz</title>
+		<title>Juego</title>
 		<link rel="stylesheet" href="style/style.css">
 	</head>
 
-	<body class="page-quiz">
+	<body class="container-fluid page-quiz">
 		<header>
 			<ul>
 				<li>Consejos</li>
@@ -21,62 +21,125 @@
 				<p>Teléfono</p>
 				<p>016</p>
 			</div>
-			<img src="https://www.placehold.it/500x100" alt="Home">
+			<img src="https://www.placehold.it/100x100" alt="Home">
 		</header>
 
 		<main>
-			<div class="instructions-initial-pop-up">
-				<img class="close-icon" src="https://www.placehold.it/50x50" alt="close">
-				<p class="instructions">¿Amor sano o tóxico?(to review)</p>
+			<div class="row">
+				<div class="col">
+					<h1 class="title title--quiz">¿Amor sano o tóxico?</h1>
+				</div>
 			</div>
-			<div class="general-page-quiz-box">
-				<div class="box quiz-item-box phrase-box">
-					<div class="box question-box">
+			<div class="instructions-initial-pop-up">
+				<div class="row">
+					<div class="col-1 offset-9">
+						<img class="close-icon" src="https://www.placehold.it/50x50" alt="close">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-10 offset-1">
+						<p class="paragraph paragraph--quiz instructions">Observa las siguientes frases, canciones y vídeos. Después identifica si corresponden a:</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-1 offset-4 healthy-love-box">
+						<img class="healthy-love-img" src="https://www.placehold.it/20x20" alt="Amor sano">
+					</div>
+					<div class="col-1 offset-2 toxic-love-box">
+						<img class="toxic-love-img" src="https://www.placehold.it/20x20" alt="Amor tóxico">
+					</div>
+				</div>
+			</div>
+
+			<div class="box box--quiz phrase-box">
+				<div class="row box box--quiz question-box">
+					<div class="col-10 offset-1">
 						<p>Afirmación 1</p>
-						<div class="icons-to-response">
-							<img src="https://www.placehold.it/50x50" alt="Amor sano">
-							<img src="https://www.placehold.it/50x50" alt="Amor tóxico">
-						</div>
-					</div>
-					<div class="box result-box">
-						<img src="https://www.placehold.it/50x50" alt="Amor sano o tóxico">
-						<p>Meter por JS opciones (Efectivamente!, ¿de verdad crees que controlar a tu pareja es sano?...)</p>
 					</div>
 				</div>
-				<div class="box quiz-item-box song-box">
-					<div class="question-box">
-						<div class="song-insert"></div>
-						<div class="icons-to-response">
-							<img src="https://www.placehold.it/50x50" alt="Amor sano">
-							<img src="https://www.placehold.it/50x50" alt="Amor tóxico">
-						</div>
+				<div class="row icons-to-response">
+					<div class="col-1 offset-4 healthy-love-box">
+						<img class="healthy-love-img" src="https://www.placehold.it/20x20" alt="Amor sano">
 					</div>
-					<div class="result-box">
-						<img src="https://www.placehold.it/50x50" alt="Amor sano o tóxico">
-						<p>Meter por JS opciones (Efectivamente!, ¿de verdad crees que controlar a tu pareja es sano?...)</p>
+					<div class="col-1 offset-2 toxic-love-box">
+						<img class="toxic-love-img" src="https://www.placehold.it/20x20" alt="Amor tóxico">
 					</div>
 				</div>
-				<div class="box quiz-item-box video-box">
-					<div class="question-box">
-						<div class="video-insert"></div>
-						<div class="icons-to-response">
-							<img src="https://www.placehold.it/50x50" alt="Amor sano">
-							<img src="https://www.placehold.it/50x50" alt="Amor tóxico">
+				<div class="row box box--quiz result-box">
+					<div class="row">
+						<div class="col-2 offset-4">
+							<img src="https://www.placehold.it/50x50" alt="Amor sano o tóxico">
 						</div>
 					</div>
-					<div class="result-box">
-						<img src="https://www.placehold.it/50x50" alt="Amor sano o tóxico">
-						<p>Meter por JS opciones (Efectivamente!, ¿de verdad crees que controlar a tu pareja es sano?...)</p>
+					<div class="row">
+						<div class="col-10 offset-1">
+							<p>Meter por JS opciones (Efectivamente!, ¿de verdad crees que controlar a tu pareja es sano?...)</p>
+						</div>
 					</div>
 				</div>
-				<div class="button">
-					Descubre más sobre los mitos del amor romántico (to review)
+			</div>
+
+			<div class="box box--quiz song-box">
+				<div class="row box box--quiz question-box">
+					<div class="col-10 offset-1">
+					</div>
+				</div>
+				<div class="row icons-to-response">
+					<div class="col-1 offset-4 healthy-love-box">
+						<img class="healthy-love-img" src="https://www.placehold.it/20x20" alt="Amor sano">
+					</div>
+					<div class="col-1 offset-2 toxic-love-box">
+						<img class="toxic-love-img" src="https://www.placehold.it/20x20" alt="Amor tóxico">
+					</div>
+				</div>
+				<div class="row box box--quiz result-box">
+					<div class="row">
+						<div class="col-2 offset-4">
+							<img src="https://www.placehold.it/50x50" alt="Amor sano o tóxico">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-10 offset-1">
+							<p>Meter por JS opciones (Efectivamente!, ¿de verdad crees que controlar a tu pareja es sano?...)</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="box box--quiz video-box">
+				<div class="row box box--quiz question-box">
+					<div class="col-10 offset-1">
+					</div>
+				</div>
+				<div class="row icons-to-response">
+					<div class="col-1 offset-4 healthy-love-box">
+						<img class="healthy-love-img" src="https://www.placehold.it/20x20" alt="Amor sano">
+					</div>
+					<div class="col-1 offset-2 toxic-love-box">
+						<img class="toxic-love-img" src="https://www.placehold.it/20x20" alt="Amor tóxico">
+					</div>
+				</div>
+				<div class="row box box--quiz result-box">
+					<div class="row">
+						<div class="col-2 offset-4">
+							<img src="https://www.placehold.it/50x50" alt="Amor sano o tóxico">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-10 offset-1">
+							<p>Meter por JS opciones (Efectivamente!, ¿de verdad crees que controlar a tu pareja es sano?...)</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-10 offset-1">
+					<p class="button button--quiz">Descubre más sobre los mitos del amor romántico</p>
 				</div>
 			</div>
 		</main>
 
 		<footer>
-
 		</footer>
 		<script type="text/javascript" src="js/main.min.js"></script>
 	</body>

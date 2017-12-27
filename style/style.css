@@ -457,6 +457,18 @@ html {
   background-color: grey;
 }
 
+.instructions-initial-pop-up {
+  background-color: pink;
+}
+
+.button--quiz {
+  background-color: tomato;
+}
+
+.phrase-box {
+  background-color: yellow;
+}
+
 @media (min-width: 576px) {
   .container {
     max-width: 540px;
