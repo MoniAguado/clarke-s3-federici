@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "AAEA,OAAQ;EACP,gBAAgB,EAAE,qBAAqB;EACvC,MAAM,EAAE,YAAY;EACpB,KAAK,EAAE,WAAW;EAClB,QAAQ,EAAE,KAAK;EACf,OAAO,EAAE,CAAC;;;ACPX,UAAW;EACV,gBAAgB,EAAE,IAAI",
-"sources": ["../scss/pages/_home.scss","../scss/pages/_quiz.scss"],
+"mappings": "AAEA,OAAQ;EACP,gBAAgB,EAAE,qBAAqB;EACvC,MAAM,EAAE,YAAY;EACpB,KAAK,EAAE,WAAW;EAClB,QAAQ,EAAE,KAAK;EACf,OAAO,EAAE,CAAC;;;ACPX,UAAW;EACV,gBAAgB,EAAE,IAAI;;;ACDvB,SAAS;EACR,MAAM,EAAE,eAAe;EACvB,MAAM,EAAE,IAAI;EACZ,KAAK,EAAE,IAAI;EACX,UAAU,EAAE,UAAU",
+"sources": ["../scss/pages/_home.scss","../scss/pages/_quiz.scss","../scss/pages/_resources.scss"],
 "names": [],
 "file": "style.css"
 }
