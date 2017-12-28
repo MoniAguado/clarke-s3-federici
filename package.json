@@ -4,7 +4,7 @@
   "description": "Adalab web starter kit",
   "dependencies": {
     "browser-sync": "*",
-    "gulp": "^3.9.1",
+    "gulp": "*",
     "gulp-autoprefixer": "*",
     "gulp-clean-css": "*",
     "gulp-combine-mq": "*",
@@ -18,9 +18,6 @@
     "gulp-util": "*",
     "gulp-zip": "*",
     "run-sequence": "*"
-  },
-  "devDependencies": {
-    "gulp": "^3.9.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
