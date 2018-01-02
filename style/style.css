@@ -1,4 +1,36 @@
-@import url("https://fonts.googleapis.com/css?family=Abel|Lilita+One");/*fuentes*//*social media*//*!
+@import url("https://fonts.googleapis.com/css?family=Abel|Lilita+One");/*fuentes*//*header*//*social media*/.header {
+  width: 100vh;
+  height: 70px;
+  background-color: #664596;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  z-index: 1;
+  margin: 0;
+}
+
+.home {
+  width: 30px;
+  height: 30px;
+}
+
+.button-burger {
+  width: 30px;
+  height: 30px;
+  margin-left: 20px;
+  margin-top: 150px;
+}/*!
  * Bootstrap Grid v4.0.0-beta.2 (https://getbootstrap.com)
  * Copyright 2011-2017 The Bootstrap Authors
  * Copyright 2011-2017 Twitter, Inc.
@@ -555,14 +587,6 @@ body {
 
 .button {
   background-color: blue;
-}
-
-.header {
-  background-color: backgroundColorHeader;
-  height: heightHeader;
-  width: widthHeader;
-  position: fixed;
-  z-index: 1;
 }
 
 .page-quiz {

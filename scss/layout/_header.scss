@@ -1,0 +1,25 @@
+
+.header {
+	width: $widthHeader;
+	height: $heightHeader;
+	background-color: $backgroundColorHeader;
+	position: fixed;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 1;
+	margin: 0;
+}
+
+.home {
+	width: $sizeHome;
+	height: $sizeHome;
+}
+
+.button-burger {
+	width: $sizeBurger;
+	height: $sizeBurger;
+	margin-left: 20px;
+	margin-top: 150px;
+}

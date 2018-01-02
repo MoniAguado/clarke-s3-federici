@@ -1,4 +1,54 @@
-/*fuentes*//*social media*/#popup {
+/*fuentes*//*header*//*social media*/.header {
+  width: 100vh;
+  height: 70px;
+  background-color: #664596;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  z-index: 1;
+  margin: 0;
+}
+
+.home {
+  width: 30px;
+  height: 30px;
+}
+
+.button-burger {
+  width: 30px;
+  height: 30px;
+  margin-left: 20px;
+  margin-top: 150px;
+}
+
+.menu {
+  position: absolute;
+  top: 5%;
+  left: 0%;
+  -webkit-transition: top ease 2s;
+  transition: top ease 2s;
+}
+
+.menu ul li {
+  list-style: none;
+}
+
+.menu ul li a {
+  text-decoration: none;
+}
+
+#popup {
   visibility: hidden;
   opacity: 0;
   margin-top: -300px;
@@ -58,14 +108,6 @@ body {
 
 .button {
   background-color: blue;
-}
-
-.header {
-  background-color: backgroundColorHeader;
-  height: heightHeader;
-  width: widthHeader;
-  position: fixed;
-  z-index: 1;
 }
 
 .page-quiz {
