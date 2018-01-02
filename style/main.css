@@ -1,3 +1,4 @@
+
 #popup {
   visibility: hidden;
   opacity: 0;
@@ -40,6 +41,13 @@ a.popup-close {
   line-height: 1;
   color: #fff;
   border-radius: 3px;
+
+.link--cover {
+  text-decoration: none;
+}
+
+.button {
+  background-color: blue;
 }
 
 .header {

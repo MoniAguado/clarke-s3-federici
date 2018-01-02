@@ -1,11 +1,7 @@
-// <<<<<<< HEAD:scss/main.scss
-// Core
-// @import 'core/mixins';
-// @import 'core/functions';
+//fuentes
+@import url('https://fonts.googleapis.com/css?family=Abel|Lilita+One');
+//core
 @import 'core/variables';
-// =======
-
-// >>>>>>> f1a4e1a30c6283759caba022839e03c7d1497846:scss/style.scss
 
 // Layout
 @import 'layout/footer';
@@ -23,6 +19,7 @@
 @import 'components/popup';
 @import 'components/titles';
 @import 'components/typography';
+@import 'components/socialmedia';
 
 // Pages
 @import 'pages/contact';
