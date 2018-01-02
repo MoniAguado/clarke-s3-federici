@@ -1,4 +1,4 @@
-/*!
+/*social media*//*!
  * Bootstrap Grid v4.0.0-beta.2 (https://getbootstrap.com)
  * Copyright 2011-2017 The Bootstrap Authors
  * Copyright 2011-2017 Twitter, Inc.
@@ -445,7 +445,57 @@ html {
 .align-self-stretch {
   -ms-flex-item-align: stretch !important;
   align-self: stretch !important;
-}/*# sourceMappingURL=bootstrap-grid.min.css.map */.link--cover {
+}/*# sourceMappingURL=bootstrap-grid.min.css.map */
+.social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  list-style: none;
+}
+
+.tw .link--social {
+  background-image: url(../images/tw.png);
+  overflow: hidden;
+  background-size: 40px 40px;
+  background-repeat: no-repeat;
+  display: block;
+  padding-top: 40px;
+  width: 50px;
+  height: 0px;
+}
+
+.fb .link--social {
+  background-image: url(../images/facebook.png);
+  overflow: hidden;
+  background-size: 40px 40px;
+  background-repeat: no-repeat;
+  display: block;
+  padding-top: 40px;
+  width: 50px;
+  height: 0px;
+}
+
+.wp .link--social {
+  background-image: url(../images/wp.png);
+  overflow: hidden;
+  background-size: 40px 40px;
+  background-repeat: no-repeat;
+  display: block;
+  padding-top: 40px;
+  width: 50px;
+
+}/*# sourceMappingURL=bootstrap-grid.min.css.map */
+.link--cover {
   text-decoration: none;
 }
 
