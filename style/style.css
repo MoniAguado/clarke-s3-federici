@@ -1,4 +1,4 @@
-/*!
+@import url("https://fonts.googleapis.com/css?family=Abel|Lilita+One");/*fuentes*//*social media*//*!
  * Bootstrap Grid v4.0.0-beta.2 (https://getbootstrap.com)
  * Copyright 2011-2017 The Bootstrap Authors
  * Copyright 2011-2017 Twitter, Inc.
@@ -445,7 +445,120 @@ html {
 .align-self-stretch {
   -ms-flex-item-align: stretch !important;
   align-self: stretch !important;
-}/*# sourceMappingURL=bootstrap-grid.min.css.map */.header {
+
+}/*# sourceMappingURL=bootstrap-grid.min.css.map */
+#popup {
+  visibility: hidden;
+  opacity: 0;
+  margin-top: -300px;
+}
+
+#popup:target {
+  visibility: visible;
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+  z-index: 999;
+  -webkit-transition: all ease 1s;
+  transition: all ease 1s;
+}
+
+.popup-contenedor {
+  position: relative;
+  margin: 25% auto;
+  padding: 30px 50px;
+  background-color: #664596;
+  color: #FFA93B;
+  border-radius: 3px;
+  width: 60%;
+}
+
+a.popup-close {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  background-color: #FFA93B;
+  padding: 7px 10px;
+  font-size: 20px;
+  text-decoration: none;
+  line-height: 1;
+  color: #fff;
+  border-radius: 3px;
+
+
+}/*# sourceMappingURL=bootstrap-grid.min.css.map */body {
+  font-family: 'Abel', sans-serif;
+  font-size: 16px;
+}
+
+.title {
+  font-family: 'Lilita One', cursive;
+  font-size: 20px;
+}/*# sourceMappingURL=bootstrap-grid.min.css.map */
+
+.social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  list-style: none;
+}
+
+.tw .link--social {
+  background-image: url(../images/tw.png);
+  overflow: hidden;
+  background-size: 40px 40px;
+  background-repeat: no-repeat;
+  display: block;
+  padding-top: 40px;
+  width: 50px;
+  height: 0px;
+}
+
+.fb .link--social {
+  background-image: url(../images/facebook.png);
+  overflow: hidden;
+  background-size: 40px 40px;
+  background-repeat: no-repeat;
+  display: block;
+  padding-top: 40px;
+  width: 50px;
+  height: 0px;
+}
+
+.wp .link--social {
+  background-image: url(../images/wp.png);
+  overflow: hidden;
+  background-size: 40px 40px;
+  background-repeat: no-repeat;
+  display: block;
+  padding-top: 40px;
+  width: 50px;
+
+}/*# sourceMappingURL=bootstrap-grid.min.css.map */
+.link--cover {
+  text-decoration: none;
+}
+
+.button {
+  background-color: blue;
+}
+
+.header {
   background-color: backgroundColorHeader;
   height: heightHeader;
   width: widthHeader;
@@ -467,6 +580,14 @@ html {
 
 .phrase-box {
   background-color: yellow;
+
+.resource {
+  border: 1px solid black;
+  margin: 15px;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+
 }
 
 @media (min-width: 576px) {
