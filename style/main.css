@@ -1,0 +1,21 @@
+.header {
+  background-color: backgroundColorHeader;
+  height: heightHeader;
+  width: widthHeader;
+  position: fixed;
+  z-index: 1;
+}
+
+.page-quiz {
+  background-color: grey;
+}
+
+.resource {
+  border: 1px solid black;
+  margin: 15px;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*# sourceMappingURL=main.css.map */
