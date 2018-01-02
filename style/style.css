@@ -445,7 +445,8 @@ html {
 .align-self-stretch {
   -ms-flex-item-align: stretch !important;
   align-self: stretch !important;
-}/*# sourceMappingURL=bootstrap-grid.min.css.map */.social-media {
+}/*# sourceMappingURL=bootstrap-grid.min.css.map */
+.social-media {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -492,7 +493,14 @@ html {
   display: block;
   padding-top: 40px;
   width: 50px;
-  height: 0px;
+
+}/*# sourceMappingURL=bootstrap-grid.min.css.map */
+.link--cover {
+  text-decoration: none;
+}
+
+.button {
+  background-color: blue;
 }
 
 .header {
