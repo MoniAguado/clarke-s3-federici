@@ -6,7 +6,7 @@
 
 		<title>Federici-Contact</title>
 		<link rel="stylesheet" href="style/style.css">
-		<link rel="stylesheet" href="style/bootstrap-grid.min.css">
+	  <link rel="stylesheet" href="style/bootstrap.min.css">
 	</head>
 	<body class="page-contact">
 		<header>
@@ -36,24 +36,31 @@
 			</div>
 			<img src="https://www.placehold.it/500x100" alt="Home">
 		</header>
-		<main>
-			<h1> ¿Necesitas ayuda?</h1>
-			<p> Si tienes alguna pregunta o quieres información adicional , rellena el siguiente formulario.
-			</p>
-			<div class="container">
-				<form class="" action="index.html" method="post">
+		<main class="container-fluid">
+			<div class="row">
+				<div class="col-12">
+					<h1>¿Necesitas ayuda?</h1>
+					<p> Si tienes alguna pregunta o quieres información adicional , rellena el siguiente formulario.
+					</p>
+				</div>
+			</div>
+			<div class="row">
+				<form class="col-6" action="index.html" method="post">
 	  			<div class="form-group">
 	          <input type="text" name="name" placeholder="Nombre" class="form-control" >
+					</div>
+					<div class="form-group">
 	  				<input type="text" name="surname" placeholder="Apellidos" class="form-control" >
 	  			</div>
 	  			<div class="form-group">
-	  				<input type="email" name="mail" placeholder="email" class="form-control" required>
+	  				<input type="email" name="mail" placeholder="Email" class="form-control" required>
 	  			</div>
-	  			<textarea name="comments" placeholder="Escribe aquí tus preguntas" rows="8" cols="60"></textarea>
+					<div class="form-group">
+						<textarea name="comments" class="form-control" placeholder="Escribe aquí tus preguntas" rows="8" cols="60"></textarea>
+					</div>
 					<button type="submit" class="btn btn-primary">Enviar</button>
 				</form>
   		</div>
-
 		</main>
 		<script type="text/javascript" src="js/main.min.js"></script>
 	</body>

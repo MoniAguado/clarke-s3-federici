@@ -445,8 +445,32 @@ html {
 .align-self-stretch {
   -ms-flex-item-align: stretch !important;
   align-self: stretch !important;
-}/*# sourceMappingURL=bootstrap-grid.min.css.map */.page-quiz {
-  background-color: red;
+}/*# sourceMappingURL=bootstrap-grid.min.css.map */.link--cover {
+  text-decoration: none;
+}
+
+.button {
+  background-color: blue;
+}
+
+.header {
+  background-color: backgroundColorHeader;
+  height: heightHeader;
+  width: widthHeader;
+  position: fixed;
+  z-index: 1;
+}
+
+.page-quiz {
+  background-color: grey;
+}
+
+.resource {
+  border: 1px solid black;
+  margin: 15px;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 @media (min-width: 576px) {
