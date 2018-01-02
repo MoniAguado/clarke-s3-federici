@@ -445,9 +445,7 @@ html {
 .align-self-stretch {
   -ms-flex-item-align: stretch !important;
   align-self: stretch !important;
-
-}/*# sourceMappingURL=bootstrap-grid.min.css.map */
-#popup {
+}/*# sourceMappingURL=bootstrap-grid.min.css.map */#popup {
   visibility: hidden;
   opacity: 0;
   margin-top: -300px;
@@ -489,9 +487,9 @@ a.popup-close {
   line-height: 1;
   color: #fff;
   border-radius: 3px;
+}
 
-
-}/*# sourceMappingURL=bootstrap-grid.min.css.map */body {
+body {
   font-family: 'Abel', sans-serif;
   font-size: 16px;
 }
@@ -499,7 +497,7 @@ a.popup-close {
 .title {
   font-family: 'Lilita One', cursive;
   font-size: 20px;
-}/*# sourceMappingURL=bootstrap-grid.min.css.map */
+}
 
 .social-media {
   display: -webkit-box;
@@ -548,8 +546,9 @@ a.popup-close {
   display: block;
   padding-top: 40px;
   width: 50px;
+  height: 0px;
+}
 
-}/*# sourceMappingURL=bootstrap-grid.min.css.map */
 .link--cover {
   text-decoration: none;
 }
@@ -580,6 +579,7 @@ a.popup-close {
 
 .phrase-box {
   background-color: yellow;
+}
 
 .resource {
   border: 1px solid black;
@@ -587,7 +587,6 @@ a.popup-close {
   width: 100%;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-
 }
 
 @media (min-width: 576px) {

@@ -4,7 +4,6 @@
   "description": "Adalab web starter kit",
   "dependencies": {
     "browser-sync": "*",
-    "gulp": "^3.9.1",
     "gulp-autoprefixer": "*",
     "gulp-clean-css": "*",
     "gulp-combine-mq": "*",

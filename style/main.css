@@ -1,5 +1,4 @@
-
-#popup {
+/*fuentes*//*social media*/#popup {
   visibility: hidden;
   opacity: 0;
   margin-top: -300px;
@@ -41,6 +40,17 @@ a.popup-close {
   line-height: 1;
   color: #fff;
   border-radius: 3px;
+}
+
+body {
+  font-family: 'Abel', sans-serif;
+  font-size: 16px;
+}
+
+.title {
+  font-family: 'Lilita One', cursive;
+  font-size: 20px;
+}
 
 .link--cover {
   text-decoration: none;
@@ -62,7 +72,6 @@ a.popup-close {
   background-color: grey;
 }
 
-
 .instructions-initial-pop-up {
   background-color: pink;
 }
@@ -73,6 +82,7 @@ a.popup-close {
 
 .phrase-box {
   background-color: yellow;
+}
 
 .resource {
   border: 1px solid black;
@@ -80,7 +90,6 @@ a.popup-close {
   width: 100%;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-
 }
 
 /*# sourceMappingURL=main.css.map */
