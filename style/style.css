@@ -1,4 +1,43 @@
-@import url("https://fonts.googleapis.com/css?family=Abel|Lilita+One");/*fuentes*//*social media*//*!
+@import url("https://fonts.googleapis.com/css?family=Abel|Lilita+One");/*fuentes*//*social media*//*footer*/.footer {
+  background-color: #403F3D;
+  width: 100vh;
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  position: relative;
+  color: #ECEDD0;
+}
+
+.footer-nav {
+  list-style-type: none;
+  padding-left: 10px;
+}
+
+.footer-phone,.contact-phones {
+  list-style-type: none;
+  padding-right: 10px;
+  padding-left: 0;
+}
+
+.contact-phones {
+  font-weight: bold;
+}
+
+.footer-nav-link {
+  color: #ECEDD0;
+}
+
+.footer a {
+  text-decoration: none;
+}/*!
  * Bootstrap Grid v4.0.0-beta.2 (https://getbootstrap.com)
  * Copyright 2011-2017 The Bootstrap Authors
  * Copyright 2011-2017 Twitter, Inc.
