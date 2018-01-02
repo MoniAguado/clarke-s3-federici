@@ -1,4 +1,7 @@
-
+//fuentes
+@import url('https://fonts.googleapis.com/css?family=Abel|Lilita+One');
+//core
+@import 'core/variables';
 
 // Layout
 @import 'layout/footer';
@@ -16,6 +19,7 @@
 @import 'components/popup';
 @import 'components/titles';
 @import 'components/typography';
+@import 'components/socialmedia';
 
 // Pages
 @import 'pages/contact';
@@ -23,6 +27,6 @@
 @import 'pages/datas';
 @import 'pages/game';
 @import 'pages/home';
-@import 'pages/quizz';
+@import 'pages/quiz';
 @import 'pages/resources';
 @import 'pages/tips';

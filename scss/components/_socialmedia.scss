@@ -1,0 +1,39 @@
+.social-media{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	list-style: none;
+}
+.tw .link--social {
+	background-image: url(../images/tw.png);
+	overflow: hidden;
+	background-size: $socialBackgroundSize;
+	background-repeat: no-repeat;
+	display: block;
+	padding-top: $socialPaddingTop;
+	width: $socialWidth;
+	height: $socialHeight;
+}
+
+.fb .link--social {
+	background-image: url(../images/facebook.png);
+	overflow: hidden;
+	background-size: $socialBackgroundSize;
+	background-repeat: no-repeat;
+	display: block;
+	padding-top: $socialPaddingTop;
+	width: $socialWidth;
+	height: $socialHeight;
+}
+
+.wp .link--social {
+	background-image: url(../images/wp.png);
+	overflow: hidden;
+	background-size: $socialBackgroundSize;
+	background-repeat: no-repeat;
+	display: block;
+	padding-top: $socialPaddingTop;
+	width: $socialWidth;
+	height: $socialHeight;
+}
