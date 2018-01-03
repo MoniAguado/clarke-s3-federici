@@ -15,11 +15,21 @@
 .home {
 	width: $sizeHome;
 	height: $sizeHome;
+	margin: auto;
+	display: block;
 }
 
 .button-burger {
 	width: $sizeBurger;
 	height: $sizeBurger;
 	margin-left: 20px;
-	margin-top: 150px;
+}
+
+.phone-header {
+	width: $widthPhoneHeader;
+	font-size: $fontSizeHeader;
+}
+
+.main-home{
+	display: none;
 }

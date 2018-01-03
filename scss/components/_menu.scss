@@ -1,16 +1,20 @@
 
+.burger {
+	position: relative;
+}
 
 .menu {
 	position: absolute;
-	top: 5%;
-	left: 0%;
+	list-style: none;
+	top: -10%;
+	left: -100%;
 	transition: top ease 2s;
 }
 
-.menu ul li {
-	list-style: none;
+.hidden {
+	display: none;
 }
 
-.menu ul li a {
-	text-decoration: none;
+.new-position {
+	left: -10%;
 }
