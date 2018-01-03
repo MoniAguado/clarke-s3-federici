@@ -445,7 +445,11 @@ html {
 .align-self-stretch {
   -ms-flex-item-align: stretch !important;
   align-self: stretch !important;
-}/*# sourceMappingURL=bootstrap-grid.min.css.map */#popup {
+}/*# sourceMappingURL=bootstrap-grid.min.css.map */p {
+  text-align: center;
+}
+
+#popup {
   visibility: hidden;
   opacity: 0;
   margin-top: -300px;
@@ -582,11 +586,27 @@ body {
 }
 
 .resource {
-  border: 1px solid black;
   margin: 15px;
-  width: 100%;
+  width: 50%;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+}
+
+.resource-music {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.logo-resources:hover {
+  opacity: 0.4;
+  -webkit-transition: linear .8s;
+  transition: linear .8s;
+}
+
+.logo-resources {
+  width: 170px;
+  height: 100px;
 }
 
 @media (min-width: 576px) {

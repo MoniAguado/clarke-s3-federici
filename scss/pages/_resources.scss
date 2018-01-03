@@ -1,6 +1,18 @@
 .resource{
-	border: 1px solid black;
 	margin: 15px;
-	width: 100%;
+	width: 50%;
 	box-sizing: border-box;
+}
+.resource-music{
+	align-items: center;
+}
+.logo-resources:hover {
+  opacity: 0.4;
+	transition: linear .8s;
+	
+}
+.logo-resources{
+	width: 170px;
+	height: 100px;
+
 }
