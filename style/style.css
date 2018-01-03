@@ -496,7 +496,9 @@ body {
 
 .title {
   font-family: 'Lilita One', cursive;
-  font-size: 20px;
+  font-size: 35px;
+  color: #664596;
+  text-transform: uppercase;
 }
 
 .social-media {
