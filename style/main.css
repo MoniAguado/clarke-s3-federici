@@ -49,7 +49,25 @@ body {
 
 .title {
   font-family: 'Lilita One', cursive;
-  font-size: 20px;
+  font-size: 35px;
+  color: #664596;
+  text-transform: uppercase;
+}
+
+.label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.cel {
+  border: 0;
+  -webkit-appearance: none;
+  border-bottom: 2px solid #664596;
 }
 
 .link--cover {
