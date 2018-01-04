@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Abel|Lilita+One");/*fuentes*//*social media*//*!
+@import url("https://fonts.googleapis.com/css?family=Abel|Lilita+One");/*fuentes*//*social media*//*contenedor consejos*//*!
  * Bootstrap Grid v4.0.0-beta.2 (https://getbootstrap.com)
  * Copyright 2011-2017 The Bootstrap Authors
  * Copyright 2011-2017 Twitter, Inc.
@@ -445,7 +445,13 @@ html {
 .align-self-stretch {
   -ms-flex-item-align: stretch !important;
   align-self: stretch !important;
-}/*# sourceMappingURL=bootstrap-grid.min.css.map */#popup {
+}/*# sourceMappingURL=bootstrap-grid.min.css.map */.container--tips {
+  border: 4px double black;
+  margin: 5px;
+  padding: 5px;
+}
+
+#popup {
   visibility: hidden;
   opacity: 0;
   margin-top: -300px;
