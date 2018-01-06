@@ -1,18 +1,83 @@
-.resource{
-	margin: 15px;
-	width: 50%;
-	box-sizing: border-box;
+// .resource{
+// 	margin: 15px;
+// 	width: 50%;
+// 	box-sizing: border-box;
+// }
+.resource-music{
+	align-items: center;
+}
+// .logo-resources:hover {
+//   opacity: 0.4;
+// 	transition: linear .8s;
+// }
+.logo-resources{
+	width: 170px;
+	height: 100px;
 }
 .resource-music{
 	align-items: center;
 }
-.logo-resources:hover {
-  opacity: 0.4;
-	transition: linear .8s;
-	
+.resource .mask {
+   opacity: 0;
+   overflow:visible;
+   border:0px solid rgba(0,0,0,0.7);
+   box-sizing:border-box;
+   transition: all 0.4s ease-in-out;
 }
-.logo-resources{
-	width: 170px;
-	height: 100px;
+.view {
+   width: 300px;
+   height: 200px;
+   margin: 10px;
+   float: left;
+   border-radius: 45px ;
+   overflow: hidden;
+   position: relative;
+   text-align: center;
+   //box-shadow: 0px 0px 5px #aaa;
+   cursor: default;
+}
 
+.view .mask {
+   width: 300px;
+   height: 200px;
+   position: absolute;
+   overflow: hidden;
+   top: 0;
+   left: 0;
+}
+
+.view .logo-resources {
+	width: 300px;
+ 	height: 200px;
+   display: block;
+   position: relative;
+}
+
+.view a.info {
+   background:url(../images/eye-button.png) center no-repeat;
+   display: inline-block;
+   text-decoration: none;
+   padding:0;
+   text-indent:-9999px;
+   width:50px;
+   height:50px;
+}
+
+.resource a.info {
+   position:relative;
+   top:-110px;
+   opacity:0;
+   transform:scale(0,0);
+   transition: transform 0.2s 0.1s ease-in, opacity 0.1s ease-in-out;
+}
+
+.resource:hover .mask {
+   opacity: 1;
+   border:100px solid rgba(0,0,0,0.7);
+}
+
+.resource:hover a.info {
+   opacity:1;
+   transform:scale(1,1);
+   transition-delay:0.3s;
 }
