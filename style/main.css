@@ -1,4 +1,12 @@
-/*fuentes*//*social media*/#popup {
+/*fuentes*//*social media*/.text {
+  font-family: 'Abel', sans-serif;
+  font-size: 16px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+#popup {
   visibility: hidden;
   opacity: 0;
   margin-top: -300px;
@@ -68,6 +76,11 @@ body {
   border: 0;
   -webkit-appearance: none;
   border-bottom: 2px solid #664596;
+}
+
+.form-group .square:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem #664596;
+  box-shadow: 0 0 0 0.2rem #664596;
 }
 
 .link--cover {
