@@ -19,17 +19,75 @@
 	display: block;
 }
 
-.button-burger {
+// .button-burger {
+	// width: $sizeBurger;
+	// height: $sizeBurger;
+	// margin-left: 20px;
+// }
+
+.phone-header {
+	width: $widthPhoneHeader;
+	font-size: $fontSizeHeader;
+	color: $colorElementsHeader;
+}
+
+.main-home{
+	display: none;
+}
+
+.menu {
+	display: none;
+}
+.hidden {
+	display: none;
+}
+
+.new-position {
+	left: 50%;
+}
+
+#burger {
+	cursor: pointer; padding: 10px 35px 16px 0px;
 	width: $sizeBurger;
 	height: $sizeBurger;
 	margin-left: 20px;
 }
 
-.phone-header {
-	width: $widthPhoneHeader;
-	font-size: $fontSizeHeader;
+#burger span, #burger span:before, #burger span:after {
+  cursor: pointer;
+  border-radius: 1px;
+  height: 4px;
+  width: 30px;
+  background: $colorElementsHeader;
+  position: absolute;
+  display: block;
+  content: '';
 }
 
-.main-home{
-	display: none;
+#burger span:before {
+  top: -10px;
+}
+
+#burger span:after {
+  bottom: -10px;
+}
+
+#burger span, #burger span:before, #burger span:after {
+  transition: all 500ms ease-in-out;
+}
+
+#burger.active span {
+  background-color: transparent;
+}
+
+#burger.active span:before, #burger.active span:after {
+  top: 0;
+}
+
+#burger.active span:before {
+  transform: rotate(45deg);
+}
+
+#burger.active span:after {
+  transform: rotate(-45deg);
 }
