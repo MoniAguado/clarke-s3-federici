@@ -2,11 +2,15 @@
 	background-color: $backgroundColorFooter;
 	width: $widthFooter;
 	height: $heightFooter;
+	color: $textColorFooter;
+}
+
+
+.flex-footer {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	position: relative;
-	color: $textColorFooter;
 }
 
 .footer-nav {
