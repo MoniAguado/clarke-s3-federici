@@ -446,7 +446,7 @@ html {
   -ms-flex-item-align: stretch !important;
   align-self: stretch !important;
 }/*# sourceMappingURL=bootstrap-grid.min.css.map */.container--tips {
-  border: 4px double black;
+  border: 4px double #664596;
   margin: 5px;
   padding: 5px;
 }
@@ -520,6 +520,7 @@ body {
   -ms-flex-align: center;
   align-items: center;
   list-style: none;
+  padding-left: 0;
 }
 
 .tw .link--social {
