@@ -1,0 +1,37 @@
+.footer {
+	background-color: $backgroundColorFooter;
+	width: $widthFooter;
+	height: $heightFooter;
+	color: $textColorFooter;
+}
+
+
+.flex-footer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	position: relative;
+}
+
+.footer-nav {
+	list-style-type: none;
+	padding-left: 10px;
+}
+
+.footer-phone, .contact-phones {
+ list-style-type: none;
+ padding-right: 10px;
+ padding-left: 0;
+}
+
+.contact-phones {
+	font-weight: bold;
+}
+
+.footer-nav-link {
+	color: $textColorFooter;
+}
+
+.footer a {
+	text-decoration: none;
+}

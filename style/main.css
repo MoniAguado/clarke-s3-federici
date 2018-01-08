@@ -1,10 +1,55 @@
 
+/*fuentes*//*social media*//*footer*/.footer {
+  background-color: #403F3D;
+  width: 100vh;
+  height: 150px;
+  color: #ECEDD0;
+}
+
+.flex-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  position: relative;
+}
+
+.footer-nav {
+  list-style-type: none;
+  padding-left: 10px;
+}
+
+.footer-phone,.contact-phones {
+  list-style-type: none;
+  padding-right: 10px;
+  padding-left: 0;
+}
+
+.contact-phones {
+  font-weight: bold;
+}
+
+.footer-nav-link {
+  color: #ECEDD0;
+}
+
+.footer a {
+  text-decoration: none;
+
+
 /*fuentes*//*social media*//*home*/#popup {
 
 /*fuentes*//*social media*//*contenedor consejos*/.container--tips {
   border: 4px double #664596;
   margin: 5px;
   padding: 5px;
+
 }
 
 #popup {
