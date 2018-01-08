@@ -1,4 +1,10 @@
-/*fuentes*//*social media*/#popup {
+/*fuentes*//*social media*//*contenedor consejos*/.container--tips {
+  border: 4px double #664596;
+  margin: 5px;
+  padding: 5px;
+}
+
+#popup {
   visibility: hidden;
   opacity: 0;
   margin-top: -300px;
