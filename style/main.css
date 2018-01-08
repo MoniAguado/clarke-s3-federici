@@ -1,4 +1,4 @@
-/*fuentes*//*social media*/#popup {
+/*fuentes*//*social media*//*survey*/#popup {
   visibility: hidden;
   opacity: 0;
   margin-top: -300px;
@@ -90,6 +90,15 @@ body {
   width: 100%;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+}
+
+.header {
+  display: none;
+}
+
+.bloque {
+  margin: 20px;
+  font-size: 15px;
 }
 
 /*# sourceMappingURL=main.css.map */

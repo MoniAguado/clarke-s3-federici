@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Abel|Lilita+One");/*fuentes*//*social media*//*!
+@import url("https://fonts.googleapis.com/css?family=Abel|Lilita+One");/*fuentes*//*social media*//*survey*//*!
  * Bootstrap Grid v4.0.0-beta.2 (https://getbootstrap.com)
  * Copyright 2011-2017 The Bootstrap Authors
  * Copyright 2011-2017 Twitter, Inc.
@@ -587,6 +587,15 @@ body {
   width: 100%;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+}
+
+.header {
+  display: none;
+}
+
+.bloque {
+  margin: 20px;
+  font-size: 15px;
 }
 
 @media (min-width: 576px) {
