@@ -495,10 +495,44 @@ html {
 .align-self-stretch {
   -ms-flex-item-align: stretch !important;
   align-self: stretch !important;
+
+}/*# sourceMappingURL=bootstrap-grid.min.css.map */.button {
+  background-color: #2AB24A;
+  color: white;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 8px;
+}
+
+.button:hover {
+  background-color: #23923D;
+  font-weight: bold;
+}
+
+.link {
+  text-decoration: none;
+  color: #664596;
+}
+
+.link:hover {
+  font-weight: bold;
+  color: #2AB24A;
+
 }/*# sourceMappingURL=bootstrap-grid.min.css.map */.container--tips {
   border: 4px double #664596;
   margin: 5px;
   padding: 5px;
+
 }
 
 #popup {
@@ -609,11 +643,11 @@ body {
 }
 
 .link--cover {
-  text-decoration: none;
+  color: white;
 }
 
-.button {
-  background-color: blue;
+.link--cover:hover {
+  color: white;
 }
 
 .header {
