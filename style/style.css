@@ -495,6 +495,13 @@ html {
 .align-self-stretch {
   -ms-flex-item-align: stretch !important;
   align-self: stretch !important;
+}/*# sourceMappingURL=bootstrap-grid.min.css.map */.text {
+  font-family: 'Abel', sans-serif;
+  font-size: 16px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+
 
 }/*# sourceMappingURL=bootstrap-grid.min.css.map */.button {
   background-color: #2AB24A;
@@ -532,6 +539,7 @@ html {
   border: 4px double #664596;
   margin: 5px;
   padding: 5px;
+
 
 }
 
@@ -640,6 +648,11 @@ body {
   padding-top: 40px;
   width: 50px;
   height: 0px;
+}
+
+.form-group .square:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem #664596;
+  box-shadow: 0 0 0 0.2rem #664596;
 }
 
 .link--cover {
