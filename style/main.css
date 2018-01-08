@@ -1,4 +1,27 @@
-/*fuentes*//*social media*/#popup {
+/*fuentes*//*social media*/.button {
+  background-color: #2AB24A;
+  color: white;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 8px;
+}
+
+.button:hover {
+  background-color: #23923D;
+  font-weight: bold;
+}
+
+#popup {
   visibility: hidden;
   opacity: 0;
   margin-top: -300px;
@@ -54,10 +77,6 @@ body {
 
 .link--cover {
   text-decoration: none;
-}
-
-.button {
-  background-color: blue;
 }
 
 .header {
