@@ -21,6 +21,16 @@
   font-weight: bold;
 }
 
+.link {
+  text-decoration: none;
+  color: #664596;
+}
+
+.link:hover {
+  font-weight: bold;
+  color: #2AB24A;
+}
+
 #popup {
   visibility: hidden;
   opacity: 0;
@@ -76,7 +86,11 @@ body {
 }
 
 .link--cover {
-  text-decoration: none;
+  color: white;
+}
+
+.link--cover:hover {
+  color: white;
 }
 
 .header {
