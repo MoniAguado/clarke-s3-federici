@@ -35,10 +35,21 @@
 
 .main-home {
   display: none;
+  height: 60%;
+  width: 40%;
+  background-color: #ECEDD0;
+  color: #664596;
+}
+
+.burger {
+  position: relative;
 }
 
 .menu {
-  display: none;
+  position: absolute;
+  left: -100;
+  -webkit-transition: left ease 5s;
+  transition: left ease 5s;
 }
 
 .hidden {

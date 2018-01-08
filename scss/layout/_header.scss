@@ -28,15 +28,25 @@
 .phone-header {
 	width: $widthPhoneHeader;
 	font-size: $fontSizeHeader;
-	color: $colorElementsHeader;
+	color: $colorPhoneHeader;
 }
 
 .main-home{
 	display: none;
+	height: $heightMenu;
+	width: $widthMenu;
+	background-color: $colorPhoneHeader;
+	color: $backgroundColorHeader;
+}
+
+.burger{
+	position: relative;
 }
 
 .menu {
-	display: none;
+	position: absolute;
+	left: -100;
+	transition: left ease 5s;
 }
 .hidden {
 	display: none;
@@ -58,7 +68,7 @@
   border-radius: 1px;
   height: 4px;
   width: 30px;
-  background: $colorElementsHeader;
+  background: $colorPhoneHeader;
   position: absolute;
   display: block;
   content: '';
