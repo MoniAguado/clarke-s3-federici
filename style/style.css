@@ -1,5 +1,4 @@
-
-@import url("https://fonts.googleapis.com/css?family=Abel|Lilita+One");/*fuentes*//*social media*//*footer*/.footer {
+@import url("https://fonts.googleapis.com/css?family=Abel|Lilita+One");/*fuentes*//*social media*//*footer*//*home*//*contenedor consejos*/.footer {
   background-color: #403F3D;
   width: 100vh;
   height: 150px;
@@ -42,13 +41,6 @@
 .footer a {
   text-decoration: none;
 }/*!
-
-
-@import url("https://fonts.googleapis.com/css?family=Abel|Lilita+One");/*fuentes*//*social media*//*home*//*!
-
-@import url("https://fonts.googleapis.com/css?family=Abel|Lilita+One");/*fuentes*//*social media*//*contenedor consejos*//*!
-
-
  * Bootstrap Grid v4.0.0-beta.2 (https://getbootstrap.com)
  * Copyright 2011-2017 The Bootstrap Authors
  * Copyright 2011-2017 Twitter, Inc.
@@ -495,18 +487,6 @@ html {
 .align-self-stretch {
   -ms-flex-item-align: stretch !important;
   align-self: stretch !important;
-
-}/*# sourceMappingURL=bootstrap-grid.min.css.map */p {
-  text-align: center;
-
-}/*# sourceMappingURL=bootstrap-grid.min.css.map */.text {
-  font-family: 'Abel', sans-serif;
-  font-size: 16px;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-
-
 }/*# sourceMappingURL=bootstrap-grid.min.css.map */.button {
   background-color: #2AB24A;
   color: white;
@@ -530,6 +510,12 @@ html {
   font-weight: bold;
 }
 
+.container--tips {
+  border: 4px double #664596;
+  margin: 5px;
+  padding: 5px;
+}
+
 .link {
   text-decoration: none;
   color: #664596;
@@ -538,14 +524,18 @@ html {
 .link:hover {
   font-weight: bold;
   color: #2AB24A;
+}
 
-}/*# sourceMappingURL=bootstrap-grid.min.css.map */.container--tips {
-  border: 4px double #664596;
-  margin: 5px;
-  padding: 5px;
+p {
+  text-align: center;
+}
 
-
-
+.text {
+  font-family: 'Abel', sans-serif;
+  font-size: 16px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 #popup {
@@ -660,6 +650,14 @@ body {
   box-shadow: 0 0 0 0.2rem #664596;
 }
 
+.page-contact {
+  background-color: #ECEDD0;
+}
+
+.form-group .square {
+  border-radius: 15px;
+}
+
 .link--cover {
   color: white;
 }
@@ -727,6 +725,10 @@ body {
 
 .phrase-box {
   background-color: yellow;
+}
+
+.page-resources {
+  background-color: #ECEDD0;
 }
 
 .resource-music {

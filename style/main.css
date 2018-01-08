@@ -1,50 +1,4 @@
-
-/*fuentes*//*social media*/p {
-  text-align: center;
-
-
-/*fuentes*//*social media*/.text {
-  font-family: 'Abel', sans-serif;
-  font-size: 16px;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-
-
-/*fuentes*//*social media*/.button {
-  background-color: #2AB24A;
-  color: white;
-  padding: 6px 12px;
-  margin-bottom: 0;
-  font-weight: 400;
-  text-align: center;
-  vertical-align: middle;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  background-image: none;
-  border: 1px solid transparent;
-  border-radius: 8px;
-}
-
-.button:hover {
-  background-color: #23923D;
-  font-weight: bold;
-}
-
-.link {
-  text-decoration: none;
-  color: #664596;
-}
-
-.link:hover {
-  font-weight: bold;
-  color: #2AB24A;
-
-
-/*fuentes*//*social media*//*footer*/.footer {
+/*fuentes*//*social media*//*footer*//*home*//*contenedor consejos*/.footer {
   background-color: #403F3D;
   width: 100vh;
   height: 150px;
@@ -86,15 +40,57 @@
 
 .footer a {
   text-decoration: none;
+}
 
+.button {
+  background-color: #2AB24A;
+  color: white;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 8px;
+}
 
-/*fuentes*//*social media*//*home*/#popup {
+.button:hover {
+  background-color: #23923D;
+  font-weight: bold;
+}
 
-/*fuentes*//*social media*//*contenedor consejos*/.container--tips {
+.container--tips {
   border: 4px double #664596;
   margin: 5px;
   padding: 5px;
+}
 
+.link {
+  text-decoration: none;
+  color: #664596;
+}
+
+.link:hover {
+  font-weight: bold;
+  color: #2AB24A;
+}
+
+p {
+  text-align: center;
+}
+
+.text {
+  font-family: 'Abel', sans-serif;
+  font-size: 16px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 #popup {
@@ -174,6 +170,14 @@ body {
   box-shadow: 0 0 0 0.2rem #664596;
 }
 
+.page-contact {
+  background-color: #ECEDD0;
+}
+
+.form-group .square {
+  border-radius: 15px;
+}
+
 .link--cover {
   color: white;
 }
@@ -241,6 +245,10 @@ body {
 
 .phrase-box {
   background-color: yellow;
+}
+
+.page-resources {
+  background-color: #ECEDD0;
 }
 
 .resource-music {
