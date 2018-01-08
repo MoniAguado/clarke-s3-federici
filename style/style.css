@@ -1,3 +1,4 @@
+
 @import url("https://fonts.googleapis.com/css?family=Abel|Lilita+One");/*fuentes*//*social media*//*footer*/.footer {
   background-color: #403F3D;
   width: 100vh;
@@ -41,6 +42,13 @@
 .footer a {
   text-decoration: none;
 }/*!
+
+
+@import url("https://fonts.googleapis.com/css?family=Abel|Lilita+One");/*fuentes*//*social media*//*home*//*!
+
+@import url("https://fonts.googleapis.com/css?family=Abel|Lilita+One");/*fuentes*//*social media*//*contenedor consejos*//*!
+
+
  * Bootstrap Grid v4.0.0-beta.2 (https://getbootstrap.com)
  * Copyright 2011-2017 The Bootstrap Authors
  * Copyright 2011-2017 Twitter, Inc.
@@ -487,7 +495,13 @@ html {
 .align-self-stretch {
   -ms-flex-item-align: stretch !important;
   align-self: stretch !important;
-}/*# sourceMappingURL=bootstrap-grid.min.css.map */#popup {
+}/*# sourceMappingURL=bootstrap-grid.min.css.map */.container--tips {
+  border: 4px double #664596;
+  margin: 5px;
+  padding: 5px;
+}
+
+#popup {
   visibility: hidden;
   opacity: 0;
   margin-top: -300px;
@@ -538,7 +552,9 @@ body {
 
 .title {
   font-family: 'Lilita One', cursive;
-  font-size: 20px;
+  font-size: 35px;
+  color: #664596;
+  text-transform: uppercase;
 }
 
 .social-media {
@@ -556,6 +572,7 @@ body {
   -ms-flex-align: center;
   align-items: center;
   list-style: none;
+  padding-left: 0;
 }
 
 .tw .link--social {
@@ -600,11 +617,48 @@ body {
 }
 
 .header {
-  background-color: backgroundColorHeader;
-  height: heightHeader;
-  width: widthHeader;
-  position: fixed;
-  z-index: 1;
+  display: none;
+}
+
+.main-home {
+  background-color: #ECEDD0;
+}
+
+.flex1,.flex2,.flex3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.link--recources,.link--tips,.link--statistics,.link--survey,.link--game {
+  background-color: #2AB24A;
+  height: 40px;
+  width: 100px;
+  font-size: 15px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.box--phrase {
+  font-family: "Lilita One", cursive;
+  font-size: 30px;
+  margin: 20px;
+  text-align: center;
+}
+
+.box--sendemail {
+  margin: 20px;
+  margin-top: 70px;
 }
 
 .page-quiz {
