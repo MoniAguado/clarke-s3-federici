@@ -5586,6 +5586,14 @@ body {
   background-color: yellow;
 }
 
+body {
+  background-color: #ECEDD0;
+}
+
+.button--quiz-toHome {
+  display: inline;
+}
+
 .page-resources {
   background-color: #ECEDD0;
 }
