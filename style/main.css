@@ -1,0 +1,344 @@
+/*fuentes*//*social media*//*footer*//*home*//*contenedor consejos*/.footer {
+  background-color: #403F3D;
+  width: 100vh;
+  height: 150px;
+  color: #ECEDD0;
+}
+
+.flex-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  position: relative;
+}
+
+.footer-nav {
+  list-style-type: none;
+  padding-left: 10px;
+}
+
+.footer-phone,.contact-phones {
+  list-style-type: none;
+  padding-right: 10px;
+  padding-left: 0;
+}
+
+.contact-phones {
+  font-weight: bold;
+}
+
+.footer-nav-link {
+  color: #ECEDD0;
+}
+
+.footer a {
+  text-decoration: none;
+}
+
+.button {
+  background-color: #2AB24A;
+  color: white;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 8px;
+}
+
+.button:hover {
+  background-color: #23923D;
+  font-weight: bold;
+}
+
+.container--tips {
+  border: 4px double #664596;
+  margin: 5px;
+  padding: 5px;
+}
+
+.link {
+  text-decoration: none;
+  color: #664596;
+}
+
+.link:hover {
+  font-weight: bold;
+  color: #2AB24A;
+}
+
+p {
+  text-align: center;
+}
+
+.text {
+  font-family: 'Abel', sans-serif;
+  font-size: 16px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+#popup {
+  visibility: hidden;
+  opacity: 0;
+  margin-top: -300px;
+}
+
+#popup:target {
+  visibility: visible;
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+  z-index: 999;
+  -webkit-transition: all ease 1s;
+  transition: all ease 1s;
+}
+
+.popup-contenedor {
+  position: relative;
+  margin: 25% auto;
+  padding: 30px 50px;
+  background-color: #664596;
+  color: #FFA93B;
+  border-radius: 3px;
+  width: 60%;
+}
+
+a.popup-close {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  background-color: #FFA93B;
+  padding: 7px 10px;
+  font-size: 20px;
+  text-decoration: none;
+  line-height: 1;
+  color: #fff;
+  border-radius: 3px;
+}
+
+body {
+  font-family: 'Abel', sans-serif;
+  font-size: 16px;
+}
+
+.title {
+  font-family: 'Lilita One', cursive;
+  font-size: 35px;
+  color: #664596;
+  text-transform: uppercase;
+}
+
+.label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.cel {
+  border: 0;
+  -webkit-appearance: none;
+  border-bottom: 2px solid #664596;
+}
+
+.form-group .square:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem #664596;
+  box-shadow: 0 0 0 0.2rem #664596;
+}
+
+.page-contact {
+  background-color: #ECEDD0;
+}
+
+.form-group .square {
+  border-radius: 15px;
+}
+
+.link--cover {
+  color: white;
+}
+
+.link--cover:hover {
+  color: white;
+}
+
+.header {
+  display: none;
+}
+
+.main-home {
+  background-color: #ECEDD0;
+}
+
+.flex1,.flex2,.flex3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.link--recources,.link--tips,.link--statistics,.link--survey,.link--game {
+  background-color: #2AB24A;
+  height: 40px;
+  width: 100px;
+  font-size: 15px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.box--phrase {
+  font-family: "Lilita One", cursive;
+  font-size: 30px;
+  margin: 20px;
+  text-align: center;
+}
+
+.box--sendemail {
+  margin: 20px;
+  margin-top: 70px;
+}
+
+.page-quiz {
+  background-color: grey;
+}
+
+.instructions-initial-pop-up {
+  background-color: pink;
+}
+
+.button--quiz {
+  background-color: tomato;
+}
+
+.phrase-box {
+  background-color: yellow;
+}
+
+.page-resources {
+  background-color: #ECEDD0;
+}
+
+.resource-music {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.logo-resources {
+  width: 170px;
+  height: 100px;
+}
+
+.resource-music {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.resource .mask {
+  opacity: 0;
+  overflow: visible;
+  border: 0px solid rgba(0, 0, 0, 0.7);
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.view {
+  width: 300px;
+  height: 200px;
+  margin: 10px;
+  float: left;
+  border-radius: 45px;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+}
+
+.view .mask {
+  width: 300px;
+  height: 200px;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
+
+.view .logo-resources {
+  width: 300px;
+  height: 200px;
+  display: block;
+  position: relative;
+}
+
+.view a.info {
+  background: url(../images/eye-button.png) center no-repeat;
+  display: inline-block;
+  text-decoration: none;
+  padding: 0;
+  text-indent: -9999px;
+  width: 50px;
+  height: 50px;
+}
+
+.resource a.info {
+  position: relative;
+  top: -110px;
+  opacity: 0;
+  -webkit-transform: scale(0, 0);
+  transform: scale(0, 0);
+  -webkit-transition: opacity 0.1s ease-in-out, -webkit-transform 0.2s 0.1s ease-in;
+  transition: opacity 0.1s ease-in-out, -webkit-transform 0.2s 0.1s ease-in;
+  transition: transform 0.2s 0.1s ease-in, opacity 0.1s ease-in-out;
+  transition: transform 0.2s 0.1s ease-in, opacity 0.1s ease-in-out, -webkit-transform 0.2s 0.1s ease-in;
+}
+
+.resource:hover .mask {
+  opacity: 1;
+  border: 100px solid rgba(0, 0, 0, 0.7);
+}
+
+.resource:hover a.info {
+  opacity: 1;
+  -webkit-transform: scale(1, 1);
+  transform: scale(1, 1);
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+
+/*# sourceMappingURL=main.css.map */
