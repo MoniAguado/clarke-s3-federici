@@ -5619,6 +5619,65 @@ body {
   height: 0px;
 }
 
+.burger {
+  position: fixed;
+  left: 0;
+  top: -4%;
+  height: 100vh;
+  background-color: transparent;
+  -webkit-transition: -webkit-transform ease .7s;
+  transition: -webkit-transform ease .7s;
+  transition: transform ease .7s;
+  transition: transform ease .7s, -webkit-transform ease .7s;
+  -webkit-transform: translateX(-280%);
+  transform: translateX(-280%);
+}
+
+.menu-visible .burger {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  width: 100%;
+  background-color: transparent;
+}
+
+.container-menu {
+  position: relative;
+  height: 50%;
+  width: 200px;
+}
+
+.menu {
+  width: 200px;
+  height: 300px;
+  background-color: rgba(220, 211, 234, 0.96);
+  margin-top: 70px;
+  padding-left: 0;
+  opacity: 1;
+  z-index: 1;
+}
+
+.nav-item {
+  list-style: none;
+  text-align: left;
+  border-top: 1px solid rgba(42, 178, 74, 0.6);
+}
+
+.nav-item1 {
+  border-top: 0;
+}
+
+.nav-link {
+  text-decoration: none;
+  display: block;
+  color: #664596;
+  font-weight: 300;
+  padding: 7%;
+}
+
+.nav-link:hover {
+  background-color: white;
+}
+
 .form-group .square:focus {
   -webkit-box-shadow: 0 0 0 0.2rem #664596;
   box-shadow: 0 0 0 0.2rem #664596;
