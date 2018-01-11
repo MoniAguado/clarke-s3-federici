@@ -1,0 +1,70 @@
+.button {
+	background-color: #2AB24A;
+	color: white;
+	padding: 6px 12px;
+	margin-bottom: 0;
+	font-weight: 400;
+	text-align: center;
+	vertical-align: middle;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	background-image: none;
+	border: 1px solid transparent;
+	border-radius: 8px;
+}
+
+.button:hover {
+	background-color: #23923D;
+	font-weight: bold;
+}
+
+// efecto transition burger
+#button-menu {
+	cursor: pointer; padding: 10px 35px 16px 0px;
+	width: $sizeBurger;
+	height: $sizeBurger;
+	margin-left: 20px;
+	z-index: 1;
+}
+
+#button-menu span, #button-menu span:before, #button-menu span:after {
+  cursor: pointer;
+  border-radius: 1px;
+  height: 4px;
+  width: 30px;
+  background: $colorPhoneHeader;
+  position: absolute;
+  display: block;
+  content: '';
+}
+
+#button-menu span:before {
+  top: -10px;
+}
+
+#button-menu span:after {
+  bottom: -10px;
+}
+
+#button-menu span, #button-menu span:before, #button-menu span:after {
+  transition: all 500ms ease-in-out;
+}
+
+#button-menu.active span {
+  background-color: transparent;
+}
+
+#button-menu.active span:before, #button-menu.active span:after {
+  top: 0;
+}
+
+#button-menu.active span:before {
+  transform: rotate(45deg);
+}
+
+#button-menu.active span:after {
+  transform: rotate(-45deg);
+}

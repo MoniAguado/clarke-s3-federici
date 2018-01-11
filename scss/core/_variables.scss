@@ -1,13 +1,24 @@
 /*fuentes*/
-$fontTitleSize: 20px;
+$fontTitleSize: 35px;
+$fontTitleColor: #664596;
 
-$backgroundColorHeader: #28CC4F;
-$heightHeader: 100px;
-$widthHeader: 100vh;
+/*header*/
+$backgroundColorHeader: #664596;
+$heightHeader: 70px;
+$widthHeader: 100%;
+$sizeHome: 25%;
+$sizeBurger: 25%;
+$widthPhoneHeader: 50%;
+$fontSizeHeader: 12px;
 
-$backgroundColorHeader: pink;
+$colorPhoneHeader: #ECEDD0;
+
+$heightMenu: 60%;
+$widthMenu: 40%;
 
 
+
+/*Popup*/
 $backgroundColorPopupContenedor: #664596;
 $colorPopupContenedor:#FFA93B;
 $backgroundColorPopupClose: #FFA93B;
@@ -18,12 +29,25 @@ $socialWidth: 50px;
 $socialBackgroundSize: 40px 40px;
 $socialPaddingTop: 40px;
 
+
+/*footer*/
+$backgroundColorFooter: #403F3D;
+$heightFooter: 150px;
+$widthFooter: 100%;
+$textColorFooter: #ECEDD0;
+$textSizeFooter: 15px;
+
 /*home*/
 $backgroundColorHome:  #ECEDD0;
 $backgroundColorButtonHome: #2AB24A;
 $heightButtonHome: 40px;
 $widthButtonHome: 100px;
 $fontSizeButton: 15px;
+/*contenedor consejos*/
+$tipsMarginBox: 5px;
+$tipsBorderBox: 4px double #664596;
+$tipsPaddingBox: 5px;
+
 
 $fontPhraseHome: 'Lilita One', cursive;
 $fontSizePhraseHome: 30px;

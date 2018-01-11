@@ -1,0 +1,58 @@
+
+.burger {
+	position: fixed;
+	left: 0;
+	top: -4%;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, 0);
+	// para que cambie el background
+	transition: transform ease 0.8s;
+	// para que se mueva hacia la izquierda y se esconda
+	transform: translateX(-1000%);
+	.menu-visible & {
+		// o .menu-visible .menu
+		// left: 0; es otra opción. cambiar en transition transform por left si elegimos esta opcion
+		// le damos la clase menu-visible para que cuando la nombremos en js vuelva a su estado normal
+		transform: translateX(0);
+		width: 100%;
+		background-color: rgba(0, 0, 0, 0);
+	}
+}
+
+.container-menu {
+	position: relative;
+	height: 50%;
+	width: 0;
+}
+
+.menu {
+	width: 200px;
+	background-color: rgba(220, 211, 234, 0.96);
+	margin-top: 70px;
+	padding-left: 0;
+	opacity: 1;
+	z-index: 1;
+}
+
+
+.nav-item {
+	list-style: none;
+	text-align: left;
+	border-top: 1px solid rgba(42, 178, 74, 0.6);
+}
+
+.nav-item1 {
+	border-top: 0;
+}
+
+.nav-link {
+	text-decoration: none;
+	display: block;
+	color: $fontTitleColor;
+	font-weight: 300;
+	padding: 7%;
+}
+
+.nav-link:hover{
+	background-color: white;
+}

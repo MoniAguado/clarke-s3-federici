@@ -7,19 +7,20 @@
 @import 'layout/footer';
 @import 'layout/grid';
 @import 'layout/header';
-@import 'layout/bootstrap-grid.min';
+@import 'layout/bootstrap.min';
 
 // Components
 @import 'components/buttons';
 @import 'components/buttonsFace';
 @import 'components/containers';
-@import 'components/forms';
+@import 'components/form';
 @import 'components/links';
 @import 'components/paragraphs';
 @import 'components/popup';
 @import 'components/titles';
 @import 'components/typography';
 @import 'components/socialmedia';
+@import 'components/menu';
 
 // Pages
 @import 'pages/contact';
