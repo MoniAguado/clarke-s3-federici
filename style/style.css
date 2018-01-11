@@ -3,6 +3,8 @@
   width: 100vh;
   height: 150px;
   color: #ECEDD0;
+  position: fixed;
+  bottom: 0;
 }
 
 .flex-footer {
