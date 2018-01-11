@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Abel|Lilita+One");/*fuentes*//*header*//*Popup*//*social media*//*footer*//*home*//*contenedor consejos*/.footer {
   background-color: #403F3D;
-  width: 100vh;
+  width: 100%;
   height: 150px;
   color: #ECEDD0;
 }
@@ -62,6 +62,8 @@
   align-items: center;
   z-index: 1;
   margin: 0;
+  top: 0;
+  left: 0;
 }
 
 .home {
@@ -102,56 +104,6 @@
 
 .new-position {
   left: 50%;
-}
-
-#burger {
-  cursor: pointer;
-  padding: 10px 35px 16px 0px;
-  width: 25%;
-  height: 25%;
-  margin-left: 20px;
-}
-
-#burger span,#burger span:before,#burger span:after {
-  cursor: pointer;
-  border-radius: 1px;
-  height: 4px;
-  width: 30px;
-  background: #ECEDD0;
-  position: absolute;
-  display: block;
-  content: '';
-}
-
-#burger span:before {
-  top: -10px;
-}
-
-#burger span:after {
-  bottom: -10px;
-}
-
-#burger span,#burger span:before,#burger span:after {
-  -webkit-transition: all 500ms ease-in-out;
-  transition: all 500ms ease-in-out;
-}
-
-#burger.active span {
-  background-color: transparent;
-}
-
-#burger.active span:before,#burger.active span:after {
-  top: 0;
-}
-
-#burger.active span:before {
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
-
-#burger.active span:after {
-  -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
 }/*!
  * Bootstrap Grid v4.0.0-beta.2 (https://getbootstrap.com)
  * Copyright 2011-2017 The Bootstrap Authors
@@ -620,6 +572,57 @@ html {
 .button:hover {
   background-color: #23923D;
   font-weight: bold;
+}
+
+#button-menu {
+  cursor: pointer;
+  padding: 10px 35px 16px 0px;
+  width: 25%;
+  height: 25%;
+  margin-left: 20px;
+  z-index: 1;
+}
+
+#button-menu span,#button-menu span:before,#button-menu span:after {
+  cursor: pointer;
+  border-radius: 1px;
+  height: 4px;
+  width: 30px;
+  background: #ECEDD0;
+  position: absolute;
+  display: block;
+  content: '';
+}
+
+#button-menu span:before {
+  top: -10px;
+}
+
+#button-menu span:after {
+  bottom: -10px;
+}
+
+#button-menu span,#button-menu span:before,#button-menu span:after {
+  -webkit-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+}
+
+#button-menu.active span {
+  background-color: transparent;
+}
+
+#button-menu.active span:before,#button-menu.active span:after {
+  top: 0;
+}
+
+#button-menu.active span:before {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+#button-menu.active span:after {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
 
 .container--tips {

@@ -10,6 +10,9 @@
 	align-items: center;
 	z-index: 1;
 	margin: 0;
+	top: 0;
+	left: 0;
+
 }
 
 .home {
@@ -18,7 +21,6 @@
 	margin: auto;
 	display: block;
 }
-
 
 .phone-header {
 	width: $widthPhoneHeader;
@@ -49,50 +51,4 @@
 
 .new-position {
 	left: 50%;
-}
-
-#burger {
-	cursor: pointer; padding: 10px 35px 16px 0px;
-	width: $sizeBurger;
-	height: $sizeBurger;
-	margin-left: 20px;
-}
-
-#burger span, #burger span:before, #burger span:after {
-  cursor: pointer;
-  border-radius: 1px;
-  height: 4px;
-  width: 30px;
-  background: $colorPhoneHeader;
-  position: absolute;
-  display: block;
-  content: '';
-}
-
-#burger span:before {
-  top: -10px;
-}
-
-#burger span:after {
-  bottom: -10px;
-}
-
-#burger span, #burger span:before, #burger span:after {
-  transition: all 500ms ease-in-out;
-}
-
-#burger.active span {
-  background-color: transparent;
-}
-
-#burger.active span:before, #burger.active span:after {
-  top: 0;
-}
-
-#burger.active span:before {
-  transform: rotate(45deg);
-}
-
-#burger.active span:after {
-  transform: rotate(-45deg);
 }
