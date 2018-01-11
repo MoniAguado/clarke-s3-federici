@@ -1,0 +1,54 @@
+
+.header {
+	width: $widthHeader;
+	height: $heightHeader;
+	background-color: $backgroundColorHeader;
+	position: fixed;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 1;
+	margin: 0;
+	top: 0;
+	left: 0;
+
+}
+
+.home {
+	width: $sizeHome;
+	height: $sizeHome;
+	margin: auto;
+	display: block;
+}
+
+.phone-header {
+	width: $widthPhoneHeader;
+	font-size: $fontSizeHeader;
+	color: $colorPhoneHeader;
+}
+
+.main-home{
+	display: none;
+	height: $heightMenu;
+	width: $widthMenu;
+	background-color: $colorPhoneHeader;
+	color: $backgroundColorHeader;
+}
+
+.burger{
+	position: relative;
+}
+
+.menu {
+	position: absolute;
+	//left: -100;
+	//transition: left ease 5s;
+}
+.hidden {
+	display: none;
+}
+
+.new-position {
+	left: 50%;
+}

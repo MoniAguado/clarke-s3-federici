@@ -1,9 +1,34 @@
-// Estilos Header
+.main-home {
+	background-color: $backgroundColorHome;
+}
 
-.header {
-	background-color: backgroundColorHeader;
-	height: heightHeader;
-	width: widthHeader;
-	position: fixed;
-	z-index: 1;
+.flex1, .flex2, .flex3 {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	margin: $marginBoxHome;
+}
+
+
+.link--recources, .link--tips, .link--statistics, .link--survey, .link--game {
+	background-color: $backgroundColorButtonHome;
+	height: $heightButtonHome;
+	width: $widthButtonHome;
+	font-size: $fontSizeButton;
+	text-align: center;
+	text-decoration: none;
+}
+
+
+.box--phrase {
+	font-family: $fontPhraseHome;
+	font-size: $fontSizePhraseHome;
+	margin: $marginBoxHome;
+	text-align: center;
+}
+
+.box--sendemail {
+	margin: $marginBoxHome;
+	margin-top: 70px;
 }

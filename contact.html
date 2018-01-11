@@ -6,7 +6,7 @@
 
 		<title>Federici-Contact</title>
 		<link rel="stylesheet" href="style/style.css">
-	  <link rel="stylesheet" href="style/bootstrap.min.css">
+	 
 	</head>
 	<body class="page-contact">
 		<header>
@@ -36,31 +36,33 @@
 			</div>
 			<img src="https://www.placehold.it/500x100" alt="Home">
 		</header>
-		<main class="container-fluid">
+		<main class="container-fluid pt-4 pb-4"><!--la clase pt-4 pb-4 para dar padding top y bottom-->
 			<div class="row">
-				<div class="col-12">
-					<h1>¿Necesitas ayuda?</h1>
-					<p> Si tienes alguna pregunta o quieres información adicional , rellena el siguiente formulario.
+				<div class="col-12 text-center"><!--la clase text-center para centrar el contenido en linea-->
+					<h1 class="title">¿Necesitas ayuda?</h1>
+					<p class="text"> Si tienes alguna pregunta o quieres información adicional , rellena el siguiente formulario.
 					</p>
 				</div>
 			</div>
-			<div class="row">
-				<form class="col-sm-6 " action="index.html" method="post">
-	  			<div class="form-group">
-	          <input type="text" name="name" placeholder="Nombre" class="form-control" >
-					</div>
-					<div class="form-group">
-	  				<input type="text" name="surname" placeholder="Apellidos" class="form-control" >
-	  			</div>
-	  			<div class="form-group">
-	  				<input type="email" name="mail" placeholder="Email" class="form-control" required>
-	  			</div>
-					<div class="form-group">
-						<textarea name="comments" class="form-control" placeholder="Escribe aquí tus preguntas" rows="8" cols="60"></textarea>
-					</div>
-					<button type="submit" class="btn btn-primary">Enviar</button>
-				</form>
-  		</div>
+			<div class="row justify-content-center"><!--la clase justify-content-center para que el contenido en bloque esté centrado-->
+				<div class=" col-xs-12 col-sm-8"><!-- Esta div para dar tamaño al form-->
+					<form class="form-horizontal" action="index.html" method="post">
+		  			<div class="form-group">
+		          <input type="text" name="name" placeholder="Nombre" class="form-control square" >
+						</div>
+						<div class="form-group">
+		  				<input type="text" name="surname" placeholder="Apellidos" class="form-control square" >
+		  			</div>
+		  			<div class="form-group">
+		  				<input type="email" name="mail" placeholder="Email" class="form-control square" required>
+		  			</div>
+						<div class="form-group">
+							<textarea name="comments" class="form-control square" placeholder="Escribe aquí tus preguntas" rows="8" cols="60"></textarea>
+						</div>
+						<button type="submit" class="button">Enviar</button>
+					</form>
+  			</div>
+			</div>
 		</main>
 		<script type="text/javascript" src="js/main.min.js"></script>
 	</body>
