@@ -1,20 +1,10 @@
-<<<<<<< HEAD
-@import url("https://fonts.googleapis.com/css?family=Abel|Lilita+One");/*fuentes*//*social media*//*survey*//*!
- * Bootstrap Grid v4.0.0-beta.2 (https://getbootstrap.com)
- * Copyright 2011-2017 The Bootstrap Authors
- * Copyright 2011-2017 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- */@-ms-viewport {
-  width: device-width;
-=======
-@import url("https://fonts.googleapis.com/css?family=Abel|Lilita+One");/*fuentes*//*header*//*Popup*//*social media*//*footer*//*home*//*contenedor consejos*/.footer {
+@import url("https://fonts.googleapis.com/css?family=Abel|Lilita+One");/*fuentes*//*header*//*Popup*//*social media*//*survey*//*footer*//*home*//*contenedor consejos*/.footer {
   background-color: #403F3D;
   width: 100%;
   height: 150px;
   color: #ECEDD0;
   position: absolute;
   bottom: 0;
->>>>>>> master
 }
 
 .flex-footer {
@@ -5634,12 +5624,12 @@ body {
   top: -4%;
   height: 100vh;
   background-color: transparent;
-  -webkit-transition: -webkit-transform ease .5s;
-  transition: -webkit-transform ease .5s;
-  transition: transform ease .5s;
-  transition: transform ease .5s, -webkit-transform ease .5s;
-  -webkit-transform: translateX(-280%);
-  transform: translateX(-280%);
+  -webkit-transition: -webkit-transform ease 0.8s;
+  transition: -webkit-transform ease 0.8s;
+  transition: transform ease 0.8s;
+  transition: transform ease 0.8s, -webkit-transform ease 0.8s;
+  -webkit-transform: translateX(-1000%);
+  transform: translateX(-1000%);
 }
 
 .menu-visible .burger {
@@ -5853,13 +5843,10 @@ body {
   transition-delay: 0.3s;
 }
 
-.header {
-  display: none;
-}
-
 .bloque {
   margin: 20px;
   font-size: 15px;
+  top: 200px;
 }
 
 @media (min-width: 576px) {
