@@ -1,25 +1,27 @@
 'use strict';
 
-var answerButton = document.querySelector('.button--answer1');
-var box = document.querySelectorAll('.wrapper1');
-var boxAnswer = document.querySelectorAll('.wrapper--answer');
-var boxQuestion = document.querySelectorAll('wrapper--question');
 
+var answerButton = document.querySelectorAll('.button');
+var question = document.querySelectorAll('.question--efect');
+var answer = document.querySelectorAll('.answer--efect');
+var box = document.querySelectorAll('.wrapper--question');
 
-function rotateAnswer() {
-	for (i = 0; i< box.length; i++) {
-		box[i].classList.add('new--position');
-	}
-	for (i = 0; i< boxAnswer.length; i++) {
-		boxAnswer[i].classList.remove('hidden');
-	}
-	for (i = 0; i< boxQuestion.length; i++) {
-		boxQuestion[i].classList.add('hidden');
-	}
+for (var i = 0; i<answerButton.length; i++) {
+answerButton[i].addEventListener('click', rotateAnswer);
 }
 
-answerButton.addEventListener('click', rotateAnswer);
+function rotateAnswer() {
+	for (var i = 0; i<box.length; i++) {
+	box[i].classList.add('new--position');
+}
+	for (var i = 0; i<question.length; i++) {
+	question[i].classList.add('hidden');
+}
 
-/*for (var i = 0; i < answerButton.length; i++) {
-  answerButton[i].addEventListener('click', rotateAnswer);
-}*/
+	function appearAnswer(){
+	for (var i = 0; i<answer.length; i++) {
+		answer[i].classList.remove('hidden');
+	}
+	}
+	setTimeout(appearAnswer, 1000);
+}
