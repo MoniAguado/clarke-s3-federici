@@ -1,10 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Abel|Lilita+One");/*fuentes*//*header*//*Popup*//*social media*//*footer*//*home*//*contenedor consejos*/.footer {
   background-color: #403F3D;
-  width: 100%;
-  height: 150px;
+  width: 100vh;
   color: #ECEDD0;
-  position: absolute;
-  bottom: 0;
+  padding: 10px;
+  padding-bottom: 20px;
 }
 
 .flex-footer {
@@ -44,6 +43,10 @@
   text-decoration: none;
 }
 
+.copyright {
+  text-align: center;
+}
+
 .header {
   width: 100%;
   height: 70px;
@@ -79,31 +82,22 @@
   width: 50%;
   font-size: 12px;
   color: #ECEDD0;
-}
-
-.main-home {
-  display: none;
-  height: 60%;
-  width: 40%;
-  background-color: #ECEDD0;
-  color: #664596;
-}
-
-.burger {
-  position: relative;
+}/*.burger{
+	position: relative;
 }
 
 .menu {
-  position: absolute;
+	position: absolute;
+	//left: -100;
+	//transition: left ease 5s;
 }
-
 .hidden {
-  display: none;
+	display: none;
 }
 
 .new-position {
-  left: 50%;
-}/*!
+	left: 50%;
+}*//*!
  * Bootstrap v4.0.0-beta.2 (https://getbootstrap.com)
  * Copyright 2011-2017 The Bootstrap Authors
  * Copyright 2011-2017 Twitter, Inc.
@@ -5640,12 +5634,6 @@ body {
 }
 
 .container-menu {
-  position: relative;
-  height: 50%;
-  width: 0;
-}
-
-.menu {
   width: 200px;
   background-color: rgba(220, 211, 234, 0.96);
   margin-top: 70px;
@@ -5654,10 +5642,10 @@ body {
   z-index: 1;
 }
 
-.nav-item {
+.menu {
   list-style: none;
   text-align: left;
-  border-top: 1px solid rgba(42, 178, 74, 0.6);
+  padding-left: 0;
 }
 
 .nav-item1 {
@@ -5670,6 +5658,7 @@ body {
   color: #664596;
   font-weight: 300;
   padding: 7%;
+  border-top: 1px solid rgba(42, 178, 74, 0.6);
 }
 
 .nav-link:hover {
@@ -5697,8 +5686,25 @@ body {
   color: white;
 }
 
-.main-home {
+.body {
   background-color: #ECEDD0;
+}
+
+.main-home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100vh;
 }
 
 .flex1,.flex2,.flex3 {
