@@ -1,6 +1,17 @@
+<<<<<<< HEAD
 
 .main-home {
+=======
+.body {
+>>>>>>> fix-menu
 	background-color: $backgroundColorHome;
+}
+.main-home {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
 }
 
 .flex1, .flex2, .flex3 {

@@ -27,28 +27,3 @@
 	font-size: $fontSizeHeader;
 	color: $colorPhoneHeader;
 }
-
-.main-home{
-	display: none;
-	height: $heightMenu;
-	width: $widthMenu;
-	background-color: $colorPhoneHeader;
-	color: $backgroundColorHeader;
-}
-
-.burger{
-	position: relative;
-}
-
-.menu {
-	position: absolute;
-	//left: -100;
-	//transition: left ease 5s;
-}
-.hidden {
-	display: none;
-}
-
-.new-position {
-	left: 50%;
-}

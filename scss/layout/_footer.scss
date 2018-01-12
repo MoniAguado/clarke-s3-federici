@@ -2,10 +2,9 @@
 .footer {
 	background-color: $backgroundColorFooter;
 	width: $widthFooter;
-	height: $heightFooter;
 	color: $textColorFooter;
-	position: fixed;
-	bottom: 0;
+	padding: 10px;
+	padding-bottom: 20px;
 }
 
 .col-12 {
@@ -39,4 +38,8 @@
 
 .footer a {
 	text-decoration: none;
+}
+
+.copyright {
+	text-align: center;
 }
