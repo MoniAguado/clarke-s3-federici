@@ -1,6 +1,13 @@
 
-.main-home {
+.body {
 	background-color: $backgroundColorHome;
+}
+.main-home {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding-top: 70px;
 }
 
 .flex1, .flex2, .flex3 {
@@ -26,10 +33,12 @@
 	font-family: $fontPhraseHome;
 	font-size: $fontSizePhraseHome;
 	margin: $marginBoxHome;
+	color: $fontTitleColor;
 	text-align: center;
 }
 
 .box--sendemail {
 	margin: $marginBoxHome;
-	margin-top: 70px;
+	margin-top: 50px;
+	text-align: left;
 }
