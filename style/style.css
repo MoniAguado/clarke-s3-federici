@@ -3,7 +3,7 @@
   width: 100%;
   height: 150px;
   color: #ECEDD0;
-  position: absolute;
+  position: fixed;
   bottom: 0;
 }
 
@@ -5847,6 +5847,7 @@ body {
   margin: 20px;
   font-size: 15px;
   top: 200px;
+  text-align: left;
 }
 
 @media (min-width: 576px) {

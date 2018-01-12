@@ -15,7 +15,7 @@ function showMenu (){
 burger.addEventListener('click', showMenu);
 
 var buttonBurger = document.querySelector('.button-menu');
-var body = document.querySelector('.page-home');
+var body = document.querySelector('.body');
 var close = document.querySelector('.button-menu');
 buttonBurger.addEventListener('click', clickMenu);
 
