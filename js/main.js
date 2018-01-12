@@ -6,12 +6,12 @@ document.querySelector("#button-menu")
     this.classList.toggle( "active" );
   });
 
+// efecto menú
 var burger = document.querySelector('.burger');
 var menu = document.querySelector('.menu');
 function showMenu (){
 	menu.classList.toggle('new-position');
 }
-
 burger.addEventListener('click', showMenu);
 
 var buttonBurger = document.querySelector('.button-menu');
@@ -27,6 +27,6 @@ var links = document.querySelectorAll('.nav-link');
 for (var i = 0; i < links.length; i++) {
 	links[i].addEventListener('click', clickMenu);
 }
-// // para que cuando hagas click en la pantalla se cierre el menú
+// para que cuando hagas click en la pantalla se cierre el menú
 var click = document.querySelector('.burger');
 click.addEventListener('click', clickMenu);
