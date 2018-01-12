@@ -5696,6 +5696,21 @@ body {
   -ms-flex-align: center;
   align-items: center;
   padding: 20px;
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: -webkit-transform ease 1s;
+  transition: -webkit-transform ease 1s;
+  transition: transform ease 1s;
+  transition: transform ease 1s, -webkit-transform ease 1s;
+}
+
+.new--position {
+  -webkit-transform: rotateX(360deg);
+  transform: rotateX(360deg);
+}
+
+.hidden {
+  display: none;
 }
 
 .title--question {
@@ -5703,7 +5718,6 @@ body {
 }
 
 .wrapper--question {
-  display: none;
   -webkit-box-shadow: 6px 0px 39px -5px rgba(0, 0, 0, 0.41);
   box-shadow: 6px 0px 39px -5px rgba(0, 0, 0, 0.41);
 }
