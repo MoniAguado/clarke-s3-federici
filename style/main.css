@@ -1,13 +1,9 @@
 /*fuentes*//*header*//*Popup*//*social media*//*footer*//*home*//*contenedor consejos*/.footer {
   background-color: #403F3D;
-  width: 100vh;
+  width: 100%;
   color: #ECEDD0;
-  padding: 10px;
-  padding-bottom: 20px;
-}
-
-.col-12 {
-  position: fixed;
+  position: absolute;
+  bottom: 0;
 }
 
 .flex-footer {
@@ -18,9 +14,10 @@
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  position: relative;
+  padding-top: 20px;
 }
 
 .footer-nav {
@@ -48,6 +45,7 @@
 
 .copyright {
   text-align: center;
+  padding-bottom: 20px;
 }
 
 .header {
@@ -506,8 +504,19 @@ body {
 }
 
 @media all and (min-width: 768px) {
+  .flex-footer {
+    padding: 20px;
+  }
+
   .flex1 {
     margin-top: 70px;
+  }
+}
+
+@media all and (min-width: 1280) {
+  .flex-footer {
+    max-width: 1000px;
+    padding: 20px;
   }
 }
 
