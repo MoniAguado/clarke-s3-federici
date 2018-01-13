@@ -6,9 +6,9 @@
 	height: 100vh;
 	background-color: rgba(0, 0, 0, 0);
 	// para que cambie el background
-	transition: transform ease .5s;
+	transition: transform ease 0.8s;
 	// para que se mueva hacia la izquierda y se esconda
-	transform: translateX(-280%);
+	transform: translateX(-1000%);
 	.menu-visible & {
 		// o .menu-visible .menu
 		// left: 0; es otra opción. cambiar en transition transform por left si elegimos esta opcion
@@ -20,12 +20,6 @@
 }
 
 .container-menu {
-	position: relative;
-	height: 50%;
-	width: 0;
-}
-
-.menu {
 	width: 200px;
 	background-color: rgba(220, 211, 234, 0.96);
 	margin-top: 70px;
@@ -35,10 +29,10 @@
 }
 
 
-.nav-item {
+.menu{
 	list-style: none;
 	text-align: left;
-	border-top: 1px solid rgba(42, 178, 74, 0.6);
+	padding-left: 0;
 }
 
 .nav-item1 {
@@ -51,6 +45,7 @@
 	color: $fontTitleColor;
 	font-weight: 300;
 	padding: 7%;
+	border-top: 1px solid rgba(42, 178, 74, 0.6);
 }
 
 .nav-link:hover{

@@ -5,113 +5,217 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Federici-Estadísticas</title>
 		<link rel="stylesheet" href="style/style.css">
-		<link rel="stylesheet" href="style/main.css">
 
 	</head>
-	<body class="page-statistics">
-		<header>
-			<ul>
-				<li>Consejos</li>
-				<li>Recursos</li>
-				<li>Datos</li>
-				<li>Encuesta</li>
-				<li>Juego</li>
-				<li>Contacto</li>
-			</ul>
-			<div>
-				<p>Teléfono</p>
-				<p>016</p>
-			</div>
-			<img src="https://www.placehold.it/500x100" alt="Home">
-		</header>
+	<body class="body page-statistics">
+		<header class="col-12">
+			<div class="header">
+				<div class="button-menu" id="button-menu"><a id="nav-toggle" href="#"><span></span></a></div>
+				<nav class="burger" id="burger" data-idDesplegar="burger">
+					<!-- oculto -->
+					<container class="container">
+						<div class="container-menu">
+							<ul class="menu" id="menu">
+								<li class="nav-item nav-item1">
+									<a class="nav-link" href="tips.html">Consejos</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="resources.html">Recursos</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="statistics.html">Datos</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="survey.html">Encuesta</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="quiz.html">Juego</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="contact.html">Contacto</a>
+								</li>
+							</ul>
+						</div>
+					</container>
+				</nav>
+				<div class="phone-header">
+					<p>Teléfono contra el maltrato: 016</p>
+				</div>
+				<a href="#"><img src="images/home.png" alt="Home" class="home"></a>
+		</div>
+	</header>
 		<main class="container-fluid">
 			<div class="row">
-				<div class="col">
+				<div class="col-12">
 					<h1 class="title">Hablando de datos...</h1>
 				</div>
 			</div>
-			<div class="row">
-				<form class="col-lg-6 form">
-					<div>
-						<p>Aquí irá una pregunta para que el usuario introduzca la respuesta o datos que considere oportunos:</p>
-						<label for="question01" class="label">
-							Introduce tu respuesta:
-						</label>
-						<input id="question01" type="text" name="question01" class="cel">
-						<button type="button" name="button">Enviar</button>
+			<div class="section--statistics row">
+				<div class="col-lg-6 form">
+					<div class="wrapper">
+						<p>¿Crees que hay muchos jóvenes que están de acuerdo con la frase "quien bien te quiere, te hará sufrir"?</p>
+						<form class="form-statistics">
+							<label for="question01" class="label">
+								Introduce tu respuesta:
+							</label>
+							<input id="question01" type="text" name="question01" class="cel">
+							<button type="button" value="0" name="button" class="button button--statistics">Enviar</button>
+						</form>
 					</div>
-					<div>
-						<p>Aquí irá una pregunta para que el usuario introduzca la respuesta o datos que considere oportunos:</p>
-						<label for="question02" class="label">
-							Introduce tu respuesta:
-						</label>
-						<input id="question01" type="text" name="question02" class="cel">
-						<button type="button" name="button">Enviar</button>
+				</div>
+				<div class="col-lg-6 form">
+					<div class="wrapper wrapper--question">
+						<h2 class="title title--question question--efect">?</h2>
+						<div class="answer--efect hidden">
+							<p>71,5% de los jóvenes está de acuerdo con la expresión “quien bien te quiere, te hará sufrir”</p>
+							<img src="https://www.placehold.it/100x100" alt="answer01">
+						</div>
 					</div>
-					<div>
-						<p>Aquí irá una pregunta para que el usuario introduzca la respuesta o datos que considere oportunos:</p>
-						<label for="question03" class="label">
-							Introduce tu respuesta:
-						</label>
-						<input id="question01" type="text" name="question03" class="cel">
-						<button type="button" name="button">Enviar</button>
+				</div>
+			</div>
+
+			<div class="section--statistics row">
+				<div class="col-lg-6 form">
+					<div class="wrapper">
+						<p>¿Crees que es muy comun pensar que tenemos una media naranja?</p>
+						<form class="form-statistics">
+							<label for="question02" class="label">
+								Introduce tu respuesta:
+							</label>
+							<input id="question02" type="text" name="question02" class="cel">
+							<button type="button" value="1" name="button" class="button button--statistics">Enviar</button>
+						</form>
 					</div>
-					<div>
-						<p>Aquí irá una pregunta para que el usuario introduzca la respuesta o datos que considere oportunos:</p>
-						<label for="question04" class="label">
-							Introduce tu respuesta:
-						</label>
-						<input id="question01" type="text" name="question04" class="cel">
-						<button type="button" name="button">Enviar</button>
+				</div>
+				<div class="col-lg-6 form">
+					<div class="wrapper wrapper--question">
+						<h2 class="title title--question question--efect">?</h2>
+						<div class="answer--efect hidden">
+							<p>Un <span>68,5%</span> de los jóvenes piensa que en algún lugar hay alguien predestinado para cada persona, su media naranja</p>
+							<img src="https://www.placehold.it/100x100" alt="answer01">
+						</div>
 					</div>
-					<div>
-						<p>Aquí irá una pregunta para que el usuario introduzca la respuesta o datos que considere oportunos:</p>
-						<label for="question05" class="label">
-							Introduce tu respuesta:
-						</label>
-						<input id="question01" type="text" name="question05" class="cel">
-						<button type="button" name="button">Enviar</button>
+				</div>
+			</div>
+
+			<div class="section--statistics row">
+				<div class="col-lg-6 form">
+					<div class="wrapper">
+						<p>¿Crees que en tu entorno hay mucha gente que piensa que si tu pareja te daña tiene arreglo si te pide perdón?</p>
+						<form class="form-statistics">
+							<label for="question03" class="label">
+								Introduce tu respuesta:
+							</label>
+							<input id="question03" type="text" name="question03" class="cel">
+							<button type="button" value="2" name="button" class="button button--statistics">Enviar</button>
+						</form>
 					</div>
-					<div>
-						<p>Aquí irá una pregunta para que el usuario introduzca la respuesta o datos que considere oportunos:</p>
-						<label for="question06" class="label">
-							Introduce tu respuesta:
-						</label>
-						<input id="question01" type="text" name="question06" class="cel">
-						<button type="button" name="button">Enviar</button>
+				</div>
+				<div class="col-lg-6 form">
+					<div class="wrapper wrapper--question">
+						<h2 class="title title--question question--efect">?</h2>
+						<div class="answer--efect hidden">
+							<p>El <span>33,6%</span> de los jóvenes cree que si tu pareja te daña y te hace sufrir tiene solución si te pide perdón y te promete cambiar.</p>
+							<img src="https://www.placehold.it/100x100" alt="answer01">
+						</div>
 					</div>
-				</form>
-				<section class="col-lg-6">
-					<div>
-					<p>Aquí va la respuesta con una breve explicación y debajo una ilustración y/o un gráfico que ayude a la visualización del dato</p>
-					<img src="https://www.placehold.it/100x100" alt="answer01">
 				</div>
-				<div>
-					<p>Aquí va la respuesta con una breve explicación y debajo una ilustración y/o un gráfico que ayude a la visualización del dato</p>
-					<img src="https://www.placehold.it/100x100" alt="answer02">
+			</div>
+
+			<div class="section--statistics row">
+				<div class="col-lg-6 form">
+					<div class="wrapper">
+						<p>¿Mucha gente de tu entorno ha escuchado alguna vez "los celos son la expresión del amor"?</p>
+						<form class="form-statistics">
+							<label for="question04" class="label">
+								Introduce tu respuesta:
+							</label>
+							<input id="question04" type="text" name="question04" class="cel">
+							<button type="button" value="3" name="button" class="button button--statistics">Enviar</button>
+						</form>
+					</div>
 				</div>
-				<div>
-					<p>Aquí va la respuesta con una breve explicación y debajo una ilustración y/o un gráfico que ayude a la visualización del dato</p>
-					<img src="https://www.placehold.it/100x100" alt="answer03">
+				<div class="col-lg-6 form">
+					<div class="wrapper wrapper--question">
+						<h2 class="title title--question question--efect">?</h2>
+						<div class="answer--efect hidden">
+							<p><span>73,3%</span> de los jóvenes ha escuchado en alguna ocasión de un adulto el consejo “los celos son una expresión del amor"</p>
+							<img src="https://www.placehold.it/100x100" alt="answer01">
+						</div>
+					</div>
 				</div>
-				<div>
-					<p>Aquí va la respuesta con una breve explicación y debajo una ilustración y/o un gráfico que ayude a la visualización del dato</p>
-					<img src="https://www.placehold.it/100x100" alt="answer04">
+			</div>
+
+			<div class="section--statistics row">
+				<div class="col-lg-6 form">
+					<div class="wrapper">
+						<p>¿Cuántas chicas que conoces crees que ha sufrido violencia de control últimamente?</p>
+						<form class="form-statistics">
+							<label for="question05" class="label">
+								Introduce tu respuesta:
+							</label>
+							<input id="question05" type="text" name="question05" class="cel">
+							<button type="button" value="4" name="button" class="button button--statistics">Enviar</button>
+						</form>
+					</div>
 				</div>
-				<div>
-					<p>Aquí va la respuesta con una breve explicación y debajo una ilustración y/o un gráfico que ayude a la visualización del dato</p>
-					<img src="https://www.placehold.it/100x100" alt="answer05">
+				<div class="col-lg-6 form">
+					<div class="wrapper wrapper--question">
+						<h2 class="title title--question question--efect">?</h2>
+						<div class="answer--efect hidden">
+							<p>El porcentaje de mujeres jóvenes de 16 a 19 años que han tenido pareja en alguna ocasión y que ha sufrido violencia de control en los últimos 12 meses: <span>25%</span></p>
+							<img src="https://www.placehold.it/100x100" alt="answer01">
+						</div>
+					</div>
 				</div>
-				<div>
-					<p>Aquí va la respuesta con una breve explicación y debajo una ilustración y/o un gráfico que ayude a la visualización del dato</p>
-					<img src="https://www.placehold.it/100x100" alt="answer06">
+			</div>
+
+			<div class="section--statistics row">
+				<div class="col-lg-6 form">
+					<div class="wrapper">
+						<p>¿Cuánta gente que conoces piensa que las mujeres sufren maltrato es porque lo consienten?</p>
+						<form class="form-statistics">
+							<label for="question06" class="label">
+								Introduce tu respuesta:
+							</label>
+							<input id="question06" type="text" name="question06" class="cel">
+							<button type="button" value="5" name="button" class="button button--statistics">Enviar</button>
+						</form>
+					</div>
 				</div>
-			</section>
-			<div>
+				<div class="col-lg-6 form">
+					<div class="wrapper wrapper--question">
+						<h2 class="title title--question question--efect">?</h2>
+						<div class="answer--efect hidden">
+							<p>Un <span>37%</span> está de acuerdo con la afirmación “si las mujeres sufren maltrato es porque lo consienten”</p>
+							<img src="https://www.placehold.it/100x100" alt="answer01">
+						</div>
+					</div>
+				</div>
+			</div>
 
 		</main>
 		<script type="text/javascript" src="js/main.min.js"></script>
-		<footer>
+		<script type="text/javascript" src="js/statistics.js"></script>
+		<footer class="footer col-12">
+			<div class="flex-footer">
+				<ul class="footer-nav">
+					<li class="footer-nav-item"><a class="footer-nav-link" href="tips.html">Consejos</a></li>
+					<li class="footer-nav-item"><a class="footer-nav-link" href="resources.html">Recursos</a></li>
+					<li class="footer-nav-item"><a class="footer-nav-link" href="statistics.html">Datos</a></li>
+					<li class="footer-nav-item"><a class="footer-nav-link" href="survey.html">Encuesta</a></li>
+					<li class="footer-nav-item"><a class="footer-nav-link" href="quiz.html">Juego</a></li>
+					<li class="footer-nav-item"><a class="footer-nav-link" href="contact.html">Contacto</a></li>
+				</ul>
+				<div>
+					<ul>
+						<li class="contact-phones">Teléfonos de contacto:</li>
+						<li class="footer-phone">Teléfono del Ministerio: 016</li>
+						<li class="footer-phone">Teléfono de FMP: 900 502 061</li>
+					</ul>
+				</div>
+			</div>
+			<div class="copyright">Federici &copy 2018</div>
 		</footer>
 	</body>
 </html>

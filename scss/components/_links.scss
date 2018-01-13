@@ -7,3 +7,14 @@
 	font-weight: bold;
 	color: #2AB24A;
 }
+
+// links botones home
+
+.link--tips, .link--game, .link--recources, .link--statistics, .link--survey {
+	color: #403F3D;
+}
+
+.link--tips:hover, .link--game:hover, .link--recources:hover, .link--statistics:hover, .link--survey:hover {
+	color: #403F3D;
+	text-decoration: none;
+}

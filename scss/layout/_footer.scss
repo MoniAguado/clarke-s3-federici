@@ -1,17 +1,18 @@
 .footer {
 	background-color: $backgroundColorFooter;
 	width: $widthFooter;
-	height: $heightFooter;
 	color: $textColorFooter;
-	position: absolute;
+	position: fixed;
 	bottom: 0;
 }
+
 
 .flex-footer {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
+	justify-content: space-around;
 	position: relative;
+	padding-top: 20px;
 }
 
 .footer-nav {
@@ -35,4 +36,24 @@
 
 .footer a {
 	text-decoration: none;
+}
+
+.copyright {
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+
+
+@media all and (min-width:768px){
+	.flex-footer{
+		padding: 20px;
+	}
+}
+
+@media all and (min-width:1280){
+	.flex-footer{
+		max-width: 1000px;
+		padding: 20px;
+	}
 }

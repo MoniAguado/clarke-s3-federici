@@ -21,12 +21,60 @@
 	font-weight: bold;
 }
 
+// botones home
+.button-home{
+	height: 40px;
+	width: 100px;
+	background-color: rgb(182, 252, 159);
+	border-color: 1px solid #403F3D;
+}
+.button-tips {
+	border-radius: 100px 100px 100px 0px;
+	-moz-border-radius: 100px 100px 100px 0px;
+	-webkit-border-radius: 100px 100px 100px 0px;
+	border: 0px solid #000000;
+	box-shadow: 4px -2px 6px 0px rgba(0,0,0,0.3);
+}
+
+.button-resources {
+	border-radius: 100px 100px 0px 100px;
+	-moz-border-radius: 100px 100px 0px 100px;
+	-webkit-border-radius: 100px 100px 0px 100px;
+	border: 0px solid #000000;
+	box-shadow: -4px -3px 6px 0px rgba(0,0,0,0.3);
+}
+
+.button-statistics, .button-game {
+	border-radius: 100px 0px 100px 100px;
+	-moz-border-radius: 100px 0px 100px 100px;
+	-webkit-border-radius: 100px 0px 100px 100px;
+	border: 0px solid #000000;
+	box-shadow: -4px 3px 6px 0px rgba(0,0,0,0.3);
+}
+
+.button-survey {
+	border-radius: 0px 100px 100px 100px;
+	-moz-border-radius: 0px 100px 100px 100px;
+	-webkit-border-radius: 0px 100px 100px 100px;
+	border: 0px solid #000000;
+	box-shadow: 4px 3px 6px 0px rgba(0,0,0,0.3);
+}
+
+.button-home:hover{
+	background-color: rgb(182, 252, 159);
+	-webkit-transform: scale(1.3);
+	-ms-transform: scale(1.3);
+	transform: scale(1.3);
+}
+
+
 // efecto transition burger
 #button-menu {
 	cursor: pointer; padding: 10px 35px 16px 0px;
-	width: $sizeBurger;
+	// width: $sizeBurger;
 	height: $sizeBurger;
 	margin-left: 20px;
+	margin-right: 20px;
 	z-index: 1;
 }
 
