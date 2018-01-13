@@ -30,3 +30,9 @@ for (var i = 0; i < links.length; i++) {
 // para que cuando hagas click en la pantalla se cierre el menú
 var click = document.querySelector('.burger');
 click.addEventListener('click', clickMenu);
+
+//subir al principio de la página cuando se hace click en la flecha arriba
+var arribaButton = document.getElementById('arriba');
+arribaButton.onclick = function(){
+    window.scrollTo(0,0);
+}
