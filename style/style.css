@@ -5675,6 +5675,14 @@ body {
   transition-delay: 0.3s;
 }
 
+.page-tips {
+  background-color: #ecedd0;
+}
+
+.page-statistics {
+  background-color: #ecedd0;
+}
+
 .section--statistics {
   margin-bottom: 100px;
 }
@@ -5730,11 +5738,31 @@ body {
 .button--statistics {
   width: 40%;
   display: block;
-  margin: auto;
 }
 
 .wrapper--button {
   padding-bottom: 30px;
+}
+
+.form-statistics {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.label {
+  display: none;
+}
+
+.cel {
+  width: 45%;
 }
 
 @media (min-width: 576px) {

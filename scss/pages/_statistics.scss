@@ -1,3 +1,6 @@
+.page-statistics{
+	background-color: #ecedd0;
+}
 .section--statistics{
 	margin-bottom: 100px;
 }
@@ -39,8 +42,20 @@
 .button--statistics {
 	width: 40%;
 	display: block;
-	margin: auto;
 }
 .wrapper--button {
 	padding-bottom: 30px;
+}
+
+.form-statistics{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+}
+.label{
+	display: none;
+}
+.cel{
+	width: 45%;
 }
