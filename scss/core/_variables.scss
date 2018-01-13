@@ -2,13 +2,23 @@
 $fontTitleSize: 35px;
 $fontTitleColor: #664596;
 
-$backgroundColorHeader: #28CC4F;
-$heightHeader: 100px;
-$widthHeader: 100vh;
+/*header*/
+$backgroundColorHeader: #664596;
+$heightHeader: 70px;
+$widthHeader: 100%;
+$sizeHome: 25%;
+$sizeBurger: 25%;
+$widthPhoneHeader: 50%;
+$fontSizeHeader: 12px;
 
-$backgroundColorHeader: pink;
+$colorPhoneHeader: #ECEDD0;
+
+$heightMenu: 60%;
+$widthMenu: 40%;
 
 
+
+/*Popup*/
 $backgroundColorPopupContenedor: #664596;
 $colorPopupContenedor:#FFA93B;
 $backgroundColorPopupClose: #FFA93B;
@@ -18,6 +28,7 @@ $socialHeight: 0px;
 $socialWidth: 50px;
 $socialBackgroundSize: 40px 40px;
 $socialPaddingTop: 40px;
+
 
 /*footer*/
 $backgroundColorFooter: #403F3D;
@@ -42,4 +53,3 @@ $fontPhraseHome: 'Lilita One', cursive;
 $fontSizePhraseHome: 30px;
 
 $marginBoxHome: 20px;
-

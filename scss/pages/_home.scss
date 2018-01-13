@@ -1,10 +1,14 @@
-.header {
-	display: none;
 
-}
+.body {
 
-.main-home {
 	background-color: $backgroundColorHome;
+}
+.main-home {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
 }
 
 .flex1, .flex2, .flex3 {

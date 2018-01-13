@@ -5,53 +5,59 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Federici-Home</title>
 		<link rel="stylesheet" href="style/style.css">
-		<link rel="stylesheet" href="style/main.css">
 	</head>
-	<body class="page-home">
-		<div class="row">
-			<header class="header col-12">
-				<ul class="nav">
-				  <li class="nav-item">
-				    <a class="nav-link" href="tips.html">Consejos</a>
-				  </li>
-					<li class="nav-item">
-				    <a class="nav-link" href="resources.html">Recursos</a>
-				  </li>
-					<li class="nav-item">
-				    <a class="nav-link" href="statistics.html">Datos</a>
-				  </li>
-					<li class="nav-item">
-				    <a class="nav-link" href="survey.html">Encuesta</a>
-				  </li>
-					<li class="nav-item">
-				 		<a class="nav-link" href="quiz.html">Juego</a>
-				  </li>
-					<li class="nav-item">
-				    <a class="nav-link" href="contact.html">Contacto</a>
-				  </li>
-				</ul>
-				<div>
-					<p>Teléfono</p>
-					<p>016</p>
-				</div>
-				<img src="https://www.placehold.it/30x30" alt="Home">
-			</header>
-		</div>
-	<div class="row">
+	<body class="body page-home">
+
+			<header class="col-12">
+				<div class="header">
+					<div class="button-menu" id="button-menu"><a id="nav-toggle" href="#"><span></span></a></div>
+					<nav class="burger" id="burger" data-idDesplegar="burger">
+						<!-- oculto -->
+						<container class="container">
+							<div class="container-menu">
+								<ul class="menu" id="menu">
+								  <li class="nav-item nav-item1">
+								    <a class="nav-link" href="tips.html">Consejos</a>
+								  </li>
+									<li class="nav-item">
+								    <a class="nav-link" href="resources.html">Recursos</a>
+								  </li>
+									<li class="nav-item">
+								    <a class="nav-link" href="statistics.html">Datos</a>
+								  </li>
+									<li class="nav-item">
+								    <a class="nav-link" href="survey.html">Encuesta</a>
+								  </li>
+									<li class="nav-item">
+								    <a class="nav-link" href="quiz.html">Juego</a>
+								  </li>
+									<li class="nav-item">
+								    <a class="nav-link" href="contact.html">Contacto</a>
+								  </li>
+								</ul>
+							</div>
+						</container>
+					</nav>
+					<div class="phone-header">
+						<p>Teléfono contra el maltrato: 016</p>
+					</div>
+					<a href="#"><img src="images/home.png" alt="Home" class="home"></a>
+			</div>
+		</header>
 		<main class="main-home col-12">
 			<div class="main-home__box">
 				<div class="flex1">
-					<a href="resources.html"><div class="link link--recources">Recursos</div></a>
-					<a href="tips.html"><div class="link link--tips">Consejos</div></a>
+					<a href="resources.html"><div class="button link--recources">Recursos</div></a>
+					<a href="tips.html"><div class="button link--tips">Consejos</div></a>
 				</div>
 				<div class="box box--phrase">¿Estás viviendo tu propia historia de amor tóxico?
 				</div>
 				<div class="flex2">
-					<a href="statistics.html"><div class="link link--statistics">Datos</div></a>
-					<a href="survey.html"><div class="link link--survey">Encuesta</div></a>
+					<a href="statistics.html"><div class="button link--statistics">Datos</div></a>
+					<a href="survey.html"><div class="button link--survey">Encuesta</div></a>
 				</div>
 				<div class="flex3">
-					<a href="#quizz.html"><div class="link link--game">Juego</div></a>
+					<a href="#quizz.html"><div class="button link--game">Juego</div></a>
 				</div>
 			</div>
 
@@ -59,8 +65,7 @@
 				<p>Si necesitas resolver dudas o contactar con nosotras, puedes hacerlo a través de un formulario <a href="contact.html" class="link">aquí.</a></p>
 			</div>
 		</main>
-	</div>
-	<div class="row">
+
 		<footer class="footer col-12">
 			<div class="flex-footer">
 				<ul class="footer-nav">
