@@ -1,8 +1,8 @@
-/*fuentes*//*header*//*Popup*//*social media*//*footer*//*home*//*contenedor consejos*/.footer {
+/*fuentes*//*header*//*Popup*//*social media*//*survey*//*footer*//*home*//*contenedor consejos*/.footer {
   background-color: #403F3D;
   width: 100%;
   color: #ECEDD0;
-  position: absolute;
+  position: fixed;
   bottom: 0;
 }
 
@@ -503,6 +503,37 @@ body {
   transition-delay: 0.3s;
 }
 
+.bloque-survey {
+  background-color: #ECEDD0;
+  padding-top: 100px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  text-align: left;
+}
+
+.title-survey {
+  text-transform: none;
+}
+
+.p-survey {
+  text-align: left;
+}
+
+.logo-survey {
+  max-width: 300px;
+  padding: 20px;
+}
+
+@media all and (min-width: 500px) {
+  .bloque-survey {
+    padding-top: 100px;
+    padding-bottom: 80px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
 @media all and (min-width: 768px) {
   .flex-footer {
     padding: 20px;
@@ -510,6 +541,13 @@ body {
 
   .flex1 {
     margin-top: 70px;
+  }
+
+  .bloque-survey {
+    padding-top: 150px;
+    padding-bottom: 100px;
+    padding-left: 80px;
+    padding-right: 80px;
   }
 }
 

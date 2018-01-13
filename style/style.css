@@ -1,8 +1,8 @@
-@import url("https://fonts.googleapis.com/css?family=Abel|Lilita+One");/*fuentes*//*header*//*Popup*//*social media*//*footer*//*home*//*contenedor consejos*/.footer {
+@import url("https://fonts.googleapis.com/css?family=Abel|Lilita+One");/*fuentes*//*header*//*Popup*//*social media*//*survey*//*footer*//*home*//*contenedor consejos*/.footer {
   background-color: #403F3D;
   width: 100%;
   color: #ECEDD0;
-  position: absolute;
+  position: fixed;
   bottom: 0;
 }
 
@@ -5682,8 +5682,8 @@ body {
   transition: -webkit-transform ease 0.8s;
   transition: transform ease 0.8s;
   transition: transform ease 0.8s, -webkit-transform ease 0.8s;
-  -webkit-transform: translateX(-280%);
-  transform: translateX(-280%);
+  -webkit-transform: translateX(-1000%);
+  transform: translateX(-1000%);
 }
 
 .menu-visible .burger {
@@ -5911,6 +5911,37 @@ body {
   transition-delay: 0.3s;
 }
 
+
+.bloque-survey {
+  background-color: #ECEDD0;
+  padding-top: 100px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  text-align: left;
+}
+
+.title-survey {
+  text-transform: none;
+}
+
+.p-survey {
+  text-align: left;
+}
+
+.logo-survey {
+  max-width: 300px;
+  padding: 20px;
+}
+
+@media all and (min-width: 500px) {
+  .bloque-survey {
+    padding-top: 100px;
+    padding-bottom: 80px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
 .page-tips {
   background-color: #ecedd0;
 }
@@ -6011,6 +6042,7 @@ body {
 .cel {
   width: 45%;
   background-color: #ecedd0;
+
 }
 
 @media (min-width: 576px) {
@@ -7003,6 +7035,13 @@ body {
 
   .flex1 {
     margin-top: 70px;
+  }
+
+  .bloque-survey {
+    padding-top: 150px;
+    padding-bottom: 100px;
+    padding-left: 80px;
+    padding-right: 80px;
   }
 }
 
