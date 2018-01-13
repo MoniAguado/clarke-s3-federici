@@ -1,4 +1,6 @@
-
+.principal {
+	margin-top: 90px;
+}
 .page-resources{
 	background-color: #ECEDD0;
 }
@@ -11,7 +13,7 @@
 	align-content: center;
 	text-align: center;
 	margin-bottom: 30px;
-	margin-top: 40px;
+	margin-top: $socialPaddingTop;
 }
 
 .resource .mask {
@@ -26,8 +28,8 @@
 	height: 400px;
 }
 .view {
-   width: 300px;
-   height: 200px;
+   width: $maskSizeWidth;
+   height: $maskSizeHeidth;
    margin: 10px;
    float: left;
    border-radius: 45px ;
@@ -38,8 +40,8 @@
 }
 
 .view .mask {
-   width: 300px;
-   height: 200px;
+   width: $maskSizeWidth;
+   height: $maskSizeHeidth;
    position: absolute;
    overflow: hidden;
    top: 0;
@@ -47,8 +49,8 @@
 }
 
 .view .logo-resources {
-	width: 300px;
- 	height: 200px;
+	width: $maskSizeWidth;
+ 	height: $maskSizeHeidth;
    display: block;
    position: relative;
 }
@@ -60,8 +62,8 @@
    padding:0;
 	 margin:auto;
    text-indent:-9999px;
-   width:100%;
-   height:100%;
+   width:$widthHeader;
+   height:$widthHeader;
 	 cursor:pointer;
 }
 
