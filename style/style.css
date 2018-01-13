@@ -5483,6 +5483,21 @@ a.text-dark:focus,a.text-dark:hover {
   transform: rotate(-45deg);
 }
 
+#arriba {
+  width: 5px;
+  padding: 5px;
+  position: fixed;
+  bottom: 15px;
+  right: 45px;
+  z-index: 1;
+  opacity: 0.9;
+}
+
+#arriba img {
+  width: 30px;
+  height: 30px;
+}
+
 .container--tips {
   border: 4px double #664596;
   margin: 5px;
