@@ -5730,21 +5730,12 @@ body {
   background-image: url(../images/cover-frog.png);
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: 50% 30%;
 }
 
 #card.flipped {
   -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
-}
-
-.button--cover-invisible {
-  display: none;
-}
-
-.box--cover-button {
-  position: absolute;
-  bottom: 10%;
 }
 
 .box--cover-tocenterbutton {
@@ -5757,6 +5748,13 @@ body {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  position: absolute;
+  bottom: 10%;
+  width: 100vw;
+}
+
+.button--cover-invisible {
+  display: none;
 }
 
 .button--cover:hover {
@@ -5772,10 +5770,6 @@ body {
   animation-timing-function: ease-out;
   -webkit-animation-timing-function: ease-out;
   visibility: visible;
-}
-
-.main-home {
-  background-color: #ECEDD0;
 }
 
 .body {

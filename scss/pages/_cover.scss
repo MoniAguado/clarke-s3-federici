@@ -39,30 +39,30 @@
 	background-image: url(../images/cover-frog.png);
 	background-size: contain;
 	background-repeat: no-repeat;
-	background-position: center center;
+	background-position: 50% 30%;
 }
 
 #card.flipped {
   transform: rotateY( 180deg );
 }
 
-
-.button--cover-invisible {
-	display: none;
-}
-
-.box--cover-button {
-
-	position: absolute;
-	bottom: 10%;
-	// margin: 0 auto;
-
-}
-
 .box--cover-tocenterbutton {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	position: absolute;
+	bottom: 10%;
+	width: 100vw;
+}
+
+// .box--cover-button {
+// 	position: absolute;
+// 	bottom: 50%;
+// 	// left: 10%;
+// }
+
+.button--cover-invisible {
+	display: none;
 }
 
 .button--cover:hover {

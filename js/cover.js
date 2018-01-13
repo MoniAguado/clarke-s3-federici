@@ -6,7 +6,7 @@ function flip() {
 
 function appearButton() {
 	document.querySelector('.button--cover').classList.remove('button--cover-invisible');
-	document.querySelector('.button--cover').classList.add('bigEntrance');
+	document.querySelector('.box--cover-tocenterbutton').classList.add('bigEntrance');
 }
 
 setTimeout(flip, 3000);
