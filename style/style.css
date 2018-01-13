@@ -5417,9 +5417,9 @@ a.text-dark:focus,a.text-dark:hover {
 #button-menu {
   cursor: pointer;
   padding: 10px 35px 16px 0px;
-  width: 25%;
   height: 25%;
   margin-left: 20px;
+  margin-right: 20px;
   z-index: 1;
 }
 
@@ -5882,6 +5882,17 @@ body {
   -ms-flex-align: center;
   align-items: center;
   padding: 20px;
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: -webkit-transform ease 1s;
+  transition: -webkit-transform ease 1s;
+  transition: transform ease 1s;
+  transition: transform ease 1s, -webkit-transform ease 1s;
+}
+
+.new--position {
+  -webkit-transform: rotateX(360deg);
+  transform: rotateX(360deg);
 }
 
 .hidden {
@@ -5941,6 +5952,7 @@ body {
 
 .cel {
   width: 45%;
+  background-color: #ecedd0;
 }
 
 @media (min-width: 576px) {
