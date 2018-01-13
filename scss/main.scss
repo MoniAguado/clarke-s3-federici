@@ -1,13 +1,12 @@
-//fuentes
-@import url('https://fonts.googleapis.com/css?family=Abel|Lilita+One');
-//core
+// Core
+// @import 'core/mixins';
+// @import 'core/functions';
 @import 'core/variables';
 
 // Layout
 @import 'layout/footer';
 @import 'layout/grid';
 @import 'layout/header';
-@import 'layout/bootstrap.min';
 
 // Components
 @import 'components/buttons';
@@ -18,8 +17,6 @@
 @import 'components/popup';
 @import 'components/titles';
 @import 'components/typography';
-@import 'components/socialmedia';
-@import 'components/menu';
 
 // Pages
 @import 'pages/contact';
@@ -29,5 +26,5 @@
 @import 'pages/home';
 @import 'pages/quiz';
 @import 'pages/resources';
+@import 'pages/survey';
 @import 'pages/tips';
-@import 'pages/statistics';

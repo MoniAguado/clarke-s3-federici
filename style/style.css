@@ -1,13 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Abel|Lilita+One");/*fuentes*//*header*//*Popup*//*social media*//*footer*//*home*//*contenedor consejos*/.footer {
   background-color: #403F3D;
-  width: 100vh;
+  width: 100%;
   color: #ECEDD0;
-  padding: 10px;
-  padding-bottom: 20px;
-}
-
-.col-12 {
-  position: fixed;
+  position: absolute;
+  bottom: 0;
 }
 
 .flex-footer {
@@ -18,9 +14,10 @@
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  position: relative;
+  padding-top: 20px;
 }
 
 .footer-nav {
@@ -48,6 +45,7 @@
 
 .copyright {
   text-align: center;
+  padding-bottom: 20px;
 }
 
 .header {
@@ -5414,6 +5412,55 @@ a.text-dark:focus,a.text-dark:hover {
   font-weight: bold;
 }
 
+.button-home {
+  height: 40px;
+  width: 100px;
+  background-color: #b6fc9f;
+  border-color: 1px solid #403F3D;
+}
+
+.button-tips {
+  border-radius: 100px 100px 100px 0px;
+  -moz-border-radius: 100px 100px 100px 0px;
+  -webkit-border-radius: 100px 100px 100px 0px;
+  border: 0px solid #000000;
+  -webkit-box-shadow: 4px -2px 6px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 4px -2px 6px 0px rgba(0, 0, 0, 0.3);
+}
+
+.button-resources {
+  border-radius: 100px 100px 0px 100px;
+  -moz-border-radius: 100px 100px 0px 100px;
+  -webkit-border-radius: 100px 100px 0px 100px;
+  border: 0px solid #000000;
+  -webkit-box-shadow: -4px -3px 6px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: -4px -3px 6px 0px rgba(0, 0, 0, 0.3);
+}
+
+.button-statistics,.button-game {
+  border-radius: 100px 0px 100px 100px;
+  -moz-border-radius: 100px 0px 100px 100px;
+  -webkit-border-radius: 100px 0px 100px 100px;
+  border: 0px solid #000000;
+  -webkit-box-shadow: -4px 3px 6px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: -4px 3px 6px 0px rgba(0, 0, 0, 0.3);
+}
+
+.button-survey {
+  border-radius: 0px 100px 100px 100px;
+  -moz-border-radius: 0px 100px 100px 100px;
+  -webkit-border-radius: 0px 100px 100px 100px;
+  border: 0px solid #000000;
+  -webkit-box-shadow: 4px 3px 6px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 4px 3px 6px 0px rgba(0, 0, 0, 0.3);
+}
+
+.button-home:hover {
+  background-color: #b6fc9f;
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+}
+
 #button-menu {
   cursor: pointer;
   padding: 10px 35px 16px 0px;
@@ -5495,6 +5542,15 @@ a.text-dark:focus,a.text-dark:hover {
 .link:hover {
   font-weight: bold;
   color: #2AB24A;
+}
+
+.link--tips,.link--game,.link--recources,.link--statistics,.link--survey {
+  color: #403F3D;
+}
+
+.link--tips:hover,.link--game:hover,.link--recources:hover,.link--statistics:hover,.link--survey:hover {
+  color: #403F3D;
+  text-decoration: none;
 }
 
 p {
@@ -5708,7 +5764,7 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  height: 100vh;
+  padding-top: 70px;
 }
 
 .flex1,.flex2,.flex3 {
@@ -5724,11 +5780,11 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin: 20px;
+  margin: 30px;
 }
 
 .link--recources,.link--tips,.link--statistics,.link--survey,.link--game {
-  background-color: #2AB24A;
+  background-color: #b6fc9f;
   height: 40px;
   width: 100px;
   font-size: 15px;
@@ -5739,13 +5795,15 @@ body {
 .box--phrase {
   font-family: "Lilita One", cursive;
   font-size: 30px;
-  margin: 20px;
+  margin: 30px;
+  color: #664596;
   text-align: center;
 }
 
 .box--sendemail {
-  margin: 20px;
-  margin-top: 70px;
+  margin: 30px;
+  margin-top: 50px;
+  text-align: left;
 }
 
 .page-quiz {
@@ -6935,6 +6993,16 @@ body {
 
   .text-sm-center {
     text-align: center !important;
+  }
+}
+
+@media all and (min-width: 768px) {
+  .flex-footer {
+    padding: 20px;
+  }
+
+  .flex1 {
+    margin-top: 70px;
   }
 }
 
@@ -9255,6 +9323,13 @@ body {
 
   .text-xl-center {
     text-align: center !important;
+  }
+}
+
+@media all and (min-width: 1280) {
+  .flex-footer {
+    max-width: 1000px;
+    padding: 20px;
   }
 }
 
