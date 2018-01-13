@@ -1,6 +1,5 @@
 
 .body {
-
 	background-color: $backgroundColorHome;
 }
 .main-home {
@@ -8,7 +7,7 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	height: 100vh;
+	padding-top: 70px;
 }
 
 .flex1, .flex2, .flex3 {
@@ -21,7 +20,7 @@
 
 
 .link--recources, .link--tips, .link--statistics, .link--survey, .link--game {
-	background-color: $backgroundColorButtonHome;
+	background-color: rgb(182, 252, 159);
 	height: $heightButtonHome;
 	width: $widthButtonHome;
 	font-size: $fontSizeButton;
@@ -34,10 +33,18 @@
 	font-family: $fontPhraseHome;
 	font-size: $fontSizePhraseHome;
 	margin: $marginBoxHome;
+	color: $fontTitleColor;
 	text-align: center;
 }
 
 .box--sendemail {
 	margin: $marginBoxHome;
-	margin-top: 70px;
+	margin-top: 50px;
+	text-align: left;
+}
+
+@media all and (min-width:768px) {
+	.flex1 {
+		margin-top: 70px;
+	}
 }

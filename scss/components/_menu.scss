@@ -8,7 +8,7 @@
 	// para que cambie el background
 	transition: transform ease 0.8s;
 	// para que se mueva hacia la izquierda y se esconda
-	transform: translateX(-280%);
+	transform: translateX(-1000%);
 	.menu-visible & {
 		// o .menu-visible .menu
 		// left: 0; es otra opción. cambiar en transition transform por left si elegimos esta opcion

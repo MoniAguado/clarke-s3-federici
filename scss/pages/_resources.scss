@@ -1,14 +1,21 @@
-
+.principal {
+	margin-top: 90px;
+}
 .page-resources{
 	background-color: #ECEDD0;
 }
+.div-resource{
+	display: flex;
+  justify-content: center;
+}
+.resource-music{
+	align-items: center;
+	align-content: center;
+	text-align: center;
+	margin-bottom: 30px;
+	margin-top: $socialPaddingTop;
+}
 
-.resource-music{
-	align-items: center;
-}
-.resource-music{
-	align-items: center;
-}
 .resource .mask {
    opacity: 0;
    overflow:visible;
@@ -16,9 +23,13 @@
    box-sizing:border-box;
    transition: all 0.4s ease-in-out;
 }
+.player{
+	width:90%;
+	height: 400px;
+}
 .view {
-   width: 300px;
-   height: 200px;
+   width: $maskSizeWidth;
+   height: $maskSizeHeidth;
    margin: 10px;
    float: left;
    border-radius: 45px ;
@@ -29,8 +40,8 @@
 }
 
 .view .mask {
-   width: 300px;
-   height: 200px;
+   width: $maskSizeWidth;
+   height: $maskSizeHeidth;
    position: absolute;
    overflow: hidden;
    top: 0;
@@ -38,8 +49,8 @@
 }
 
 .view .logo-resources {
-	width: 300px;
- 	height: 200px;
+	width: $maskSizeWidth;
+ 	height: $maskSizeHeidth;
    display: block;
    position: relative;
 }
@@ -49,14 +60,16 @@
    display: inline-block;
    text-decoration: none;
    padding:0;
+	 margin:auto;
    text-indent:-9999px;
-   width:50px;
-   height:50px;
+   width:$widthHeader;
+   height:$widthHeader;
+	 cursor:pointer;
 }
 
 .resource a.info {
    position:relative;
-   top:-110px;
+   top:-200px;
    opacity:0;
    transform:scale(0,0);
    transition: transform 0.2s 0.1s ease-in, opacity 0.1s ease-in-out;
