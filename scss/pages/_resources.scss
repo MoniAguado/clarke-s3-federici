@@ -2,23 +2,28 @@
 .page-resources{
 	background-color: #ECEDD0;
 }
-
+.div-resource{
+	display: flex;
+  justify-content: center;
+}
 .resource-music{
 	align-items: center;
 	align-content: center;
+	text-align: center;
+	margin-bottom: 30px;
+	margin-top: 40px;
 }
-iframe{
-	margin-left: auto;
-}
-.resource-music{
-	align-items: center;
-}
+
 .resource .mask {
    opacity: 0;
    overflow:visible;
    border:0px solid rgba(0,0,0,0.7);
    box-sizing:border-box;
    transition: all 0.4s ease-in-out;
+}
+.player{
+	width:90%;
+	height: 400px;
 }
 .view {
    width: 300px;
