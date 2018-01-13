@@ -7,25 +7,67 @@
 		<link rel="stylesheet" href="style/style.css">
 	</head>
 
-	<body class="container-fluid page-quiz">
-		<header>
-			<ul>
-				<li>Consejos</li>
-				<li>Recursos</li>
-				<li>Datos</li>
-				<li>Encuesta</li>
-				<li>Juego</li>
-				<li>Contacto</li>
-			</ul>
-			<div>
-				<p>Teléfono</p>
-				<p>016</p>
+	<body class="body container-fluid page-quiz">
+		<header class="col-12">
+			<div class="header">
+				<div class="button-menu" id="button-menu"><a id="nav-toggle" href="#"><span></span></a></div>
+				<nav class="burger" id="burger" data-idDesplegar="burger">
+					<!-- oculto -->
+					<container class="container">
+						<div class="container-menu">
+							<ul class="menu" id="menu">
+								<li class="nav-item nav-item1">
+									<a class="nav-link" href="tips.html">Consejos</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="resources.html">Recursos</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="statistics.html">Datos</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="survey.html">Encuesta</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="quiz.html">Juego</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="contact.html">Contacto</a>
+								</li>
+							</ul>
+						</div>
+					</container>
+				</nav>
+				<div class="phone-header">
+					<p>Teléfono contra el maltrato: 016</p>
+				</div>
+				<a href="home.html"><img src="images/home.png" alt="Home" class="home"></a>
 			</div>
-			<img src="https://www.placehold.it/100x100" alt="Home">
 		</header>
 
-		<main>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<main>
 			<div class="modal-wrapper" id="popup">
    			<div class="popup-contenedor">
       		<h2>pop up</h2>
@@ -80,11 +122,55 @@
 						<p>Meter por JS opciones (Efectivamente!, ¿de verdad crees que controlar a tu pareja es sano?...)</p>
 					</div>
 				</div>
-				<button class="button button--quiz-toHome"><a class="link link--quiz-toHome"href="home.html">Descubre más sobre los mitos del amor romántico</a></button>
+				<button class="button button--quiz-toHome">
+					<a class="link link--quiz-toHome"href="home.html">Descubre más sobre los mitos del amor romántico</a>
+				</button>
 			</div>
 		</main>
-		<footer>
-		</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<a id="arriba" title="arriba">
+			<img src="images/ico-arrow.png" alt="arriba">
+		</a>
+
+		 <div class="row">
+		 <footer class="footer col-12">
+			 <div class="flex-footer">
+				 <ul class="footer-nav">
+					 <li class="footer-nav-item"><a class="footer-nav-link" href="tips.html">Consejos</a></li>
+					 <li class="footer-nav-item"><a class="footer-nav-link" href="resources.html">Recursos</a></li>
+					 <li class="footer-nav-item"><a class="footer-nav-link" href="statistics.html">Datos</a></li>
+					 <li class="footer-nav-item"><a class="footer-nav-link" href="survey.html">Encuesta</a></li>
+					 <li class="footer-nav-item"><a class="footer-nav-link" href="quiz.html">Juego</a></li>
+					 <li class="footer-nav-item"><a class="footer-nav-link" href="contact.html">Contacto</a></li>
+				 </ul>
+				 <div>
+					 <ul>
+						 <li class="contact-phones">Teléfonos de contacto:</li>
+						 <li class="footer-phone">Teléfono del Ministerio: 016</li>
+						 <li class="footer-phone">Teléfono de FMP: 900 502 061</li>
+					 </ul>
+				 </div>
+			 </div>
+			 <div class="copyright">Federici &copy 2018</div>
+		 </footer>
+	 </div>
 		<script type="text/javascript" src="js/main.min.js"></script>
+		<script type="text/javascript" src="js/quiz.js"></script>
 	</body>
 </html>
