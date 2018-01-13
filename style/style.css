@@ -1028,6 +1028,12 @@ body {
   }
 }
 
+@media all and (min-width: 768px) {
+  .footer {
+    max-width: 550px;
+  }
+}
+
 @media (min-width: 768px) {
   .container {
     max-width: 720px;
