@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Abel|Lilita+One");/*fuentes*//*header*//*Popup*//*social media*//*survey*//*footer*//*home*//*contenedor consejos*/.footer {
   background-color: #403F3D;
   width: 100%;
-  height: 150px;
   color: #ECEDD0;
   position: fixed;
   bottom: 0;
@@ -15,10 +14,10 @@
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
   position: relative;
+  padding-top: 20px;
 }
 
 .footer-nav {
@@ -42,6 +41,11 @@
 
 .footer a {
   text-decoration: none;
+}
+
+.copyright {
+  text-align: center;
+  padding-bottom: 20px;
 }
 
 .header {
@@ -79,6 +83,7 @@
   width: 50%;
   font-size: 12px;
   color: #ECEDD0;
+<<<<<<< HEAD
 }
 
 .home {
@@ -102,6 +107,8 @@
 
 .new-position {
   left: 50%;
+=======
+>>>>>>> home-style
 }/*!
  * Bootstrap v4.0.0-beta.2 (https://getbootstrap.com)
  * Copyright 2011-2017 The Bootstrap Authors
@@ -5431,6 +5438,55 @@ a.text-dark:focus,a.text-dark:hover {
   font-weight: bold;
 }
 
+.button-home {
+  height: 40px;
+  width: 100px;
+  background-color: #b6fc9f;
+  border-color: 1px solid #403F3D;
+}
+
+.button-tips {
+  border-radius: 100px 100px 100px 0px;
+  -moz-border-radius: 100px 100px 100px 0px;
+  -webkit-border-radius: 100px 100px 100px 0px;
+  border: 0px solid #000000;
+  -webkit-box-shadow: 4px -2px 6px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 4px -2px 6px 0px rgba(0, 0, 0, 0.3);
+}
+
+.button-resources {
+  border-radius: 100px 100px 0px 100px;
+  -moz-border-radius: 100px 100px 0px 100px;
+  -webkit-border-radius: 100px 100px 0px 100px;
+  border: 0px solid #000000;
+  -webkit-box-shadow: -4px -3px 6px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: -4px -3px 6px 0px rgba(0, 0, 0, 0.3);
+}
+
+.button-statistics,.button-game {
+  border-radius: 100px 0px 100px 100px;
+  -moz-border-radius: 100px 0px 100px 100px;
+  -webkit-border-radius: 100px 0px 100px 100px;
+  border: 0px solid #000000;
+  -webkit-box-shadow: -4px 3px 6px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: -4px 3px 6px 0px rgba(0, 0, 0, 0.3);
+}
+
+.button-survey {
+  border-radius: 0px 100px 100px 100px;
+  -moz-border-radius: 0px 100px 100px 100px;
+  -webkit-border-radius: 0px 100px 100px 100px;
+  border: 0px solid #000000;
+  -webkit-box-shadow: 4px 3px 6px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 4px 3px 6px 0px rgba(0, 0, 0, 0.3);
+}
+
+.button-home:hover {
+  background-color: #b6fc9f;
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+}
+
 #button-menu {
   cursor: pointer;
   padding: 10px 35px 16px 0px;
@@ -5488,6 +5544,22 @@ a.text-dark:focus,a.text-dark:hover {
   padding: 5px;
 }
 
+.label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.cel {
+  border: 0;
+  -webkit-appearance: none;
+  border-bottom: 2px solid #664596;
+}
+
 .link {
   text-decoration: none;
   color: #664596;
@@ -5496,6 +5568,15 @@ a.text-dark:focus,a.text-dark:hover {
 .link:hover {
   font-weight: bold;
   color: #2AB24A;
+}
+
+.link--tips,.link--game,.link--recources,.link--statistics,.link--survey {
+  color: #403F3D;
+}
+
+.link--tips:hover,.link--game:hover,.link--recources:hover,.link--statistics:hover,.link--survey:hover {
+  color: #403F3D;
+  text-decoration: none;
 }
 
 p {
@@ -5627,8 +5708,13 @@ body {
   transition: -webkit-transform ease 0.8s;
   transition: transform ease 0.8s;
   transition: transform ease 0.8s, -webkit-transform ease 0.8s;
+<<<<<<< HEAD
   -webkit-transform: translateX(-1000%);
   transform: translateX(-1000%);
+=======
+  -webkit-transform: translateX(-280%);
+  transform: translateX(-280%);
+>>>>>>> home-style
 }
 
 .menu-visible .burger {
@@ -5639,12 +5725,6 @@ body {
 }
 
 .container-menu {
-  position: relative;
-  height: 50%;
-  width: 0;
-}
-
-.menu {
   width: 200px;
   background-color: rgba(220, 211, 234, 0.96);
   margin-top: 70px;
@@ -5653,10 +5733,10 @@ body {
   z-index: 1;
 }
 
-.nav-item {
+.menu {
   list-style: none;
   text-align: left;
-  border-top: 1px solid rgba(42, 178, 74, 0.6);
+  padding-left: 0;
 }
 
 .nav-item1 {
@@ -5669,6 +5749,7 @@ body {
   color: #664596;
   font-weight: 300;
   padding: 7%;
+  border-top: 1px solid rgba(42, 178, 74, 0.6);
 }
 
 .nav-link:hover {
@@ -5696,8 +5777,25 @@ body {
   color: white;
 }
 
-.main-home {
+.body {
   background-color: #ECEDD0;
+}
+
+.main-home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-top: 70px;
 }
 
 .flex1,.flex2,.flex3 {
@@ -5713,11 +5811,11 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin: 20px;
+  margin: 30px;
 }
 
 .link--recources,.link--tips,.link--statistics,.link--survey,.link--game {
-  background-color: #2AB24A;
+  background-color: #b6fc9f;
   height: 40px;
   width: 100px;
   font-size: 15px;
@@ -5728,13 +5826,15 @@ body {
 .box--phrase {
   font-family: "Lilita One", cursive;
   font-size: 30px;
-  margin: 20px;
+  margin: 30px;
+  color: #664596;
   text-align: center;
 }
 
 .box--sendemail {
-  margin: 20px;
-  margin-top: 70px;
+  margin: 30px;
+  margin-top: 50px;
+  text-align: left;
 }
 
 .page-quiz {
@@ -6829,6 +6929,16 @@ body {
 
   .text-sm-center {
     text-align: center !important;
+  }
+}
+
+@media all and (min-width: 768px) {
+  .flex-footer {
+    padding: 20px;
+  }
+
+  .flex1 {
+    margin-top: 70px;
   }
 }
 
@@ -9149,6 +9259,13 @@ body {
 
   .text-xl-center {
     text-align: center !important;
+  }
+}
+
+@media all and (min-width: 1280) {
+  .flex-footer {
+    max-width: 1000px;
+    padding: 20px;
   }
 }
 
