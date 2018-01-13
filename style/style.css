@@ -5758,16 +5758,24 @@ body {
   background-color: #ECEDD0;
 }
 
-.resource-music {
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+.div-resource {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .resource-music {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 40px;
 }
 
 .resource .mask {
@@ -5778,6 +5786,11 @@ body {
   box-sizing: border-box;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
+}
+
+.player {
+  width: 90%;
+  height: 400px;
 }
 
 .view {
@@ -5813,14 +5826,16 @@ body {
   display: inline-block;
   text-decoration: none;
   padding: 0;
+  margin: auto;
   text-indent: -9999px;
-  width: 50px;
-  height: 50px;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
 }
 
 .resource a.info {
   position: relative;
-  top: -110px;
+  top: -200px;
   opacity: 0;
   -webkit-transform: scale(0, 0);
   transform: scale(0, 0);
