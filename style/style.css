@@ -5464,9 +5464,9 @@ a.text-dark:focus,a.text-dark:hover {
 #button-menu {
   cursor: pointer;
   padding: 10px 35px 16px 0px;
-  width: 25%;
   height: 25%;
   margin-left: 20px;
+  margin-right: 20px;
   z-index: 1;
 }
 
@@ -5909,6 +5909,108 @@ body {
   transform: scale(1, 1);
   -webkit-transition-delay: 0.3s;
   transition-delay: 0.3s;
+}
+
+.page-tips {
+  background-color: #ecedd0;
+}
+
+.page-statistics {
+  background-color: #ecedd0;
+}
+
+.section--statistics {
+  margin-bottom: 100px;
+}
+
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 20px;
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: -webkit-transform ease 1s;
+  transition: -webkit-transform ease 1s;
+  transition: transform ease 1s;
+  transition: transform ease 1s, -webkit-transform ease 1s;
+}
+
+.new--position {
+  -webkit-transform: rotateX(360deg);
+  transform: rotateX(360deg);
+}
+
+.hidden {
+  display: none;
+}
+
+.title--question {
+  text-align: center;
+}
+
+.wrapper--question {
+  -webkit-box-shadow: 6px 0px 39px -5px rgba(0, 0, 0, 0.41);
+  box-shadow: 6px 0px 39px -5px rgba(0, 0, 0, 0.41);
+  -webkit-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+  -webkit-transition: -webkit-transform ease 2s;
+  transition: -webkit-transform ease 2s;
+  transition: transform ease 2s;
+  transition: transform ease 2s, -webkit-transform ease 2s;
+}
+
+.new--position {
+  -webkit-transform: rotateY(360deg);
+  transform: rotateY(360deg);
+}
+
+.wrapper--answer {
+  -webkit-box-shadow: 6px 0px 39px -5px rgba(0, 0, 0, 0.41);
+  box-shadow: 6px 0px 39px -5px rgba(0, 0, 0, 0.41);
+}
+
+.button--statistics {
+  width: 40%;
+  display: block;
+}
+
+.wrapper--button {
+  padding-bottom: 30px;
+}
+
+.form-statistics {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.label {
+  display: none;
+}
+
+.cel {
+  width: 45%;
+  background-color: #ecedd0;
 }
 
 @media (min-width: 576px) {
