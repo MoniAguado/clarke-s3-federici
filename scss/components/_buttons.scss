@@ -71,9 +71,10 @@
 // efecto transition burger
 #button-menu {
 	cursor: pointer; padding: 10px 35px 16px 0px;
-	width: $sizeBurger;
+	// width: $sizeBurger;
 	height: $sizeBurger;
 	margin-left: 20px;
+	margin-right: 20px;
 	z-index: 1;
 }
 
