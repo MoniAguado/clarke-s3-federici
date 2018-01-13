@@ -31,6 +31,13 @@
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center center;
+
+	@media all and (min-width:768px) {
+  	background: radial-gradient(transparent 40%, #664596 100%), url(../images/cover-couple2.png);
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center center;
+	 }
 }
 
 #card .back {
@@ -55,12 +62,6 @@
 	width: 100vw;
 }
 
-// .box--cover-button {
-// 	position: absolute;
-// 	bottom: 50%;
-// 	// left: 10%;
-// }
-
 .button--cover-invisible {
 	display: none;
 }
@@ -68,6 +69,12 @@
 .button--cover:hover {
 	text-decoration: none;
 	color: white;
+}
+
+.button--cover {
+	@media all and (max-width:768px) {
+		font-weight: bold;
+	 }
 }
 
 .bigEntrance {
