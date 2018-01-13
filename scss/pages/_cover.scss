@@ -1,8 +1,12 @@
+.page-cover {
+	position: relative;
+}
+
 .container-flip {
-  width: 200px;
-  height: 260px;
+  width: 100vw;
+  height: 100vh;
   position: relative;
-  perspective: 800px;
+  perspective: 1000px;
 }
 
 #card {
@@ -23,11 +27,19 @@
 }
 
 #card .front {
-  background: red;
+  background: radial-gradient(transparent 40%, #664596 100%), url(../images/cover-couple2-b.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center center;
 }
+
 #card .back {
-  background: blue;
+  background: #8AD59C;
   transform: rotateY( 180deg );
+	background-image: url(../images/cover-frog.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center center;
 }
 
 #card.flipped {
@@ -35,20 +47,19 @@
 }
 
 
-
-// .button--cover-invisible {
-// 	display: none;
-// }
-//
-// .button--cover-visible {
-// 	display: block;
-// }
-
-
-
-
+.button--cover-invisible {
+	display: none;
+}
 
 .box--cover-button {
+
+	position: absolute;
+	bottom: 10%;
+	// margin: 0 auto;
+
+}
+
+.box--cover-tocenterbutton {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -59,106 +70,43 @@
 	color: white;
 }
 
+.bigEntrance {
+	animation-name: bigEntrance;
+	-webkit-animation-name: bigEntrance;
+	animation-duration: 1.6s;
+	-webkit-animation-duration: 1.6s;
+	animation-timing-function: ease-out;
+	-webkit-animation-timing-function: ease-out;
+	visibility: visible;
+}
 
-
-
-// .page-cover {
-// 	display: flex;
-// 	justify-content: center;
-// 	align-items: flex-end;
-// 	background-color: #664596;
-// 	// background-size: contain;
-// 	// background-repeat: no-repeat;
-// 	// background-position: center center;
-// 	min-height: 100vh;
-// 	//
-// 	// @media all and (min-width: 768px) {
-// 	// 	background-image: url(../images/cover-couple2.png);
-// 	// 	background-position: top;
-// 	// }
-// }
-//
-// .flip1 .flip2 {
-// 	position: absolute;
-// 	backface-visibility: hidden;
-// }
-//
-// .flip2 {
-// 	transform: rotateY(-180deg);
-// }
-//
-// .rotated1 {
-// 	// backface-visibility: hidden;
-// 	// // position: absolute;
-// 	// top: 0;
-// 	// left: 0;
-// 	transform-style: preserve-3d;
-//   animation-duration: 3s;
-//   animation-name: example;
-//   animation-iteration-count: 1;
-//   animation-timing-function: linear;
-//   animation-fill-mode: forwards;
-// }
-//
-// .rotated2 {
-// 	// backface-visibility: hidden;
-// 	// // position: absolute;
-// 	// top: 0;
-// 	// left: 0;
-// 	transform-style: preserve-3d;
-//   animation-duration: 3s;
-//   animation-name: example1;
-//   animation-iteration-count: 1;
-//   animation-timing-function: linear;
-//   animation-fill-mode: forwards;
-// }
-//
-//
-// @keyframes example {
-//   from {
-//
-// 		// background-image: url(../images/cover-couple2-b.png);
-//       // background-color: skyblue;
-//     transform: rotateY(0deg);
-//
-//   }
-//   to {
-// 		// background-image: url(../images/cover-frog.png);
-//           // background-color: red;
-//     transform: rotateY(90deg);
-//   }
-// }
-//
-// @keyframes example2 {
-//   from {
-//
-// 		// background-image: url(../images/cover-couple2-b.png);
-//       // background-color: skyblue;
-//     transform: rotateY(90deg);
-//
-//   }
-//   to {
-// 		// background-image: url(../images/cover-frog.png);
-//           // background-color: red;
-//     transform: rotateY(180deg);
-//   }
-// }
-//
-// .box--cover-button {
-// 	margin: 40px;
-// 	padding-bottom: 20px;
-//
-// 	@media all and (min-width: 400px) {
-// 		padding-bottom: 10px;
-// 	}
-//
-// 	@media all and (min-width: 768px) {
-// 		margin: 10px;
-// 		margin-bottom: 20px;
-// 		padding-bottom: 3px;
-// 	}
-// }
-//
-// .button--cover {
-// 	font-weight: bold;
-// }
+@keyframes bigEntrance {
+	0% {
+		transform: scale(0.3) rotate(6deg) translateX(-30%) translateY(30%);
+		opacity: 0.2;
+	}
+	30% {
+		transform: scale(1.05) rotate(-2deg) translateX(2%) translateY(-2%);
+		opacity: 1;
+	}
+	45% {
+		transform: scale(0.95) rotate(1deg) translateX(0%) translateY(0%);
+		opacity: 1;
+	}
+	60% {
+		transform: scale(1.02) rotate(-1deg) translateX(0%) translateY(0%);
+		opacity: 1;
+	}
+	75% {
+		transform: scale(0.98) rotate(1deg) translateX(0%) translateY(0%);
+		opacity: 1;
+	}
+	90% {
+		transform: scale(1.02) rotate(0deg) translateX(0%) translateY(0%);
+		opacity: 1;
+	}
+	100% {
+		transform: scale(1) rotate(0deg) translateX(0%) translateY(0%);
+		opacity: 1;
+	}
+}

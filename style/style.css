@@ -5689,12 +5689,16 @@ body {
   border-radius: 15px;
 }
 
-.container-flip {
-  width: 200px;
-  height: 260px;
+.page-cover {
   position: relative;
-  -webkit-perspective: 800px;
-  perspective: 800px;
+}
+
+.container-flip {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
 }
 
 #card {
@@ -5720,13 +5724,20 @@ body {
 }
 
 #card .front {
-  background: red;
+  background: radial-gradient(transparent 40%, #664596 100%), url(../images/cover-couple2-b.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 #card .back {
-  background: blue;
+  background: #8AD59C;
   -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
+  background-image: url(../images/cover-frog.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 #card.flipped {
@@ -5734,7 +5745,16 @@ body {
   transform: rotateY(180deg);
 }
 
+.button--cover-invisible {
+  display: none;
+}
+
 .box--cover-button {
+  position: absolute;
+  bottom: 10%;
+}
+
+.box--cover-tocenterbutton {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5749,6 +5769,16 @@ body {
 .button--cover:hover {
   text-decoration: none;
   color: white;
+}
+
+.bigEntrance {
+  animation-name: bigEntrance;
+  -webkit-animation-name: bigEntrance;
+  animation-duration: 1.6s;
+  -webkit-animation-duration: 1.6s;
+  animation-timing-function: ease-out;
+  -webkit-animation-timing-function: ease-out;
+  visibility: visible;
 }
 
 .main-home {
@@ -9371,6 +9401,94 @@ body {
 
   to {
     background-position: 0 0;
+  }
+}
+
+@-webkit-keyframes bigEntrance {
+  0% {
+    -webkit-transform: scale(0.3) rotate(6deg) translateX(-30%) translateY(30%);
+    transform: scale(0.3) rotate(6deg) translateX(-30%) translateY(30%);
+    opacity: 0.2;
+  }
+
+  30% {
+    -webkit-transform: scale(1.05) rotate(-2deg) translateX(2%) translateY(-2%);
+    transform: scale(1.05) rotate(-2deg) translateX(2%) translateY(-2%);
+    opacity: 1;
+  }
+
+  45% {
+    -webkit-transform: scale(0.95) rotate(1deg) translateX(0%) translateY(0%);
+    transform: scale(0.95) rotate(1deg) translateX(0%) translateY(0%);
+    opacity: 1;
+  }
+
+  60% {
+    -webkit-transform: scale(1.02) rotate(-1deg) translateX(0%) translateY(0%);
+    transform: scale(1.02) rotate(-1deg) translateX(0%) translateY(0%);
+    opacity: 1;
+  }
+
+  75% {
+    -webkit-transform: scale(0.98) rotate(1deg) translateX(0%) translateY(0%);
+    transform: scale(0.98) rotate(1deg) translateX(0%) translateY(0%);
+    opacity: 1;
+  }
+
+  90% {
+    -webkit-transform: scale(1.02) rotate(0deg) translateX(0%) translateY(0%);
+    transform: scale(1.02) rotate(0deg) translateX(0%) translateY(0%);
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: scale(1) rotate(0deg) translateX(0%) translateY(0%);
+    transform: scale(1) rotate(0deg) translateX(0%) translateY(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes bigEntrance {
+  0% {
+    -webkit-transform: scale(0.3) rotate(6deg) translateX(-30%) translateY(30%);
+    transform: scale(0.3) rotate(6deg) translateX(-30%) translateY(30%);
+    opacity: 0.2;
+  }
+
+  30% {
+    -webkit-transform: scale(1.05) rotate(-2deg) translateX(2%) translateY(-2%);
+    transform: scale(1.05) rotate(-2deg) translateX(2%) translateY(-2%);
+    opacity: 1;
+  }
+
+  45% {
+    -webkit-transform: scale(0.95) rotate(1deg) translateX(0%) translateY(0%);
+    transform: scale(0.95) rotate(1deg) translateX(0%) translateY(0%);
+    opacity: 1;
+  }
+
+  60% {
+    -webkit-transform: scale(1.02) rotate(-1deg) translateX(0%) translateY(0%);
+    transform: scale(1.02) rotate(-1deg) translateX(0%) translateY(0%);
+    opacity: 1;
+  }
+
+  75% {
+    -webkit-transform: scale(0.98) rotate(1deg) translateX(0%) translateY(0%);
+    transform: scale(0.98) rotate(1deg) translateX(0%) translateY(0%);
+    opacity: 1;
+  }
+
+  90% {
+    -webkit-transform: scale(1.02) rotate(0deg) translateX(0%) translateY(0%);
+    transform: scale(1.02) rotate(0deg) translateX(0%) translateY(0%);
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: scale(1) rotate(0deg) translateX(0%) translateY(0%);
+    transform: scale(1) rotate(0deg) translateX(0%) translateY(0%);
+    opacity: 1;
   }
 }
 
