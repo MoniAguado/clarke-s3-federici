@@ -5912,7 +5912,8 @@ body {
 }
 
 .title--quiz {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  font-size: 25px;
 }
 
 .quiz-item-box {
@@ -5929,7 +5930,16 @@ body {
   text-align: justify;
 }
 
-.question-box p {
+.author {
+  text-align: right;
+}
+
+.scale-out-horizontal {
+  -webkit-animation: scale-out-horizontal 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  animation: scale-out-horizontal 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+
+.question {
   text-align: justify;
 }
 
@@ -5939,6 +5949,7 @@ body {
   display: flex;
   -ms-flex-pack: distribute;
   justify-content: space-around;
+  margin: 20px;
 }
 
 .icons-to-response img {
@@ -5995,16 +6006,60 @@ body {
   width: 45px;
 }
 
+.result span {
+  color: #664596;
+  font-weight: bold;
+  font-style: italic;
+}
+
 .feedback {
   display: block;
+  font-size: 20px;
 }
 
 .feedbackWin {
   color: green;
+  font-weight: bold;
+  padding: 5px;
+  border: 3px #2AB24A;
 }
 
 .feedbackLose {
   color: red;
+  font-weight: bold;
+  padding: 5px;
+  border: 3px red;
+}
+
+.iconAndFeedback {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+
+.icon-container {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #664596;
+  margin: 0 auto;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-right: 10px;
+}
+
+.icon-container-right {
+  background-image: url(/images/tick-mark.svg);
+}
+
+.icon-container-wrong {
+  background-image: url(/images/delete.svg);
 }
 
 .button--quiz-toHome {
@@ -9873,6 +9928,34 @@ body {
   100% {
     -webkit-transform: scale(1) rotate(0deg) translateX(0%) translateY(0%);
     transform: scale(1) rotate(0deg) translateX(0%) translateY(0%);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes scale-out-horizontal {
+  0% {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes scale-out-horizontal {
+  0% {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
     opacity: 1;
   }
 }

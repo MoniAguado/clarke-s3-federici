@@ -3,7 +3,8 @@ body {
 }
 
 .title--quiz {
-	margin-bottom: 20px;
+	margin-bottom: 10px;
+	font-size: 25px;
 }
 
 .quiz-item-box {
@@ -26,13 +27,48 @@ body {
 	text-align: justify;
 }
 
-.question-box p {
+.author {
+	text-align: right;
+}
+
+.scale-out-horizontal {
+	-webkit-animation: scale-out-horizontal 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	        animation: scale-out-horizontal 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+@-webkit-keyframes scale-out-horizontal {
+  0% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+    opacity: 1;
+  }
+}
+@keyframes scale-out-horizontal {
+  0% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+    opacity: 1;
+  }
+}
+
+.question {
 	text-align: justify;
 }
 
 .icons-to-response {
 	display: flex;
 	justify-content: space-around;
+	margin: 20px;
 }
 
 
@@ -71,29 +107,67 @@ body {
 	display: none;
 }
 
-
-
 .result p {
 	display: inline;
 	padding-right: 20px;
 }
 
- .result img {
- 	display: block;
- 	height: 45px;
- 	width: 45px;
- }
+.result img {
+	display: block;
+	height: 45px;
+	width: 45px;
+}
 
- .feedback {
-	 display: block;
- }
+.result span {
+	color: #664596;
+	font-weight: bold;
+	font-style: italic;
+}
 
- .feedbackWin {
-	 color: green;
- }
- .feedbackLose {
-	 color: red;
- }
+.feedback {
+	display: block;
+	font-size: 20px;
+}
+
+.feedbackWin {
+	color: green;
+	font-weight: bold;
+	padding: 5px;
+	border: 3px #2AB24A;
+	// border-radius: 10px 10px;
+}
+.feedbackLose {
+	color: red;
+	font-weight: bold;
+	padding: 5px;
+	border: 3px red;
+}
+
+.iconAndFeedback {
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 20px;
+}
+
+.icon-container {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #664596;
+	margin: 0 auto;
+	background-size: 50%;
+	background-repeat: no-repeat;
+	background-position: center center;
+	margin-right: 10px;
+}
+
+.icon-container-right {
+	background-image: url(/images/tick-mark.svg);
+}
+
+.icon-container-wrong {
+	background-image: url(/images/delete.svg);
+}
 
 
 .button--quiz-toHome {
