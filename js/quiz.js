@@ -7,17 +7,12 @@ function closeIconsToResponseAndOpenResultBox(event) {
 	document.querySelector('.icons-to-response').classList.add('icons-to-response-invisible');
 	document.querySelector('.result-box').classList.remove('result-box-invisible');
 
-
-	// document.querySelector('.result-box').classList.add('.result-box-visible');
-	// document.querySelector('.result-box').classList.toggle('.result-box-invisible');
-
-
-
-
 	if (event.currentTarget.classList.contains('correct-answer')) {
 		document.querySelector('.feedback').insertAdjacentHTML('beforeend', feedbackTextWin);
+		document.querySelector('.feedback').classList.add('feedbackWin');
 	} else {
 		document.querySelector('.feedback').insertAdjacentHTML('beforeend', feedbackTextLose);
+		document.querySelector('.feedback').classList.add('feedbackLose');
 	}
 }
 

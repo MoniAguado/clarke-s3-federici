@@ -59,29 +59,42 @@ body {
 	display: none;
 }
 
+.result-box {
+	margin-bottom: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
 .result-box-invisible {
 	display: none;
 }
-
-// .result-box-visible {
-// 	display: block;
-// }
 
 
 
 .result p {
 	display: inline;
+	padding-right: 20px;
 }
 
  .result img {
- 	display: inline;
+ 	display: block;
  	height: 45px;
  	width: 45px;
  }
 
  .feedback {
+	 display: block;
+ }
+
+ .feedbackWin {
 	 color: green;
  }
+ .feedbackLose {
+	 color: red;
+ }
+
 
 .button--quiz-toHome {
 	margin: 50px auto;

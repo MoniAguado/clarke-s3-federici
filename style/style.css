@@ -5963,22 +5963,48 @@ body {
   display: none;
 }
 
+.result-box {
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
 .result-box-invisible {
   display: none;
 }
 
 .result p {
   display: inline;
+  padding-right: 20px;
 }
 
 .result img {
-  display: inline;
+  display: block;
   height: 45px;
   width: 45px;
 }
 
 .feedback {
+  display: block;
+}
+
+.feedbackWin {
   color: green;
+}
+
+.feedbackLose {
+  color: red;
 }
 
 .button--quiz-toHome {
