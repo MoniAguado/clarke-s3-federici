@@ -5907,28 +5907,95 @@ body {
   text-align: left;
 }
 
-.page-quiz {
-  background-color: grey;
-}
-
-.instructions-initial-pop-up {
-  background-color: pink;
-}
-
-.button--quiz {
-  background-color: tomato;
-}
-
-.phrase-box {
-  background-color: yellow;
-}
-
 body {
   background-color: #ECEDD0;
 }
 
-.button--quiz-toHome {
+.title--quiz {
+  margin-bottom: 20px;
+}
+
+.quiz-item-box {
+  background-color: rgba(182, 252, 159, 0.5);
+  border: 3px double #2AB24A;
+  margin-bottom: 50px;
+  border-radius: 50px 24px 50px 24px;
+  -moz-border-radius: 50px 24px 50px 24px;
+  -webkit-border-radius: 50px 24px 50px 24px;
+}
+
+.question-box {
+  margin: 25px auto;
+  text-align: justify;
+}
+
+.question-box p {
+  text-align: justify;
+}
+
+.icons-to-response {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+.icons-to-response img {
   display: inline;
+  height: 45px;
+  width: 45px;
+}
+
+.icons-to-response img:hover {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+}
+
+.icons-to-response p {
+  display: inline;
+  font-family: 'Lilita One', cursive;
+  font-size: 30px;
+  color: #664596;
+}
+
+.icons-to-response-invisible {
+  display: none;
+}
+
+.result-box-invisible {
+  display: none;
+}
+
+.result p {
+  display: inline;
+}
+
+.result img {
+  display: inline;
+  height: 45px;
+  width: 45px;
+}
+
+.feedback {
+  color: green;
+}
+
+.button--quiz-toHome {
+  margin: 50px auto;
+  display: block;
+  text-align: center;
+}
+
+.link--quiz-toHome {
+  display: inline;
+  text-decoration: none;
+  color: white;
+}
+
+.link--quiz-toHome:hover {
+  text-decoration: none;
+  color: white;
 }
 
 .principal {
@@ -9546,6 +9613,16 @@ body {
 
 @media all and (max-width: 768px) {
   .button--cover {
+    font-weight: bold;
+  }
+
+  .quiz-item-box {
+    border-radius: 88px 37px 88px 37px;
+    -moz-border-radius: 88px 37px 88px 37px;
+    -webkit-border-radius: 88px 37px 88px 37px;
+  }
+
+  .button--quiz-toHome {
     font-weight: bold;
   }
 }
