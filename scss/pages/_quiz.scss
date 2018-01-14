@@ -1,6 +1,38 @@
 body {
 	background-color: #ECEDD0;
 }
+.rotate-center {
+	-webkit-animation: rotate-center 2s ease-in-out both;
+	        animation: rotate-center 2s ease-in-out both;
+					// visibility: visible;
+}
+
+.popup-invisible {
+	display: none;
+	visibility: hidden;
+	opacity: 0;
+}
+
+@-webkit-keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
 
 .title--quiz {
 	margin-bottom: 20px;
@@ -215,8 +247,6 @@ body {
 .video {
 	margin-top: 30px;
 }
-
-
 
 .button--quiz-toHome {
 	margin: 50px auto;

@@ -78,7 +78,7 @@ function activateSpeakerSong1() {
 }
 
 function activateSpeakerSong1WithDelay() {
-	setTimeout(activateSpeakerSong1, 2500)
+	setTimeout(activateSpeakerSong1, 2500);
 }
 
 var pressedEmojiPhrase1 = document.querySelectorAll('.emoji-phrase1');
@@ -93,7 +93,7 @@ function activateSpeakerSong2() {
 }
 
 function activateSpeakerSong1WithDelay2() {
-	setTimeout(activateSpeakerSong2, 2500)
+	setTimeout(activateSpeakerSong2, 2500);
 }
 
 var pressedEmojiPhrase2 = document.querySelectorAll('.emoji-phrase2');
@@ -101,3 +101,17 @@ var pressedEmojiPhrase2 = document.querySelectorAll('.emoji-phrase2');
 for (var i = 0; i < pressedEmojiPhrase2.length; i++) {
 	pressedEmojiPhrase2[i].addEventListener('click', activateSpeakerSong1WithDelay2);
 }
+
+// 4. FUNCIONALIDAD QUE APAREZCA EL POP-UP________________
+function popUpEntrance() {
+	document.getElementById('popup').classList.add('.rotate-center');
+}
+
+setTimeout(popUpEntrance, 1500);
+
+// 5. FUNCIONALIDAD QUE DESAPAREZCA EL POP-UP________________
+function popUpGoodbye() {
+	document.getElementById('popup').classList.add('.popup-invisible');
+}
+
+document.querySelector('.popup-close').addEventListener('click', popUpGoodbye);

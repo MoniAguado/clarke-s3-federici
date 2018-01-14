@@ -5583,7 +5583,11 @@ p {
 #popup {
   visibility: hidden;
   opacity: 0;
-  margin-top: -300px;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  -webkit-transform: translateX(-10%);
+  transform: translateX(-10%);
 }
 
 #popup:target {
@@ -5603,16 +5607,18 @@ p {
 
 .popup-contenedor {
   position: relative;
-  margin: 25% auto;
-  padding: 30px 50px;
+  margin: 5% auto;
+  padding: 45px 30px;
   background-color: #664596;
   color: #FFA93B;
+  font-weight: bold;
   border-radius: 3px;
   width: 60%;
 }
 
 a.popup-close {
   position: absolute;
+  display: block;
   top: 3px;
   right: 3px;
   background-color: #FFA93B;
@@ -5909,6 +5915,17 @@ body {
 
 body {
   background-color: #ECEDD0;
+}
+
+.rotate-center {
+  -webkit-animation: rotate-center 2s ease-in-out both;
+  animation: rotate-center 2s ease-in-out both;
+}
+
+.popup-invisible {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
 }
 
 .title--quiz {
@@ -9952,6 +9969,30 @@ body {
     -webkit-transform: scale(1) rotate(0deg) translateX(0%) translateY(0%);
     transform: scale(1) rotate(0deg) translateX(0%) translateY(0%);
     opacity: 1;
+  }
+}
+
+@-webkit-keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 
