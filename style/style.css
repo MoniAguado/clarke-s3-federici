@@ -5857,8 +5857,15 @@ body {
   background-color: #ecedd0;
 }
 
+.tips {
+  padding: 30px;
+  padding-top: 80px;
+}
+
 .page-statistics {
   background-color: #ecedd0;
+  padding: 30px;
+  padding-top: 80px;
 }
 
 .section--statistics {
@@ -5953,6 +5960,18 @@ body {
 .cel {
   width: 45%;
   background-color: #ecedd0;
+}
+
+.image--statistics {
+  display: block;
+  margin: auto;
+  width: 99%;
+  height: 99%;
+}
+
+.resalt {
+  font-weight: bold;
+  color: #7719ff;
 }
 
 @media (min-width: 576px) {
