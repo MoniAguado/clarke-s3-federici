@@ -5531,6 +5531,7 @@ a.text-dark:focus,a.text-dark:hover {
   border: 4px double #664596;
   margin: 5px;
   padding: 5px;
+  width: 100%;
 }
 
 .label {
@@ -6053,12 +6054,38 @@ body {
   padding: 20px;
 }
 
+.wrapper--tips {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
 .page-tips {
   background-color: #ecedd0;
 }
 
+.tips {
+  padding: 30px;
+  padding-top: 80px;
+}
+
+.image--tips {
+  max-width: 99%;
+  max-height: 99%;
+}
+
 .page-statistics {
   background-color: #ecedd0;
+  padding: 30px;
+  padding-top: 80px;
 }
 
 .section--statistics {
@@ -6153,6 +6180,18 @@ body {
 .cel {
   width: 45%;
   background-color: #ecedd0;
+}
+
+.image--statistics {
+  display: block;
+  margin: auto;
+  width: 99%;
+  height: 99%;
+}
+
+.resalt {
+  font-weight: bold;
+  color: #7719ff;
 }
 
 @media all and (min-width: 500px) {
@@ -7150,6 +7189,10 @@ body {
 @media all and (min-width: 768px) {
   .flex-footer {
     padding: 20px;
+  }
+
+  .container--tips {
+    width: 48%;
   }
 
   #card .front {
