@@ -56,19 +56,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 			<!-- <div class="modal-wrapper" id="popup">
    			<div class="popup-contenedor">
       		<h2>pop up</h2>
@@ -90,12 +77,12 @@
 							<div class="box question-box">
 								<p class="question">"No necesito quererte para demostrarme que me quiero a mí misma" </p>
 								<p class="author">(Película: Come, reza, ama)</p>
-								<div class="icons-to-response">
+								<div class="icons-to-response" id="iconsToResponse1">
 									<p>¿</p>
 									<img class="emoji emoji-phrase1
-									happy-emoji correct-answer" src="/images/Heart_Eyes_Emoji.png" alt="Amor sano">
+									happy-emoji correct-answer" data-idQuestion="1" src="/images/Heart_Eyes_Emoji.png" alt="Amor sano">
 									<p>o</p>
-									<img class="emoji emoji-phrase1 sad-emoji" src="/images/Crying_Face_Emoji.png" alt="Amor tóxico">
+									<img class="emoji emoji-phrase1 sad-emoji" data-idQuestion="1" src="/images/Crying_Face_Emoji.png" alt="Amor tóxico">
 									<p>?</p>
 								</div>
 							</div>
@@ -103,23 +90,20 @@
 					</div>
 					<div class="row">
 						<div class="col-10 offset-1">
-							<div class="box result-box result-box-invisible">
+							<div class="box result-box result-box-invisible" id="result1">
 								<div class="iconAndFeedback">
-									<div class="icon-container">
+									<div class="icon-container" id="icon-container1">
 									</div>
-									<div class="feedback">
+									<div class="feedback" id="feedback1">
 									</div>
 								</div>
 								<div class="result">
-									<p>Esto representa una relación <span>sana</span></p>
+									<p>Representa una relación <span>sana</span></p>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-
-
-
 
 				<div class="box quiz-item-box song-box">
 					<div class="row">
@@ -137,32 +121,28 @@
 										<p class="author">(Despacito - Luis Fonsi ft Daddy Yankee)</p>
 									</div>
 								</div>
-								<div class="icons-to-response">
+								<div class="icons-to-response" id="iconsToResponse2">
 									<p>¿</p>
 									<img class="emoji
-									happy-emoji" src="/images/Heart_Eyes_Emoji.png" alt="Amor sano">
+									happy-emoji" data-idQuestion="2" src="/images/Heart_Eyes_Emoji.png" alt="Amor sano">
 									<p>o</p>
-									<img class="emoji sad-emoji correct-answer" src="/images/Crying_Face_Emoji.png" alt="Amor tóxico">
+									<img class="emoji sad-emoji correct-answer" data-idQuestion="2" src="/images/Crying_Face_Emoji.png" alt="Amor tóxico">
 									<p>?</p>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-
-
-
 					<div class="row">
 						<div class="col-10 offset-1">
-							<div class="box result-box result-box-invisible">
+							<div class="box result-box result-box-invisible" id="result2">
 								<div class="iconAndFeedback">
-									<div class="icon-container">
+									<div class="icon-container" id="icon-container2">
 									</div>
-									<div class="feedback">
+									<div class="feedback" id="feedback2">
 									</div>
 								</div>
 								<div class="result">
-									<p>Esto representa una relación <span>tóxica</span></p>
+									<p>Representa una relación <span>tóxica</span></p>
 								</div>
 							</div>
 						</div>
@@ -171,32 +151,159 @@
 
 
 
-
-
-
-
-
-
-
-
 				<div class="box quiz-item-box video-box">
-					<div class="question-box">
-						<div class="video-insert"></div>
-						<div class="icons-to-response">
-							<img src="https://www.placehold.it/50x50" alt="Amor sano">
-							<img src="https://www.placehold.it/50x50" alt="Amor tóxico">
+					<div class="row">
+						<div class="col-10 offset-1">
+							<div class="box question-box">
+								<div class="video">
+									<video class="video" src="/media/3MSC.mp4" id="3MSC" controls width="240px" preload="auto">
+									</video>
+								</div>
+								<div class="icons-to-response" id="iconsToResponse3">
+									<p>¿</p>
+									<img class="emoji
+									happy-emoji" data-idQuestion="3" src="/images/Heart_Eyes_Emoji.png" alt="Amor sano">
+									<p>o</p>
+									<img class="emoji sad-emoji correct-answer" data-idQuestion="3" src="/images/Crying_Face_Emoji.png" alt="Amor tóxico">
+									<p>?</p>
+								</div>
+							</div>
 						</div>
 					</div>
-					<div class="result-box">
-						<img src="https://www.placehold.it/50x50" alt="Amor sano o tóxico">
-						<p>Meter por JS opciones (Efectivamente!, ¿de verdad crees que controlar a tu pareja es sano?...)</p>
+					<div class="row">
+						<div class="col-10 offset-1">
+							<div class="box result-box result-box-invisible" id="result3">
+								<div class="iconAndFeedback">
+									<div class="icon-container" id="icon-container3">
+									</div>
+									<div class="feedback" id="feedback3">
+									</div>
+								</div>
+								<div class="result">
+									<p>Representa una relación <span>tóxica</span></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="box quiz-item-box phrase-box">
+					<div class="row">
+						<div class="col-10 offset-1">
+							<div class="box question-box">
+								<p class="question">"Y ¿ahora qué? ¿Vas a evitarme durante otra semana? </p>
+								<p class="question">Ambos sabemos, que, para cuando llegue el fin de semana que viene, volverás a estar en mi cama" </p>
+								<p class="author">(Libro: After)</p>
+								<div class="icons-to-response" id="iconsToResponse4">
+									<p>¿</p>
+									<img class="emoji emoji-phrase2
+									happy-emoji" data-idQuestion="4" src="/images/Heart_Eyes_Emoji.png" alt="Amor sano">
+									<p>o</p>
+									<img class="emoji emoji-phrase1 sad-emoji  correct-answer emoji-phrase2" data-idQuestion="4" src="/images/Crying_Face_Emoji.png" alt="Amor tóxico">
+									<p>?</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-10 offset-1">
+							<div class="box result-box result-box-invisible" id="result4">
+								<div class="iconAndFeedback">
+									<div class="icon-container" id="icon-container4">
+									</div>
+									<div class="feedback" id="feedback4">
+									</div>
+								</div>
+								<div class="result">
+									<p>Representa una relación <span>tóxica</span></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="box quiz-item-box song-box">
+					<div class="row">
+						<div class="col-10 offset-1">
+							<div class="box question-box">
+								<div class="song">
+									<audio id="nosoy" src="media/fragmento-no soy.mp3">
+									</audio>
+									<div class="icon-speaker-container speaker-nosoy "></div>
+									<div class="lyrics">
+										<p>Y no deberías haberme tentado, te gusta jugar</p>
+										<p>No confundas la dulzura con la temperatura</p>
+										<p>Pero que yo nunca te imaginé mi estrellita ay así en este plan</p>
+										<p>Pero yo a ti te conozco y sé por dónde vas</p>
+										<p>Si no quieres flamenquito, no toques las palmas</p>
+										<p class="author">(No soy una de esas - Jesse & Joy ft Alejandro Sanz)</p>
+									</div>
+								</div>
+								<div class="icons-to-response" id="iconsToResponse5">
+									<p>¿</p>
+									<img class="emoji
+									happy-emoji" data-idQuestion="5" src="/images/Heart_Eyes_Emoji.png" alt="Amor sano">
+									<p>o</p>
+									<img class="emoji sad-emoji correct-answer" data-idQuestion="5" src="/images/Crying_Face_Emoji.png" alt="Amor tóxico">
+									<p>?</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-10 offset-1">
+							<div class="box result-box result-box-invisible" id="result5">
+								<div class="iconAndFeedback">
+									<div class="icon-container" id="icon-container5">
+									</div>
+									<div class="feedback" id="feedback5">
+									</div>
+								</div>
+								<div class="result">
+									<p>Representa una relación <span>tóxica</span></p>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 
 
 
-
-
+				<div class="box quiz-item-box video-box">
+					<div class="row">
+						<div class="col-10 offset-1">
+							<div class="box question-box">
+								<div class="video">
+									<video class="video" src="/media/fragmento-up.mp4" id="3MSC" controls width="240px" preload="auto">
+									</video>
+								</div>
+								<div class="icons-to-response" id="iconsToResponse6">
+									<p>¿</p>
+									<img class="emoji
+									happy-emoji correct-answer" data-idQuestion="6" src="/images/Heart_Eyes_Emoji.png" alt="Amor sano">
+									<p>o</p>
+									<img class="emoji sad-emoji" data-idQuestion="6" src="/images/Crying_Face_Emoji.png" alt="Amor tóxico">
+									<p>?</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-10 offset-1">
+							<div class="box result-box result-box-invisible" id="result6">
+								<div class="iconAndFeedback">
+									<div class="icon-container" id="icon-container6">
+									</div>
+									<div class="feedback" id="feedback6">
+									</div>
+								</div>
+								<div class="result">
+									<p>Representa una relación <span>sana</span></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 				<div class="row">
 					<div class="col-8 offset-2">
 						<button class="button button--quiz-toHome">
@@ -204,20 +311,8 @@
 						</button>
 					</div>
 				</div>
-			</div><!--end general-container-->
+			</div> <!--general page end-->
 		</main>
-
-
-
-
-
-
-
-
-
-
-
-
 
 		<a id="arriba" title="arriba">
 			<img src="images/ico-arrow.png" alt="arriba">

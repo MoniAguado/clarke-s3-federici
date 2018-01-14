@@ -1,79 +1,59 @@
 'use strict';
 
 // 1. FUNCIONALIDAD OBTENER FEEDBACK TRAS LA RESPUESTA__________________
+
+// function QuizItem(question, toxicity, questionType) {
+// 	this.question = question;
+// 	this.toxicity = toxicity;
+// 	this.questionType = questionType;
+// };
+//
+// QuizItem.prototype.checkAnswer = function(userAnswer) {
+// 	if (userAnswer === this.toxicity) {
+// 		return true;
+// 	}
+// 	else {
+// 		return false;
+// 	}
+// }
+//
+// var question1 = new QuizItem('No necesito quererte para demostrarme que me quiero a mí misma', false, 'phrase');
+
 var feedbackTextWin = '¡Acertaste!';
 var feedbackTextLose = '¡Fallaste!';
 
-
-
-
-function openResultBox() {
-	var resultBox = 	document.querySelectorAll('.result-box');
-
-	for (var j = 0; j < resultBox.length; j++) {
-		resultBox[j].classList.remove('result-box-invisible');
-	}
-}
-
 function closeIconsToResponseAndOpenResultBox(event) {
-
-
-
-	document.querySelector('.icons-to-response').classList.add('scale-out-horizontal');
+	var questionId = event.currentTarget.getAttribute('data-idQuestion');
+	document.getElementById('iconsToResponse' + questionId).classList.add('scale-out-horizontal');
 
 	if (event.currentTarget.classList.contains('correct-answer')) {
-			document.querySelector('.feedback').insertAdjacentHTML('beforeend', feedbackTextWin);
 
-			document.querySelector('.feedback').classList.add('feedbackWin');
+			document.getElementById('feedback' + questionId).insertAdjacentHTML('beforeend', feedbackTextWin);
 
-			document.querySelector('.icon-container').classList.add('icon-container-right');
+			document.getElementById('feedback' + questionId).classList.add('feedbackWin');
 
+			document.getElementById('icon-container' + questionId).classList.add('icon-container-right');
 		} else {
-			document.querySelector('.feedback').insertAdjacentHTML('beforeend', feedbackTextLose);
-			document.querySelector('.feedback').classList.add('feedbackLose');
-			document.querySelector('.icon-container').classList.add('icon-container-wrong');
+			document.getElementById('feedback' + questionId).insertAdjacentHTML('beforeend', feedbackTextLose);
+
+			document.getElementById('feedback' + questionId).classList.add('feedbackLose');
+
+			document.getElementById('icon-container' + questionId).classList.add('icon-container-wrong');
 		}
 
-	setTimeout(openResultBox, 1500)
+	//setTimeout(openResultBox, 1500)
+	setTimeout( function (){
+		document.getElementById('result' + questionId).classList.remove('result-box-invisible');
+	}, 1500)
 }
 
-var pressedEmoji = document.querySelectorAll('.emoji');
+var possiblePressedEmoji = document.querySelectorAll('.emoji');
 
-for (var i = 0; i < pressedEmoji.length; i++) {
-	pressedEmoji[i].addEventListener('click', closeIconsToResponseAndOpenResultBox);
+for (var i = 0; i < possiblePressedEmoji.length; i++) {
+	possiblePressedEmoji[i].addEventListener('click', closeIconsToResponseAndOpenResultBox);
 }
 
 
-
-
-// var feedbackTextWin = '¡Acertaste!';
-// var feedbackTextLose = '¡Fallaste!';
-//
-// function openResultBox() {
-// 	document.querySelector('.result-box').classList.remove('result-box-invisible');
-// }
-//
-// function closeIconsToResponseAndOpenResultBox(event) {
-// 	document.querySelector('.icons-to-response').classList.add('scale-out-horizontal');
-//
-// 	if (event.currentTarget.classList.contains('correct-answer')) {
-// 			document.querySelector('.feedback').insertAdjacentHTML('beforeend', feedbackTextWin);
-// 			document.querySelector('.feedback').classList.add('feedbackWin');
-// 			document.querySelector('.icon-container').classList.add('icon-container-right');
-// 		} else {
-// 			document.querySelector('.feedback').insertAdjacentHTML('beforeend', feedbackTextLose);
-// 			document.querySelector('.feedback').classList.add('feedbackLose');
-// 			document.querySelector('.icon-container').classList.add('icon-container-wrong');
-// 		}
-//
-// 	setTimeout(openResultBox, 1500)
-// }
-//
-// var pressedEmoji = document.querySelectorAll('.emoji');
-//
-// for (var i = 0; i < pressedEmoji.length; i++) {
-// 	pressedEmoji[i].addEventListener('click', closeIconsToResponseAndOpenResultBox);
-// }
 
 // 2. FUNCIONALIDAD REPRODUCIR AUDIOS__________________
 function playDespacito() {
@@ -81,6 +61,13 @@ function playDespacito() {
 }
 
 document.querySelector('.speaker-despacito').addEventListener('click', playDespacito);
+
+function playNoSoy() {
+	document.getElementById('nosoy').play();
+}
+
+document.querySelector('.speaker-nosoy').addEventListener('click', playNoSoy);
+
 
 
 
@@ -98,4 +85,19 @@ var pressedEmojiPhrase1 = document.querySelectorAll('.emoji-phrase1');
 
 for (var i = 0; i < pressedEmojiPhrase1.length; i++) {
 	pressedEmojiPhrase1[i].addEventListener('click', activateSpeakerSong1WithDelay);
+}
+
+
+function activateSpeakerSong2() {
+	document.querySelector('.speaker-nosoy').classList.add('roll-in-left');
+}
+
+function activateSpeakerSong1WithDelay2() {
+	setTimeout(activateSpeakerSong2, 2500)
+}
+
+var pressedEmojiPhrase2 = document.querySelectorAll('.emoji-phrase2');
+
+for (var i = 0; i < pressedEmojiPhrase2.length; i++) {
+	pressedEmojiPhrase2[i].addEventListener('click', activateSpeakerSong1WithDelay2);
 }
