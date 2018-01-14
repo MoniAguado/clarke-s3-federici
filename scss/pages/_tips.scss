@@ -1,3 +1,9 @@
+.wrapper--tips{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: stretch;
+	justify-content: space-between;
+}
 .page-tips{
 	background-color: #ecedd0;
 }
@@ -7,6 +13,6 @@
 }
 
 .image--tips{
-	width: 99%;
-	height: 99%;
+	max-width: 99%;
+	max-height: 99%;
 }

@@ -5469,6 +5469,7 @@ a.text-dark:focus,a.text-dark:hover {
   border: 4px double #664596;
   margin: 5px;
   padding: 5px;
+  width: 100%;
 }
 
 .label {
@@ -5853,6 +5854,20 @@ body {
   transition-delay: 0.3s;
 }
 
+.wrapper--tips {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
 .page-tips {
   background-color: #ecedd0;
 }
@@ -5863,8 +5878,8 @@ body {
 }
 
 .image--tips {
-  width: 99%;
-  height: 99%;
+  max-width: 99%;
+  max-height: 99%;
 }
 
 .page-statistics {
@@ -7731,6 +7746,12 @@ body {
 
   .text-md-center {
     text-align: center !important;
+  }
+}
+
+@media all and (min-width: 768px) {
+  .container--tips {
+    width: 48%;
   }
 }
 

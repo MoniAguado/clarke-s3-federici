@@ -2,4 +2,11 @@
 	border: $tipsBorderBox;
 	margin: $tipsMarginBox;
 	padding: $tipsPaddingBox;
+	width: 100%;
+}
+
+@media all and(min-width: 768px) {
+	.container--tips {
+		width: 48%;
+	}
 }
