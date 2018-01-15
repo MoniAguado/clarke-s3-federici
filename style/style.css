@@ -6128,11 +6128,12 @@ body {
 }
 
 .principal {
-  margin-top: 50px;
+  margin-top: 80px;
 }
 
 .page-resources {
   background-color: #ECEDD0;
+  overflow-x: hidden;
 }
 
 .div-resource {
@@ -6187,6 +6188,7 @@ body {
   height: 200px;
   position: absolute;
   overflow: hidden;
+  border-radius: 45px;
   top: 0;
   left: 0;
 }
@@ -6196,6 +6198,7 @@ body {
   height: 200px;
   display: block;
   position: relative;
+  border-radius: 45px;
 }
 
 .view a.info {
