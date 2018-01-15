@@ -83,6 +83,7 @@
   width: 50%;
   font-size: 12px;
   color: #ECEDD0;
+  text-align: center;
 }/*!
  * Bootstrap v4.0.0-beta.2 (https://getbootstrap.com)
  * Copyright 2011-2017 The Bootstrap Authors
@@ -7189,6 +7190,10 @@ body {
 @media all and (min-width: 768px) {
   .flex-footer {
     padding: 20px;
+  }
+
+  .phone-header {
+    font-size: 20px;
   }
 
   .container--tips {

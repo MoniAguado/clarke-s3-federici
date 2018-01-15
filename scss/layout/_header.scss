@@ -26,4 +26,11 @@
 	width: $widthPhoneHeader;
 	font-size: $fontSizeHeader;
 	color: $colorPhoneHeader;
+	text-align: center;
+}
+
+@media all and (min-width:768px) {
+  .phone-header {
+    font-size: 20px;
+  }
 }
