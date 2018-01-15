@@ -5645,6 +5645,7 @@ body {
   font-family: 'Lilita One', cursive;
   font-size: 35px;
   color: #664596;
+  text-align: left;
 }
 
 .social-media {
@@ -6277,10 +6278,6 @@ body {
 
 .page-tips {
   background-color: #ecedd0;
-}
-
-.tips {
-  padding: 30px;
 }
 
 .image--tips {
@@ -7419,10 +7416,6 @@ body {
 
   .flex1 {
     margin-top: 70px;
-  }
-
-  .general--wrapper {
-    padding-top: 150px;
   }
 
   .bloque-survey {
@@ -9756,6 +9749,12 @@ body {
   .flex-footer {
     max-width: 1000px;
     padding: 20px;
+  }
+}
+
+@media all and (min-width: 1280px) {
+  .general--wrapper {
+    padding-top: 150px;
   }
 }
 
