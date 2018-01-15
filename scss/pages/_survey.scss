@@ -2,6 +2,7 @@
 	padding-top: 100px;
 	padding-left: 20px;
 	padding-right: 20px;
+	width: 100%;
 }
 
 .bloque-survey {
@@ -35,12 +36,15 @@
 }
 
 @media all and (min-width:768px){
-	.general--wrapper{
-		padding-top: 150px;
-	}
 	.bloque-survey{
 		padding-bottom: 100px;
 		padding-left: 80px;
 		padding-right: 80px;
+	}
+}
+
+@media all and (min-width:1280px){
+	.general--wrapper{
+		padding-top: 150px;
 	}
 }
