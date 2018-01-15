@@ -1,8 +1,9 @@
 .principal {
-	margin-top: 50px;
+	margin-top: 80px;
 }
 .page-resources{
 	background-color: #ECEDD0;
+	overflow-x: hidden;
 }
 .div-resource{
 	display: flex;
@@ -44,6 +45,7 @@
    height: $maskSizeHeidth;
    position: absolute;
    overflow: hidden;
+	 border-radius: 45px ;
    top: 0;
    left: 0;
 }
@@ -51,8 +53,9 @@
 .view .logo-resources {
 	width: $maskSizeWidth;
  	height: $maskSizeHeidth;
-   display: block;
-   position: relative;
+  display: block;
+  position: relative;
+	border-radius: 45px ;
 }
 
 .view a.info {
