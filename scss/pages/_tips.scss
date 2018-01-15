@@ -1,3 +1,18 @@
+.wrapper--tips{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: stretch;
+	justify-content: space-between;
+}
 .page-tips{
 	background-color: #ecedd0;
+}
+.tips {
+	padding: 30px;
+	padding-top: 80px;
+}
+
+.image--tips{
+	max-width: 99%;
+	max-height: 99%;
 }
