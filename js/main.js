@@ -31,12 +31,30 @@ for (var i = 0; i < links.length; i++) {
 var click = document.querySelector('.burger');
 click.addEventListener('click', clickMenu);
 
+// para que cuando hagas click en la pantalla se cambie el cross a menú
+
+body.addEventListener('click', crossToBurger);
+// !hace lo contrario de lo que le pides. Le decimos que si el menu esta visible, se quita la clase active del buttonBurger
+function crossToBurger(){
+	if (!body.classList.contains('menu-visible')){
+		buttonBurger.classList.remove('active');
+	}
+}
+
+
 //subir al principio de la página cuando se hace click en la flecha arriba
-
-
 if (document.getElementById ('arriba') !== null) {
   var arribaButton = document.getElementById('arriba');
   arribaButton.onclick = function(){
       window.scrollTo(0,0);
     }
-}
+
+
+
+
+
+//subir al principio de la página cuando se hace click en la flecha arriba
+// var arribaButton = document.getElementById('arriba');
+// arribaButton.onclick = function(){
+//     window.scrollTo(0,0);
+// }
