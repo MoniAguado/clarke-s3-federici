@@ -5603,7 +5603,10 @@ p {
 
 .popup-contenedor {
   position: relative;
-  margin: 50% auto;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   padding: 45px 30px;
   background-color: #664596;
   color: #FFA93B;
@@ -5914,6 +5917,7 @@ body {
 
 .page-quiz {
   background-color: #ECEDD0;
+  overflow-x: hidden;
 }
 
 .invisible {
@@ -5923,7 +5927,7 @@ body {
 }
 
 .title--quiz {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   font-size: 25px;
 }
 
