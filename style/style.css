@@ -9762,6 +9762,10 @@ body {
 }
 
 @media all and (min-width: 1280px) {
+  .flex1 {
+    margin-top: 0px;
+  }
+
   .general--wrapper {
     padding-top: 150px;
     padding-left: 50px;
@@ -9810,12 +9814,6 @@ body {
 @media all and (max-width: 768px) {
   p {
     text-align: left;
-  }
-
-  .button--cover {
-    font-weight: bold;
-    height: 60px;
-    width: 150px;
   }
 
   .quiz-item-box {
