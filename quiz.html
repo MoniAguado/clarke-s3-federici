@@ -8,7 +8,7 @@
 		<link rel="icon" type="images/png" href="/images/favicon.ico">
 	</head>
 
-	<body class="body container-fluid page-quiz">
+	<body class="body page-quiz">
 		<header class="col-12">
 			<div class="header">
 				<div class="button-menu" id="button-menu"><a id="nav-toggle" href="#"><span></span></a></div>
@@ -45,19 +45,19 @@
 				<a href="home.html"><img src="images/home.png" alt="Home" class="home"></a>
 			</div>
 		</header>
-		<main class="general--wrapper">
+		<main class="general--wrapper container-fluid">
 			<div class="row">
 				<div class="col-12 principal">
 					<h1 class="title text-sm-center text-md-left text-uppercase title--quiz">¿Amor sano o tóxico?</h1>
 				</div>
 			</div>
 
-			<div class="modal-wrapper" id="popup">
-   			<div class="popup-contenedor">
-      		<p class="instructions">Presta atención a las siguientes frases, canciones y vídeos.</p>
+			<div class="modal-wrapper popup" id="popup">
+				<div class="popup-contenedor">
+					<p class="instructions">Presta atención a las siguientes frases, canciones y vídeos.</p>
 					<p>¿Sabrías identificar si corresponden a relaciones sanas o tóxicas?</p>
-      		<a class="popup-close" href="">X</a>
-  			</div>
+					<button class="popup-close">X</button>
+				</div>
 			</div>
 
 			<div class="general-page-quiz-box">
@@ -122,8 +122,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="row">
-						<div class="col-10 offset-1">
+
 							<div class="box result-box result-box-invisible" id="result2">
 								<div class="iconAndFeedback">
 									<div class="icon-container" id="icon-container2">
@@ -135,8 +134,6 @@
 									<p>Representa una relación <span>tóxica</span></p>
 								</div>
 							</div>
-						</div>
-					</div>
 				</div>
 
 				<div class="box quiz-item-box video-box">
@@ -297,8 +294,9 @@
 						</button>
 					</div>
 				</div>
-			</div> <!--general page end-->
-		</main>
+			</div>
+				</div> <!--general page end-->
+			</main>
 
 		<a id="arriba" title="arriba">
 			<img src="images/ico-arrow.png" alt="arriba">

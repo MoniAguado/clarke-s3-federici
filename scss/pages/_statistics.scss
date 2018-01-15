@@ -1,7 +1,6 @@
 
 .page-statistics{
 	background-color: #ecedd0;
-	padding: 30px;
 }
 
 .section--statistics{
@@ -82,4 +81,11 @@
 .resalt {
 	font-weight: bold;
 	color: #7719ff;
+}
+
+@media all and(min-width: 500px){
+	.image--statistics{
+		width: 50%;
+		height: 50%;
+	}
 }
