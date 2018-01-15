@@ -1,12 +1,13 @@
 
 p{
 	text-align:center;
+		@media all and (max-width:768px) {
+			text-align: left;
+		}
 }
-//"text-sm-center text-md-left en contact.html
 
 .text {
 	font-family:'Abel', sans-serif;
 	font-size: 16px;
 	align-items: center;
 }
-
