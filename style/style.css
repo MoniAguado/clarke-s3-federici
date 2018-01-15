@@ -7403,6 +7403,11 @@ body {
     font-size: 20px;
   }
 
+  .button-home {
+    height: 60px;
+    width: 150px;
+  }
+
   .container--tips {
     width: 48%;
   }
