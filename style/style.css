@@ -37,6 +37,7 @@
 
 .footer-nav-link {
   color: #ECEDD0;
+  padding: 15px;
 }
 
 .footer a {
@@ -7383,6 +7384,12 @@ body {
 }
 
 @media all and (min-width: 768px) {
+  .footer-nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
   .flex-footer {
     padding: 20px;
   }
