@@ -160,9 +160,9 @@
 #button-menu {
   cursor: pointer;
   padding: 10px 35px 16px 0px;
-  width: 25%;
   height: 25%;
   margin-left: 20px;
+  margin-right: 20px;
   z-index: 1;
 }
 
@@ -523,6 +523,10 @@ body {
 .logo-survey {
   max-width: 300px;
   padding: 20px;
+}
+
+.page-tips {
+  background-color: #ecedd0;
 }
 
 @media all and (min-width: 500px) {

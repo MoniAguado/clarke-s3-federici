@@ -5911,7 +5911,6 @@ body {
   transition-delay: 0.3s;
 }
 
-
 .bloque-survey {
   background-color: #ECEDD0;
   padding-top: 100px;
@@ -5933,14 +5932,6 @@ body {
   max-width: 300px;
   padding: 20px;
 }
-
-@media all and (min-width: 500px) {
-  .bloque-survey {
-    padding-top: 100px;
-    padding-bottom: 80px;
-    padding-left: 50px;
-    padding-right: 50px;
-  }
 
 .page-tips {
   background-color: #ecedd0;
@@ -6042,7 +6033,15 @@ body {
 .cel {
   width: 45%;
   background-color: #ecedd0;
+}
 
+@media all and (min-width: 500px) {
+  .bloque-survey {
+    padding-top: 100px;
+    padding-bottom: 80px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
 }
 
 @media (min-width: 576px) {
