@@ -17,6 +17,12 @@
 .footer-nav {
 	list-style-type: none;
 	padding-left: 10px;
+
+	@media all and (min-width:768px){
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows:1fr 1fr 1fr;
+	}
 }
 
 .footer-phone, .contact-phones {
@@ -32,6 +38,8 @@
 .footer-nav-link {
 	color: $textColorFooter;
 	text-decoration: none;
+	padding: 15px;
+
 }
 
 .footer-nav-link:hover {
