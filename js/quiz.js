@@ -25,6 +25,7 @@ var feedbackTextLose = '¡Fallaste!';
 function closeIconsToResponseAndOpenResultBox(event) {
 	var questionId = event.currentTarget.getAttribute('data-idQuestion');
 	document.getElementById('iconsToResponse' + questionId).classList.add('scale-out-horizontal');
+	document.getElementById('iconsToResponse' + questionId).classList.add('result-box-invisible');
 
 	if (event.currentTarget.classList.contains('correct-answer')) {
 
@@ -102,16 +103,18 @@ for (var i = 0; i < pressedEmojiPhrase2.length; i++) {
 	pressedEmojiPhrase2[i].addEventListener('click', activateSpeakerSong1WithDelay2);
 }
 
-// 4. FUNCIONALIDAD QUE APAREZCA EL POP-UP________________
-function popUpEntrance() {
-	document.getElementById('popup').classList.add('.rotate-center');
-}
 
-setTimeout(popUpEntrance, 1500);
+// 4. FUNCIONALIDAD QUE APAREZCA EL POP-UP________________
+// function popUpEntrance() {
+// 	document.getElementById('popup').classList.add('.rotate-center');
+// }
+//
+// setTimeout(popUpEntrance, 1500);
+
 
 // 5. FUNCIONALIDAD QUE DESAPAREZCA EL POP-UP________________
 function popUpGoodbye() {
-	document.getElementById('popup').classList.add('.popup-invisible');
+	document.getElementById('popup').classList.add('invisible');
 }
 
 document.querySelector('.popup-close').addEventListener('click', popUpGoodbye);
