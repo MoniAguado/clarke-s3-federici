@@ -6242,6 +6242,7 @@ body {
   padding-top: 100px;
   padding-left: 20px;
   padding-right: 20px;
+  width: 100%;
 }
 
 .bloque-survey {
@@ -6290,7 +6291,6 @@ body {
 
 .page-statistics {
   background-color: #ecedd0;
-  padding: 30px;
 }
 
 .section--statistics {
