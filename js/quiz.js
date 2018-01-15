@@ -48,8 +48,15 @@ var feedbackTextLose = '¡Fallaste!';
 
 function closeIconsToResponseAndOpenResultBox(event) {
 	var questionId = event.currentTarget.getAttribute('data-idQuestion');
+
 	document.getElementById('iconsToResponse' + questionId).classList.add('scale-out-horizontal');
-	document.getElementById('iconsToResponse' + questionId).classList.add('icons-to-response-invisible');
+
+	setTimeout(deleteIconsToResponse, 600);
+
+	function deleteIconsToResponse() {
+		document.getElementById('iconsToResponse' + questionId).classList.add('icons-to-response-invisible');
+	}
+
 
 	if (event.currentTarget.classList.contains('correct-answer')) {
 
@@ -66,11 +73,13 @@ function closeIconsToResponseAndOpenResultBox(event) {
 			document.getElementById('icon-container' + questionId).classList.add('icon-container-wrong');
 		}
 
-	//setTimeout(openResultBox, 1500)
-	setTimeout( function (){
+	setTimeout(openResultBox, 600);
+
+	function openResultBox() {
 		document.getElementById('result' + questionId).classList.remove('result-box-invisible');
-	}, 1500)
+	}
 }
+
 
 var possiblePressedEmoji = document.querySelectorAll('.emoji');
 
