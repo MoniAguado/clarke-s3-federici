@@ -37,21 +37,14 @@
 
 .footer-nav-link {
   color: #ECEDD0;
-<<<<<<< HEAD
   text-decoration: none;
+  padding: 15px;
 }
 
 .footer-nav-link:hover {
   text-decoration: none;
   color: #ECEDD0;
   font-weight: bold;
-=======
-  padding: 15px;
-}
-
-.footer a {
-  text-decoration: none;
->>>>>>> 5fe264da567c44086518cb1432b1d6a2d5afe22c
 }
 
 .copyright {
@@ -5757,11 +5750,8 @@ body {
 
 .nav-link:hover {
   background-color: white;
-<<<<<<< HEAD
   text-decoration: none;
   color: #664596;
-=======
->>>>>>> 5fe264da567c44086518cb1432b1d6a2d5afe22c
 }
 
 .form-group .square:focus {
@@ -6138,11 +6128,7 @@ body {
 }
 
 .principal {
-<<<<<<< HEAD
-  margin-top: 90px;
-=======
   margin-top: 50px;
->>>>>>> 5fe264da567c44086518cb1432b1d6a2d5afe22c
 }
 
 .page-resources {
@@ -7404,15 +7390,12 @@ body {
 }
 
 @media all and (min-width: 768px) {
-<<<<<<< HEAD
-=======
   .footer-nav {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
   }
 
->>>>>>> 5fe264da567c44086518cb1432b1d6a2d5afe22c
   .flex-footer {
     padding: 20px;
   }
