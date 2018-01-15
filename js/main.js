@@ -48,7 +48,7 @@ if (document.getElementById ('arriba') !== null) {
   arribaButton.onclick = function(){
       window.scrollTo(0,0);
     }
-
+}
 
 
 
