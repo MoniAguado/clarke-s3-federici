@@ -6,7 +6,6 @@
 	bottom: 0;
 }
 
-
 .flex-footer {
 	display: flex;
 	flex-direction: row;
@@ -38,11 +37,15 @@
 
 .footer-nav-link {
 	color: $textColorFooter;
+	text-decoration: none;
 	padding: 15px;
+
 }
 
-.footer a {
+.footer-nav-link:hover {
 	text-decoration: none;
+	color: $textColorFooter;
+	font-weight: bold;
 }
 
 .copyright {

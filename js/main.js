@@ -53,6 +53,7 @@ if (document.getElementById ('arriba') !== null) {
 
 
 
+
 //subir al principio de la página cuando se hace click en la flecha arriba
 // var arribaButton = document.getElementById('arriba');
 // arribaButton.onclick = function(){

@@ -1,6 +1,11 @@
+.general--wrapper {
+	padding-top: 100px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
 .bloque-survey {
 	background-color: $backgroundColorHome;
-	padding-top: 100px;
 	padding-left: 20px;
 	padding-right: 20px;
 	padding-bottom: 20px;
@@ -30,8 +35,10 @@
 }
 
 @media all and (min-width:768px){
-	.bloque-survey{
+	.general--wrapper{
 		padding-top: 150px;
+	}
+	.bloque-survey{
 		padding-bottom: 100px;
 		padding-left: 80px;
 		padding-right: 80px;

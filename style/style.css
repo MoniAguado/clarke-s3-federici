@@ -37,11 +37,14 @@
 
 .footer-nav-link {
   color: #ECEDD0;
+  text-decoration: none;
   padding: 15px;
 }
 
-.footer a {
+.footer-nav-link:hover {
   text-decoration: none;
+  color: #ECEDD0;
+  font-weight: bold;
 }
 
 .copyright {
@@ -5642,7 +5645,6 @@ body {
   font-family: 'Lilita One', cursive;
   font-size: 35px;
   color: #664596;
-  text-transform: uppercase;
 }
 
 .social-media {
@@ -5747,6 +5749,8 @@ body {
 
 .nav-link:hover {
   background-color: white;
+  text-decoration: none;
+  color: #664596;
 }
 
 .form-group .square:focus {
@@ -6233,9 +6237,14 @@ body {
   transition-delay: 0.3s;
 }
 
+.general--wrapper {
+  padding-top: 100px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 .bloque-survey {
   background-color: #ECEDD0;
-  padding-top: 100px;
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 20px;
@@ -6275,7 +6284,6 @@ body {
 
 .tips {
   padding: 30px;
-  padding-top: 80px;
 }
 
 .image--tips {
@@ -6286,7 +6294,6 @@ body {
 .page-statistics {
   background-color: #ecedd0;
   padding: 30px;
-  padding-top: 80px;
 }
 
 .section--statistics {
@@ -7417,8 +7424,11 @@ body {
     margin-top: 70px;
   }
 
-  .bloque-survey {
+  .general--wrapper {
     padding-top: 150px;
+  }
+
+  .bloque-survey {
     padding-bottom: 100px;
     padding-left: 80px;
     padding-right: 80px;
