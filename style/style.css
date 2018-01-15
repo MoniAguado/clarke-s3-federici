@@ -6394,6 +6394,11 @@ body {
     padding-right: 50px;
   }
 
+  .general--wrapper {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
   .image--statistics {
     width: 50%;
     height: 50%;
@@ -9750,6 +9755,8 @@ body {
 @media all and (min-width: 1280px) {
   .general--wrapper {
     padding-top: 150px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 }
 

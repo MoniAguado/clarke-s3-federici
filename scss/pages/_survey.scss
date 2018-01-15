@@ -33,6 +33,10 @@
 		padding-left: 50px;
 		padding-right: 50px;
 	}
+	.general--wrapper{
+		padding-left: 50px;
+		padding-right: 50px;
+	}
 }
 
 @media all and (min-width:768px){
@@ -46,5 +50,7 @@
 @media all and (min-width:1280px){
 	.general--wrapper{
 		padding-top: 150px;
+		padding-left: 50px;
+		padding-right: 50px;
 	}
 }
