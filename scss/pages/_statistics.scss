@@ -82,3 +82,10 @@
 	font-weight: bold;
 	color: #7719ff;
 }
+
+@media all and(min-width: 500px){
+	.image--statistics{
+		width: 50%;
+		height: 50%;
+	}
+}
