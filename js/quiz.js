@@ -1,23 +1,47 @@
 'use strict';
 
-// 1. FUNCIONALIDAD OBTENER FEEDBACK TRAS LA RESPUESTA__________________
+// 1. FUNCIONALIDAD OBTENER FEEDBACK TRAS LA RESPUESTA Y BORRAR EMOJIS__________________
 
-// function QuizItem(question, toxicity, questionType) {
-// 	this.question = question;
-// 	this.toxicity = toxicity;
-// 	this.questionType = questionType;
-// };
+// var feedbackTextWin = '¡Acertaste!';
+// var feedbackTextLose = '¡Fallaste!';
 //
-// QuizItem.prototype.checkAnswer = function(userAnswer) {
-// 	if (userAnswer === this.toxicity) {
-// 		return true;
-// 	}
-// 	else {
-// 		return false;
-// 	}
+// function closeIconsToResponseAndOpenResultBox(event) {
+// 	var questionId = event.currentTarget.getAttribute('data-idQuestion');
+// 		debugger
+// 	document.getElementById('iconsToResponse' + questionId).classList.add('scale-out-horizontal');
+// 	debugger
+// 	document.getElementById('iconsToResponse' + questionId).classList.add('invisible');
+// 	debugger
+//
+//
+// 	if (event.currentTarget.classList.contains('correct-answer')) {
+//
+// 			document.getElementById('feedback' + questionId).insertAdjacentHTML('beforeend', feedbackTextWin);
+//
+// 			document.getElementById('feedback' + questionId).classList.add('feedbackWin');
+//
+// 			document.getElementById('icon-container' + questionId).classList.add('icon-container-right');
+// 		} else {
+// 			document.getElementById('feedback' + questionId).insertAdjacentHTML('beforeend', feedbackTextLose);
+//
+// 			document.getElementById('feedback' + questionId).classList.add('feedbackLose');
+//
+// 			document.getElementById('icon-container' + questionId).classList.add('icon-container-wrong');
+// 		}
+// debugger
+// 	//setTimeout(openResultBox, 1500)
+// 	setTimeout( function (){
+// 		debugger
+// 		document.getElementById('result' + questionId).classList.remove('invisible');
+// 	}, 1500)
 // }
 //
-// var question1 = new QuizItem('No necesito quererte para demostrarme que me quiero a mí misma', false, 'phrase');
+// var possiblePressedEmoji = document.querySelectorAll('.emoji');
+//
+// for (var i = 0; i < possiblePressedEmoji.length; i++) {
+// 	possiblePressedEmoji[i].addEventListener('click', closeIconsToResponseAndOpenResultBox);
+// }
+
 
 var feedbackTextWin = '¡Acertaste!';
 var feedbackTextLose = '¡Fallaste!';
@@ -25,7 +49,7 @@ var feedbackTextLose = '¡Fallaste!';
 function closeIconsToResponseAndOpenResultBox(event) {
 	var questionId = event.currentTarget.getAttribute('data-idQuestion');
 	document.getElementById('iconsToResponse' + questionId).classList.add('scale-out-horizontal');
-	document.getElementById('iconsToResponse' + questionId).classList.add('result-box-invisible');
+	document.getElementById('iconsToResponse' + questionId).classList.add('icons-to-response-invisible');
 
 	if (event.currentTarget.classList.contains('correct-answer')) {
 
@@ -113,17 +137,9 @@ for (var i = 0; i < pressedEmojiPhrase2.length; i++) {
 
 
 // 5. FUNCIONALIDAD QUE DESAPAREZCA EL POP-UP________________
-var buttonClosePop = document.querySelector('.popup-close');
-var boxPopUp = document.querySelector('.popup');
 
 function popUpGoodbye() {
-	boxPopUp.classList.add('invisible');
+	document.getElementById('popup').classList.add('invisible');
 }
 
-buttonClosePop.addEventListener('click', popUpGoodbye);
-
-// function popUpGoodbye() {
-// 	document.getElementById('popup').classList.add('invisible');
-// }
-//
-// document.querySelector('.popup-close').addEventListener('click', popUpGoodbye);
+document.querySelector('.popup-close').addEventListener('click', popUpGoodbye);

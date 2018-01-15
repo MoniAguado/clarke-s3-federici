@@ -5,7 +5,7 @@ document.querySelector("#button-menu")
   .addEventListener("click", function() {
     this.classList.toggle( "active" );
   });
-
+	
 // efecto menú
 var burger = document.querySelector('.burger');
 var menu = document.querySelector('.menu');

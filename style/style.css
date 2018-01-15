@@ -5589,7 +5589,7 @@ p {
 .popup {
   visibility: visible;
   opacity: 1;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.8);
   position: fixed;
   top: 0;
   left: 0;
@@ -5920,12 +5920,6 @@ body {
   overflow-x: hidden;
 }
 
-.invisible {
-  display: none;
-  visibility: hidden;
-  opacity: 0;
-}
-
 .title--quiz {
   margin-bottom: 30px;
   font-size: 25px;
@@ -5963,6 +5957,10 @@ body {
   margin: 40px auto;
 }
 
+.icons-to-response-invisible {
+  display: none;
+}
+
 .icons-to-response img {
   display: inline;
   height: 45px;
@@ -5979,10 +5977,6 @@ body {
   font-family: 'Lilita One', cursive;
   font-size: 30px;
   color: #664596;
-}
-
-.icons-to-response-invisible {
-  display: none;
 }
 
 .result-box {

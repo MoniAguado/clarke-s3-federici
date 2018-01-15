@@ -3,12 +3,6 @@
 	overflow-x: hidden;
 }
 
-.invisible {
-	display: none;
-	visibility: hidden;
-	opacity: 0;
-}
-
 .title--quiz {
 	margin-bottom: 30px;
 	font-size: 25px;
@@ -39,7 +33,6 @@
 	font-style: italic;
 }
 
-
 .question {
 	text-align: justify;
 }
@@ -50,6 +43,9 @@
 	margin: 40px auto;
 }
 
+.icons-to-response-invisible {
+	display: none;
+}
 
 .icons-to-response img {
 	display: inline;
@@ -70,10 +66,6 @@
 	color: #664596;
 }
 
-.icons-to-response-invisible {
-	display: none;
-}
-
 .result-box {
 	margin-bottom: 20px;
 	display: flex;
@@ -85,6 +77,10 @@
 .result-box-invisible {
 	display: none;
 }
+
+// .invisible {
+// 	display: none;
+// }
 
 .result p {
 	display: inline;
