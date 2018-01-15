@@ -6234,9 +6234,14 @@ body {
   transition-delay: 0.3s;
 }
 
+.general--wrapper {
+  padding-top: 100px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 .bloque-survey {
   background-color: #ECEDD0;
-  padding-top: 100px;
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 20px;
@@ -6276,7 +6281,6 @@ body {
 
 .tips {
   padding: 30px;
-  padding-top: 80px;
 }
 
 .image--tips {
@@ -6287,7 +6291,6 @@ body {
 .page-statistics {
   background-color: #ecedd0;
   padding: 30px;
-  padding-top: 80px;
 }
 
 .section--statistics {
@@ -7418,8 +7421,11 @@ body {
     margin-top: 70px;
   }
 
-  .bloque-survey {
+  .general--wrapper {
     padding-top: 150px;
+  }
+
+  .bloque-survey {
     padding-bottom: 100px;
     padding-left: 80px;
     padding-right: 80px;
