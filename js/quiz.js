@@ -113,8 +113,17 @@ for (var i = 0; i < pressedEmojiPhrase2.length; i++) {
 
 
 // 5. FUNCIONALIDAD QUE DESAPAREZCA EL POP-UP________________
+var buttonClosePop = document.querySelector('.popup-close');
+var boxPopUp = document.querySelector('.popup');
+
 function popUpGoodbye() {
-	document.getElementById('popup').classList.add('invisible');
+	boxPopUp.classList.add('invisible');
 }
 
-document.querySelector('.popup-close').addEventListener('click', popUpGoodbye);
+buttonClosePop.addEventListener('click', popUpGoodbye);
+
+// function popUpGoodbye() {
+// 	document.getElementById('popup').classList.add('invisible');
+// }
+//
+// document.querySelector('.popup-close').addEventListener('click', popUpGoodbye);
