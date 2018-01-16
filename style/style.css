@@ -6074,7 +6074,7 @@ body {
   background-color: #664596;
   margin: 20px auto;
   background-size: 65%;
-  background-image: url(/images/speaker.svg);
+  background-image: url(../images/speaker.svg);
   background-repeat: no-repeat;
   background-position: center center;
 }
