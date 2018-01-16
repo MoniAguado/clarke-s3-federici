@@ -6079,8 +6079,14 @@ body {
   background-position: center center;
 }
 
-.video {
+.box-video {
   margin-top: 30px;
+  text-align: center;
+}
+
+.video {
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 .button--quiz-toHome {
@@ -6382,6 +6388,18 @@ body {
 .resalt {
   font-weight: bold;
   color: #7719ff;
+}
+
+@media all and (min-width: 400px) {
+  .icons-to-response {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .icons-to-response img {
+    margin: 0 30px;
+  }
 }
 
 @media all and (min-width: 500px) {
@@ -7414,6 +7432,17 @@ body {
 
   .flex1 {
     margin-top: 70px;
+  }
+
+  .quiz-item-box {
+    width: 680px;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    margin-bottom: 50px;
   }
 
   .bloque-survey {
