@@ -42,9 +42,15 @@
 // 	possiblePressedEmoji[i].addEventListener('click', closeIconsToResponseAndOpenResultBox);
 // }
 
-
 var feedbackTextWin = '¡Acertaste!';
 var feedbackTextLose = '¡Fallaste!';
+
+
+
+
+
+
+
 
 function closeIconsToResponseAndOpenResultBox(event) {
 	var questionId = event.currentTarget.getAttribute('data-idQuestion');
@@ -57,19 +63,13 @@ function closeIconsToResponseAndOpenResultBox(event) {
 		document.getElementById('iconsToResponse' + questionId).classList.add('icons-to-response-invisible');
 	}
 
-
 	if (event.currentTarget.classList.contains('correct-answer')) {
-
 			document.getElementById('feedback' + questionId).insertAdjacentHTML('beforeend', feedbackTextWin);
-
 			document.getElementById('feedback' + questionId).classList.add('feedbackWin');
-
 			document.getElementById('icon-container' + questionId).classList.add('icon-container-right');
 		} else {
 			document.getElementById('feedback' + questionId).insertAdjacentHTML('beforeend', feedbackTextLose);
-
 			document.getElementById('feedback' + questionId).classList.add('feedbackLose');
-
 			document.getElementById('icon-container' + questionId).classList.add('icon-container-wrong');
 		}
 
@@ -80,12 +80,13 @@ function closeIconsToResponseAndOpenResultBox(event) {
 	}
 }
 
-
 var possiblePressedEmoji = document.querySelectorAll('.emoji');
 
 for (var i = 0; i < possiblePressedEmoji.length; i++) {
 	possiblePressedEmoji[i].addEventListener('click', closeIconsToResponseAndOpenResultBox);
 }
+
+
 
 
 

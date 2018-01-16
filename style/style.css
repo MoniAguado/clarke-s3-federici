@@ -6060,11 +6060,11 @@ body {
 }
 
 .icon-container-right {
-  background-image: url(/images/tick-mark.svg);
+  background-image: url(../images/tick-mark.svg);
 }
 
 .icon-container-wrong {
-  background-image: url(/images/delete.svg);
+  background-image: url(../images/delete.svg);
 }
 
 .icon-speaker-container {

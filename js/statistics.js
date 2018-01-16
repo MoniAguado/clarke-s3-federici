@@ -7,7 +7,7 @@ var box = document.querySelectorAll('.wrapper--question');
 
 //con un bucle for recorremos el array con todos los elementos con la clase .button y les aplicamos la función
 for (var i = 0; i<answerButton.length; i++) {
-answerButton[i].addEventListener('click', rotateAnswer);
+	answerButton[i].addEventListener('click', rotateAnswer);
 }
 
 //cuando se dispare el evento, a traves de currentTarget se accede al value y este se usa como indice para acceder al elemento correspondiente en el array
