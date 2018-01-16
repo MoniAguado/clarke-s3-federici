@@ -28,6 +28,13 @@
 	background-color: rgb(182, 252, 159);
 	border-color: 1px solid #403F3D;
 }
+
+@media all and (min-width:768px){
+	.button-home{
+		height: 60px;
+		width: 150px;
+	}
+}
 .button-tips {
 	border-radius: 100px 100px 100px 0px;
 	-moz-border-radius: 100px 100px 100px 0px;

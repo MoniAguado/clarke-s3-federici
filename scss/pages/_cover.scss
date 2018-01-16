@@ -71,13 +71,6 @@
 	color: white;
 }
 
-.button--cover {
-	@media all and (max-width:768px) {
-		font-weight: bold;
-		height: 60px;
-		width: 150px;
-	 }
-}
 
 .bigEntrance {
 	animation-name: bigEntrance;
